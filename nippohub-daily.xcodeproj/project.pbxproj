@@ -18,6 +18,9 @@
 		54C1FD22224446D600AB4FC8 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 54C1FD21224446D600AB4FC8 /* GoogleService-Info.plist */; };
 		54C1FD24224446E900AB4FC8 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 54C1FD23224446E900AB4FC8 /* GoogleService-Info.plist */; };
 		54C1FD26224446F900AB4FC8 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 54C1FD25224446F900AB4FC8 /* GoogleService-Info.plist */; };
+		5E99E2EDAC11B3134A51A4B2 /* Pods_nippohub_dailyUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C959E3B09DECB470B0B3AC1 /* Pods_nippohub_dailyUITests.framework */; };
+		68E1A26A7BB64FCEF4C78B4A /* Pods_nippohub_daily.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3763B8884410BDF84668DF2F /* Pods_nippohub_daily.framework */; };
+		BEE4D3ED4041D11317B0C135 /* Pods_nippohub_dailyTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0526FC9D8890CE3F9BD45EC8 /* Pods_nippohub_dailyTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +41,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0526FC9D8890CE3F9BD45EC8 /* Pods_nippohub_dailyTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_nippohub_dailyTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3763B8884410BDF84668DF2F /* Pods_nippohub_daily.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_nippohub_daily.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		416D323E47E2F2B26E527DAB /* Pods-nippohub-daily.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-nippohub-daily.release.xcconfig"; path = "Pods/Target Support Files/Pods-nippohub-daily/Pods-nippohub-daily.release.xcconfig"; sourceTree = "<group>"; };
 		54C1FCE7224444CA00AB4FC8 /* nippohub-daily.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "nippohub-daily.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		54C1FCEA224444CA00AB4FC8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		54C1FCEC224444CA00AB4FC8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -55,6 +61,12 @@
 		54C1FD21224446D600AB4FC8 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		54C1FD23224446E900AB4FC8 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		54C1FD25224446F900AB4FC8 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		6E29FA28320AE5E76C86423E /* Pods-nippohub-dailyUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-nippohub-dailyUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-nippohub-dailyUITests/Pods-nippohub-dailyUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		7C959E3B09DECB470B0B3AC1 /* Pods_nippohub_dailyUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_nippohub_dailyUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		83869DF114DC7D4A8F8FE69B /* Pods-nippohub-dailyTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-nippohub-dailyTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-nippohub-dailyTests/Pods-nippohub-dailyTests.debug.xcconfig"; sourceTree = "<group>"; };
+		882961D9420CFFE7AF8BEA08 /* Pods-nippohub-daily.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-nippohub-daily.debug.xcconfig"; path = "Pods/Target Support Files/Pods-nippohub-daily/Pods-nippohub-daily.debug.xcconfig"; sourceTree = "<group>"; };
+		A5F756E82F770F55E32B445C /* Pods-nippohub-dailyUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-nippohub-dailyUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-nippohub-dailyUITests/Pods-nippohub-dailyUITests.release.xcconfig"; sourceTree = "<group>"; };
+		AD44ADFE49361060143C25A7 /* Pods-nippohub-dailyTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-nippohub-dailyTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-nippohub-dailyTests/Pods-nippohub-dailyTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +74,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				68E1A26A7BB64FCEF4C78B4A /* Pods_nippohub_daily.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -69,6 +82,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BEE4D3ED4041D11317B0C135 /* Pods_nippohub_dailyTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -76,6 +90,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5E99E2EDAC11B3134A51A4B2 /* Pods_nippohub_dailyUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -89,6 +104,8 @@
 				54C1FD01224444CD00AB4FC8 /* nippohub-dailyTests */,
 				54C1FD0C224444CD00AB4FC8 /* nippohub-dailyUITests */,
 				54C1FCE8224444CA00AB4FC8 /* Products */,
+				8D18C2F90E300CAFFE7E2335 /* Pods */,
+				619111258795E4B5C38DD7C7 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -137,6 +154,29 @@
 			path = "nippohub-dailyUITests";
 			sourceTree = "<group>";
 		};
+		619111258795E4B5C38DD7C7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3763B8884410BDF84668DF2F /* Pods_nippohub_daily.framework */,
+				0526FC9D8890CE3F9BD45EC8 /* Pods_nippohub_dailyTests.framework */,
+				7C959E3B09DECB470B0B3AC1 /* Pods_nippohub_dailyUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8D18C2F90E300CAFFE7E2335 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				882961D9420CFFE7AF8BEA08 /* Pods-nippohub-daily.debug.xcconfig */,
+				416D323E47E2F2B26E527DAB /* Pods-nippohub-daily.release.xcconfig */,
+				83869DF114DC7D4A8F8FE69B /* Pods-nippohub-dailyTests.debug.xcconfig */,
+				AD44ADFE49361060143C25A7 /* Pods-nippohub-dailyTests.release.xcconfig */,
+				6E29FA28320AE5E76C86423E /* Pods-nippohub-dailyUITests.debug.xcconfig */,
+				A5F756E82F770F55E32B445C /* Pods-nippohub-dailyUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -144,9 +184,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 54C1FD12224444CD00AB4FC8 /* Build configuration list for PBXNativeTarget "nippohub-daily" */;
 			buildPhases = (
+				0A69FB18AC5A4FCD628B3FD4 /* [CP] Check Pods Manifest.lock */,
 				54C1FCE3224444CA00AB4FC8 /* Sources */,
 				54C1FCE4224444CA00AB4FC8 /* Frameworks */,
 				54C1FCE5224444CA00AB4FC8 /* Resources */,
+				4AE6044A8133583AE7736CFB /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -161,6 +203,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 54C1FD15224444CD00AB4FC8 /* Build configuration list for PBXNativeTarget "nippohub-dailyTests" */;
 			buildPhases = (
+				A6C46E8C3007250B19A0EE72 /* [CP] Check Pods Manifest.lock */,
 				54C1FCFA224444CD00AB4FC8 /* Sources */,
 				54C1FCFB224444CD00AB4FC8 /* Frameworks */,
 				54C1FCFC224444CD00AB4FC8 /* Resources */,
@@ -179,6 +222,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 54C1FD18224444CD00AB4FC8 /* Build configuration list for PBXNativeTarget "nippohub-dailyUITests" */;
 			buildPhases = (
+				5B7C7C7B6D20D8F5670CBEAA /* [CP] Check Pods Manifest.lock */,
 				54C1FD05224444CD00AB4FC8 /* Sources */,
 				54C1FD06224444CD00AB4FC8 /* Frameworks */,
 				54C1FD07224444CD00AB4FC8 /* Resources */,
@@ -265,6 +309,83 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0A69FB18AC5A4FCD628B3FD4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-nippohub-daily-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4AE6044A8133583AE7736CFB /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-nippohub-daily/Pods-nippohub-daily-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-nippohub-daily/Pods-nippohub-daily-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5B7C7C7B6D20D8F5670CBEAA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-nippohub-dailyUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A6C46E8C3007250B19A0EE72 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-nippohub-dailyTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		54C1FCE3224444CA00AB4FC8 /* Sources */ = {
@@ -446,6 +567,7 @@
 		};
 		54C1FD13224444CD00AB4FC8 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 882961D9420CFFE7AF8BEA08 /* Pods-nippohub-daily.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -463,6 +585,7 @@
 		};
 		54C1FD14224444CD00AB4FC8 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 416D323E47E2F2B26E527DAB /* Pods-nippohub-daily.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -480,6 +603,7 @@
 		};
 		54C1FD16224444CD00AB4FC8 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 83869DF114DC7D4A8F8FE69B /* Pods-nippohub-dailyTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -500,6 +624,7 @@
 		};
 		54C1FD17224444CD00AB4FC8 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AD44ADFE49361060143C25A7 /* Pods-nippohub-dailyTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -520,6 +645,7 @@
 		};
 		54C1FD19224444CD00AB4FC8 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6E29FA28320AE5E76C86423E /* Pods-nippohub-dailyUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -539,6 +665,7 @@
 		};
 		54C1FD1A224444CD00AB4FC8 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A5F756E82F770F55E32B445C /* Pods-nippohub-dailyUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
