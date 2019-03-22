@@ -97,6 +97,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		54BECCE122458DD80064BE83 /* views */ = {
+			isa = PBXGroup;
+			children = (
+				54C1FCF6224444CD00AB4FC8 /* LaunchScreen.storyboard */,
+				54C1FCEE224444CA00AB4FC8 /* Main.storyboard */,
+			);
+			path = views;
+			sourceTree = "<group>";
+		};
+		54BECCE222458DFD0064BE83 /* view controllers */ = {
+			isa = PBXGroup;
+			children = (
+				54C1FCEC224444CA00AB4FC8 /* ViewController.swift */,
+			);
+			path = "view controllers";
+			sourceTree = "<group>";
+		};
 		54C1FCDE224444CA00AB4FC8 = {
 			isa = PBXGroup;
 			children = (
@@ -122,12 +139,11 @@
 		54C1FCE9224444CA00AB4FC8 /* nippohub-daily */ = {
 			isa = PBXGroup;
 			children = (
+				54BECCE222458DFD0064BE83 /* view controllers */,
+				54BECCE122458DD80064BE83 /* views */,
 				54C1FD25224446F900AB4FC8 /* GoogleService-Info.plist */,
 				54C1FCEA224444CA00AB4FC8 /* AppDelegate.swift */,
-				54C1FCEC224444CA00AB4FC8 /* ViewController.swift */,
-				54C1FCEE224444CA00AB4FC8 /* Main.storyboard */,
 				54C1FCF4224444CD00AB4FC8 /* Assets.xcassets */,
-				54C1FCF6224444CD00AB4FC8 /* LaunchScreen.storyboard */,
 				54C1FCF9224444CD00AB4FC8 /* Info.plist */,
 				54C1FCF1224444CA00AB4FC8 /* nippohub_daily.xcdatamodeld */,
 			);
