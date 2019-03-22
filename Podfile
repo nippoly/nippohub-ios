@@ -8,6 +8,7 @@ target 'nippohub-daily' do
   # Pods for nippohub-daily
 
   pod 'Firebase/Core'
+  pod 'Firebase/Auth'
 
   target 'nippohub-dailyTests' do
     inherit! :search_paths
