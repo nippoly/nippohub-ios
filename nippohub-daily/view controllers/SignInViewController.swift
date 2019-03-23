@@ -22,7 +22,7 @@ class SignInViewController: UIViewController {
     func signIn() {
         let email = formEmail.text!
         let password = formPassword.text!
-        print("|---------------------------------------|")
+        
         Auth.auth().signIn(withEmail: email, password: password) { user, error in
             // TODO: 実装
             print("-------------")
