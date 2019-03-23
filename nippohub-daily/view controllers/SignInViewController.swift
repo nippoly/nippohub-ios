@@ -20,8 +20,11 @@ class SignInViewController: UIViewController {
 
     @IBAction
     func signIn() {
-        print("|---------------------------------------|")
-        Auth.auth().signIn(withEmail: formEmail.text!, password: formPassword.text!) { user, error in
+        let email = formEmail.text!
+        let password = formPassword.text!
+        
+        Auth.auth().signIn(withEmail: email, password: password) { user, error in
+            // TODO: 実装
             print("-------------")
             print(user)
             print(error)
