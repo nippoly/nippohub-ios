@@ -23,12 +23,12 @@ class SignInViewController: UIViewController {
         let email = formEmail.text!
         let password = formPassword.text!
         
-        Auth.auth().signIn(withEmail: email, password: password) { user, error in
-            // TODO: 実装
-            print("-------------")
-            print(user)
-            print(error)
-            print("-------------")
+        Auth.auth().signIn(withEmail: email, password: password) { _, error in
+            
+            // TODO: nilじゃない時の処理
+            if error == nil {
+                self.performSegue(withIdentifier: "signInToDailyReportsSegue", sender: nil)
+            }
         }
     }
 
