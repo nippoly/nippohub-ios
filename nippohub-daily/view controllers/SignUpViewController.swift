@@ -25,12 +25,11 @@ class SignUpViewController: UIViewController {
             print("パスワードが異なります")
         }
         
-        Auth.auth().createUser(withEmail: email, password: password) { result, error in
-            // TODO: 処理実装
-            print("-----------")
-            print(result)
-            print(error)
-            print("-----------")
+        Auth.auth().createUser(withEmail: email, password: password) { _, error in
+            // TODO: nilじゃない時の処理
+            if error == nil {
+                self.performSegue(withIdentifier: "signUpToDailyReportsSegue", sender: nil)
+            }
         }
     }
 }
