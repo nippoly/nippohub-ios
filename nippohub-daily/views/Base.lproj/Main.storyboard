@@ -76,10 +76,10 @@
             </objects>
             <point key="canvasLocation" x="52" y="29"/>
         </scene>
-        <!--View Controller-->
+        <!--Daily Report Index View Controller-->
         <scene sceneID="8GS-Eg-Qp6">
             <objects>
-                <viewController id="hnM-0d-X7s" sceneMemberID="viewController">
+                <viewController id="hnM-0d-X7s" customClass="DailyReportIndexViewController" customModule="nippohub_daily" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="e4f-73-jNb">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
