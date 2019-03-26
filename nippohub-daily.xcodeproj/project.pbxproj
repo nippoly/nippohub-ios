@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		545159C22246DB80005854CE /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 545159C12246DB80005854CE /* SignUpViewController.swift */; };
 		545159C4224996AB005854CE /* DailyReportIndexViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 545159C3224996AB005854CE /* DailyReportIndexViewController.swift */; };
+		54572997224AE01F001F20CD /* DailyReportListItem.xib in Resources */ = {isa = PBXBuildFile; fileRef = 54572996224AE01F001F20CD /* DailyReportListItem.xib */; };
+		54572999224AE0CF001F20CD /* DailyReportListItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54572998224AE0CF001F20CD /* DailyReportListItem.swift */; };
 		54C1FCEB224444CA00AB4FC8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54C1FCEA224444CA00AB4FC8 /* AppDelegate.swift */; };
 		54C1FCED224444CA00AB4FC8 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54C1FCEC224444CA00AB4FC8 /* SignInViewController.swift */; };
 		54C1FCF0224444CA00AB4FC8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 54C1FCEE224444CA00AB4FC8 /* Main.storyboard */; };
@@ -48,6 +50,8 @@
 		416D323E47E2F2B26E527DAB /* Pods-nippohub-daily.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-nippohub-daily.release.xcconfig"; path = "Pods/Target Support Files/Pods-nippohub-daily/Pods-nippohub-daily.release.xcconfig"; sourceTree = "<group>"; };
 		545159C12246DB80005854CE /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		545159C3224996AB005854CE /* DailyReportIndexViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyReportIndexViewController.swift; sourceTree = "<group>"; };
+		54572996224AE01F001F20CD /* DailyReportListItem.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DailyReportListItem.xib; sourceTree = "<group>"; };
+		54572998224AE0CF001F20CD /* DailyReportListItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyReportListItem.swift; sourceTree = "<group>"; };
 		54C1FCE7224444CA00AB4FC8 /* nippohub-daily.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "nippohub-daily.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		54C1FCEA224444CA00AB4FC8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		54C1FCEC224444CA00AB4FC8 /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
@@ -101,6 +105,31 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		54572993224ADFCA001F20CD /* components */ = {
+			isa = PBXGroup;
+			children = (
+				54572995224ADFF6001F20CD /* controllers */,
+				54572994224ADFE1001F20CD /* xib */,
+			);
+			path = components;
+			sourceTree = "<group>";
+		};
+		54572994224ADFE1001F20CD /* xib */ = {
+			isa = PBXGroup;
+			children = (
+				54572996224AE01F001F20CD /* DailyReportListItem.xib */,
+			);
+			path = xib;
+			sourceTree = "<group>";
+		};
+		54572995224ADFF6001F20CD /* controllers */ = {
+			isa = PBXGroup;
+			children = (
+				54572998224AE0CF001F20CD /* DailyReportListItem.swift */,
+			);
+			path = controllers;
+			sourceTree = "<group>";
+		};
 		54BECCE122458DD80064BE83 /* views */ = {
 			isa = PBXGroup;
 			children = (
@@ -145,6 +174,7 @@
 		54C1FCE9224444CA00AB4FC8 /* nippohub-daily */ = {
 			isa = PBXGroup;
 			children = (
+				54572993224ADFCA001F20CD /* components */,
 				54BECCE222458DFD0064BE83 /* view controllers */,
 				54BECCE122458DD80064BE83 /* views */,
 				54C1FD25224446F900AB4FC8 /* GoogleService-Info.plist */,
@@ -309,6 +339,7 @@
 			files = (
 				54C1FCF8224444CD00AB4FC8 /* LaunchScreen.storyboard in Resources */,
 				54C1FD26224446F900AB4FC8 /* GoogleService-Info.plist in Resources */,
+				54572997224AE01F001F20CD /* DailyReportListItem.xib in Resources */,
 				54C1FCF5224444CD00AB4FC8 /* Assets.xcassets in Resources */,
 				54C1FCF0224444CA00AB4FC8 /* Main.storyboard in Resources */,
 			);
@@ -418,6 +449,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				54572999224AE0CF001F20CD /* DailyReportListItem.swift in Sources */,
 				54C1FCF3224444CB00AB4FC8 /* nippohub_daily.xcdatamodeld in Sources */,
 				545159C4224996AB005854CE /* DailyReportIndexViewController.swift in Sources */,
 				54C1FCED224444CA00AB4FC8 /* SignInViewController.swift in Sources */,
