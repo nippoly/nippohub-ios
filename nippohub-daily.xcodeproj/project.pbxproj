@@ -12,6 +12,7 @@
 		54572997224AE01F001F20CD /* DailyReportListItem.xib in Resources */ = {isa = PBXBuildFile; fileRef = 54572996224AE01F001F20CD /* DailyReportListItem.xib */; };
 		54572999224AE0CF001F20CD /* DailyReportListItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54572998224AE0CF001F20CD /* DailyReportListItem.swift */; };
 		5457299C224AE3B9001F20CD /* DailyReport.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5457299B224AE3B9001F20CD /* DailyReport.swift */; };
+		545729A0224D853B001F20CD /* DailyReportShowViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5457299F224D853B001F20CD /* DailyReportShowViewController.swift */; };
 		54C1FCEB224444CA00AB4FC8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54C1FCEA224444CA00AB4FC8 /* AppDelegate.swift */; };
 		54C1FCED224444CA00AB4FC8 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54C1FCEC224444CA00AB4FC8 /* SignInViewController.swift */; };
 		54C1FCF0224444CA00AB4FC8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 54C1FCEE224444CA00AB4FC8 /* Main.storyboard */; };
@@ -54,6 +55,7 @@
 		54572996224AE01F001F20CD /* DailyReportListItem.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DailyReportListItem.xib; sourceTree = "<group>"; };
 		54572998224AE0CF001F20CD /* DailyReportListItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyReportListItem.swift; sourceTree = "<group>"; };
 		5457299B224AE3B9001F20CD /* DailyReport.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyReport.swift; sourceTree = "<group>"; };
+		5457299F224D853B001F20CD /* DailyReportShowViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyReportShowViewController.swift; sourceTree = "<group>"; };
 		54C1FCE7224444CA00AB4FC8 /* nippohub-daily.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "nippohub-daily.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		54C1FCEA224444CA00AB4FC8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		54C1FCEC224444CA00AB4FC8 /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
@@ -155,6 +157,7 @@
 				54C1FCEC224444CA00AB4FC8 /* SignInViewController.swift */,
 				545159C12246DB80005854CE /* SignUpViewController.swift */,
 				545159C3224996AB005854CE /* DailyReportIndexViewController.swift */,
+				5457299F224D853B001F20CD /* DailyReportShowViewController.swift */,
 			);
 			path = "view controllers";
 			sourceTree = "<group>";
@@ -465,6 +468,7 @@
 				54C1FCF3224444CB00AB4FC8 /* nippohub_daily.xcdatamodeld in Sources */,
 				545159C4224996AB005854CE /* DailyReportIndexViewController.swift in Sources */,
 				54C1FCED224444CA00AB4FC8 /* SignInViewController.swift in Sources */,
+				545729A0224D853B001F20CD /* DailyReportShowViewController.swift in Sources */,
 				545159C22246DB80005854CE /* SignUpViewController.swift in Sources */,
 				54C1FCEB224444CA00AB4FC8 /* AppDelegate.swift in Sources */,
 			);

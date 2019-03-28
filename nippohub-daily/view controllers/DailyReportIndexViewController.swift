@@ -36,6 +36,15 @@ class DailyReportIndexViewController: UIViewController {
             }
         }
     }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "dailyReportIndexToDailyReportShowSegue" {
+            let destController = segue.destination as! DailyReportShowViewController
+            let index = sender as! Int
+            
+            destController.dailyReport = dailyReports[index]
+        }
+    }
 }
 
 extension DailyReportIndexViewController: UITableViewDataSource, UITableViewDelegate {
@@ -50,5 +59,9 @@ extension DailyReportIndexViewController: UITableViewDataSource, UITableViewDele
         cell.labelTitle.text = dailyReport.title // TODO: Date追加
         
         return cell
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        performSegue(withIdentifier: "dailyReportIndexToDailyReportShowSegue", sender: indexPath.row)
     }
 }
