@@ -11,9 +11,13 @@ import UIKit
 class DailyReportShowViewController: UIViewController {
     var dailyReport: DailyReport?
     
+    @IBOutlet var labelTitle: UILabel!
+    @IBOutlet var labelContent: UILabel!
+    
     override func viewDidLoad() {
-         super.viewDidLoad()
+        super.viewDidLoad()
         
-        print(dailyReport)
+        labelTitle.text = dailyReport?.title // TODO: date追加
+        labelContent.text = dailyReport?.content
     }
 }
