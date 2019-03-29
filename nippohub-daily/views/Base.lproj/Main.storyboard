@@ -93,7 +93,13 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="Pfh-cn-WQ2"/>
                     </view>
-                    <navigationItem key="navigationItem" id="ENb-6L-J52"/>
+                    <navigationItem key="navigationItem" leftItemsSupplementBackButton="YES" id="ENb-6L-J52">
+                        <barButtonItem key="rightBarButtonItem" title="new" id="YQk-lR-xSo">
+                            <connections>
+                                <segue destination="1m7-cl-HxT" kind="show" id="UuH-37-ugK"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="tableDailyReports" destination="eCK-t7-vxW" id="HCK-6L-l4V"/>
                         <segue destination="s0i-vd-TDa" kind="show" identifier="dailyReportIndexToDailyReportShowSegue" id="1je-8Y-1DD"/>
@@ -137,6 +143,21 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8fL-iz-ev1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2956" y="26.53673163418291"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="5xK-Bj-4SZ">
+            <objects>
+                <viewController id="1m7-cl-HxT" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="TUV-A5-cl4">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="dqh-AO-moC"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="JUl-x3-Z2A" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2956" y="754"/>
         </scene>
         <!--Sign Up View Controller-->
         <scene sceneID="8fs-Ah-sMd">
