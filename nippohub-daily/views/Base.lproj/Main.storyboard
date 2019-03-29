@@ -69,7 +69,7 @@
                     <connections>
                         <outlet property="formEmail" destination="oyc-GJ-9nS" id="kfy-Hq-uVC"/>
                         <outlet property="formPassword" destination="k8c-aa-al6" id="brQ-2m-y67"/>
-                        <segue destination="hnM-0d-X7s" kind="show" identifier="signInToDailyReportsSegue" id="UyU-EY-Xlu"/>
+                        <segue destination="SBW-LQ-sth" kind="show" identifier="signInToDailyReportsSegue" id="UyU-EY-Xlu"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -93,6 +93,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="Pfh-cn-WQ2"/>
                     </view>
+                    <navigationItem key="navigationItem" id="ENb-6L-J52"/>
                     <connections>
                         <outlet property="tableDailyReports" destination="eCK-t7-vxW" id="HCK-6L-l4V"/>
                         <segue destination="s0i-vd-TDa" kind="show" identifier="dailyReportIndexToDailyReportShowSegue" id="1je-8Y-1DD"/>
@@ -100,7 +101,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6Me-5j-I0J" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1085.5999999999999" y="27.436281859070466"/>
+            <point key="canvasLocation" x="2024.8" y="27.436281859070466"/>
         </scene>
         <!--Daily Report Show View Controller-->
         <scene sceneID="Ayz-f0-cun">
@@ -135,7 +136,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8fL-iz-ev1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2016.8" y="26.53673163418291"/>
+            <point key="canvasLocation" x="2956" y="26.53673163418291"/>
         </scene>
         <!--Sign Up View Controller-->
         <scene sceneID="8fs-Ah-sMd">
@@ -203,15 +204,33 @@
                         <outlet property="formEmail" destination="sU8-4k-vTo" id="T9D-3n-RAa"/>
                         <outlet property="formPassword" destination="Eea-RJ-V49" id="paJ-k5-oOs"/>
                         <outlet property="formPasswordConfirmation" destination="puk-m9-q7R" id="EsV-uD-17I"/>
-                        <segue destination="hnM-0d-X7s" kind="show" identifier="signUpToDailyReportsSegue" id="LPX-3e-4QO"/>
+                        <segue destination="SBW-LQ-sth" kind="show" identifier="signUpToDailyReportsSegue" id="LPX-3e-4QO"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Z5a-Bb-yO4" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="52" y="774"/>
         </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="r6c-yq-bjg">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="SBW-LQ-sth" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="pUR-NF-PwB">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="hnM-0d-X7s" kind="relationship" relationship="rootViewController" id="lgR-k5-ESS"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="f8b-RZ-i1M" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1085.5999999999999" y="27.436281859070466"/>
+        </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="UyU-EY-Xlu"/>
+        <segue reference="LPX-3e-4QO"/>
     </inferredMetricsTieBreakers>
 </document>
