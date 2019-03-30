@@ -27,7 +27,7 @@ class DailyReportIndexViewController: UIViewController {
                 
                 ref.child("daily_reports").queryOrdered(byChild: "userId").queryEqual(toValue: user.uid).observe(.childAdded, with: { snapshot -> Void in
                     
-                    dailyReports.append(DailyReport(date: Date(), title: snapshot.childSnapshot(forPath: "title").value as! String, content: snapshot.childSnapshot(forPath: "content").value as! String))
+                    dailyReports.append(DailyReport(id: snapshot.key, date: Date(), title: snapshot.childSnapshot(forPath: "title").value as! String, content: snapshot.childSnapshot(forPath: "content").value as! String))
                     
                     // TODO: ループ毎ではなくまとめて処理できるようにする
                     self.dailyReports = dailyReports
