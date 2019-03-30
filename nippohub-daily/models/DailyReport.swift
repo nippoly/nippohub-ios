@@ -9,6 +9,7 @@
 import Foundation
 
 struct DailyReport {
+    let id: String
     let date: Date
     let title: String
     let content: String
