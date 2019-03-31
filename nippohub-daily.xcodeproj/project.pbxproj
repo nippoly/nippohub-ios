@@ -115,57 +115,57 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		54572993224ADFCA001F20CD /* components */ = {
+		54572993224ADFCA001F20CD /* Components */ = {
 			isa = PBXGroup;
 			children = (
-				54572995224ADFF6001F20CD /* controllers */,
-				54572994224ADFE1001F20CD /* xib */,
+				54572995224ADFF6001F20CD /* Controllers */,
+				54572994224ADFE1001F20CD /* Xib */,
 			);
-			path = components;
+			path = Components;
 			sourceTree = "<group>";
 		};
-		54572994224ADFE1001F20CD /* xib */ = {
+		54572994224ADFE1001F20CD /* Xib */ = {
 			isa = PBXGroup;
 			children = (
 				54572996224AE01F001F20CD /* DailyReportListItem.xib */,
 			);
-			path = xib;
+			path = Xib;
 			sourceTree = "<group>";
 		};
-		54572995224ADFF6001F20CD /* controllers */ = {
+		54572995224ADFF6001F20CD /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
 				54572998224AE0CF001F20CD /* DailyReportListItem.swift */,
 			);
-			path = controllers;
+			path = Controllers;
 			sourceTree = "<group>";
 		};
-		5457299A224AE3A1001F20CD /* models */ = {
+		5457299A224AE3A1001F20CD /* Models */ = {
 			isa = PBXGroup;
 			children = (
 				5457299B224AE3B9001F20CD /* DailyReport.swift */,
 			);
-			path = models;
+			path = Models;
 			sourceTree = "<group>";
 		};
-		5472CE3522504AA3001158E4 /* utilities */ = {
+		5472CE3522504AA3001158E4 /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
 				5472CE3622504B38001158E4 /* DateConverter.swift */,
 			);
-			path = utilities;
+			path = Utilities;
 			sourceTree = "<group>";
 		};
-		54BECCE122458DD80064BE83 /* views */ = {
+		54BECCE122458DD80064BE83 /* Views */ = {
 			isa = PBXGroup;
 			children = (
 				54C1FCF6224444CD00AB4FC8 /* LaunchScreen.storyboard */,
 				54C1FCEE224444CA00AB4FC8 /* Main.storyboard */,
 			);
-			path = views;
+			path = Views;
 			sourceTree = "<group>";
 		};
-		54BECCE222458DFD0064BE83 /* view controllers */ = {
+		54BECCE222458DFD0064BE83 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
 				54C1FCEC224444CA00AB4FC8 /* SignInViewController.swift */,
@@ -175,7 +175,7 @@
 				545729A1224EDFDA001F20CD /* DailyReportNewViewController.swift */,
 				5472CE3322504098001158E4 /* DailyReportEditViewController.swift */,
 			);
-			path = "view controllers";
+			path = ViewControllers;
 			sourceTree = "<group>";
 		};
 		54C1FCDE224444CA00AB4FC8 = {
@@ -203,11 +203,11 @@
 		54C1FCE9224444CA00AB4FC8 /* nippohub-daily */ = {
 			isa = PBXGroup;
 			children = (
-				5472CE3522504AA3001158E4 /* utilities */,
-				5457299A224AE3A1001F20CD /* models */,
-				54572993224ADFCA001F20CD /* components */,
-				54BECCE222458DFD0064BE83 /* view controllers */,
-				54BECCE122458DD80064BE83 /* views */,
+				5472CE3522504AA3001158E4 /* Utilities */,
+				5457299A224AE3A1001F20CD /* Models */,
+				54572993224ADFCA001F20CD /* Components */,
+				54BECCE222458DFD0064BE83 /* ViewControllers */,
+				54BECCE122458DD80064BE83 /* Views */,
 				54C1FD25224446F900AB4FC8 /* GoogleService-Info.plist */,
 				54C1FCEA224444CA00AB4FC8 /* AppDelegate.swift */,
 				54C1FCF4224444CD00AB4FC8 /* Assets.xcassets */,
