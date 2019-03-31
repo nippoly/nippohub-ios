@@ -16,19 +16,16 @@ class DailyReportNewViewController: UIViewController {
     
     @IBAction
     func sendDailyReport() {
-        let formatter = DateFormatter()
-        let date = formDate.date
+        let date = DateConverter.converter.toString(from: formDate.date)
         let title = formTitle.text!
         let content = formContent.text!
         let currentUser = Auth.auth().currentUser // TODO: 確実に取得できていることを担保する
-        
-        formatter.dateFormat = "yyyy-MM-dd"
         
         if let user = currentUser {
             let ref: DatabaseReference! = Database.database().reference()
 
             ref.child("daily_reports").childByAutoId().setValue([
-                "date": formatter.string(from: date),
+                "date": date,
                 "title": title,
                 "content": content,
                 "userId": user.uid,
