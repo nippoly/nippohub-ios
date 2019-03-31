@@ -135,6 +135,13 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="tpL-xB-Of8"/>
                     </view>
+                    <navigationItem key="navigationItem" id="ite-de-dWg">
+                        <barButtonItem key="rightBarButtonItem" title="Edit" id="Px0-Wi-vhX">
+                            <connections>
+                                <segue destination="R3j-ry-KSR" kind="show" identifier="dailyReportShowToDailyReportEditSegue" id="uwP-u5-BXW"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="labelContent" destination="Qga-UI-Msj" id="vc8-mE-zSe"/>
                         <outlet property="labelTitle" destination="ReF-St-vOH" id="hmo-yJ-rQN"/>
@@ -142,7 +149,22 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8fL-iz-ev1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2956" y="26.53673163418291"/>
+            <point key="canvasLocation" x="3042" y="27"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="qMQ-zc-cra">
+            <objects>
+                <viewController id="R3j-ry-KSR" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="f8k-bs-6Sb">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="Owk-aB-X1Y"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yr7-cX-rf4" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4057" y="27"/>
         </scene>
         <!--Daily Report New View Controller-->
         <scene sceneID="5xK-Bj-4SZ">
@@ -215,7 +237,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JUl-x3-Z2A" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2956" y="753.37331334332839"/>
+            <point key="canvasLocation" x="2025" y="773"/>
         </scene>
         <!--Sign Up View Controller-->
         <scene sceneID="8fs-Ah-sMd">
