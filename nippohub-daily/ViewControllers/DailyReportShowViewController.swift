@@ -9,7 +9,7 @@
 import UIKit
 
 class DailyReportShowViewController: UIViewController {
-    var dailyReport: DailyReport?
+    var dailyReport: DailyReport!
     
     @IBOutlet var labelTitle: UILabel!
     @IBOutlet var labelContent: UILabel!
@@ -17,8 +17,8 @@ class DailyReportShowViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        labelTitle.text = dailyReport?.title // TODO: date追加
-        labelContent.text = dailyReport?.content
+        labelTitle.text = dailyReport.title // TODO: date追加
+        labelContent.text = dailyReport.content
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
