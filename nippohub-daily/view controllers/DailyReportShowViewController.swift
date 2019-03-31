@@ -20,4 +20,12 @@ class DailyReportShowViewController: UIViewController {
         labelTitle.text = dailyReport?.title // TODO: date追加
         labelContent.text = dailyReport?.content
     }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "dailyReportShowToDailyReportEditSegue" {
+            let destController = segue.destination as! DailyReportEditViewController
+            
+            destController.dailyReport = self.dailyReport
+        }
+    }
 }
