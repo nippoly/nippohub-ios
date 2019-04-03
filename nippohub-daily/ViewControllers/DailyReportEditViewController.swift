@@ -40,5 +40,7 @@ class DailyReportEditViewController: UIViewController {
                 "content": content
             ])
         }
+        
+        self.navigationController?.popViewController(animated: true)
     }
 }
