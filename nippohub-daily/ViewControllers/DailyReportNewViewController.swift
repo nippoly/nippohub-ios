@@ -32,5 +32,7 @@ class DailyReportNewViewController: UIViewController {
                 "createdAt": Int(Date().timeIntervalSince1970 * 1000)
             ])
         }
+        
+        self.navigationController?.popViewController(animated: true)
     }
 }
