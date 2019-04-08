@@ -27,6 +27,7 @@
 		54C1FD22224446D600AB4FC8 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 54C1FD21224446D600AB4FC8 /* GoogleService-Info.plist */; };
 		54C1FD24224446E900AB4FC8 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 54C1FD23224446E900AB4FC8 /* GoogleService-Info.plist */; };
 		54C1FD26224446F900AB4FC8 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 54C1FD25224446F900AB4FC8 /* GoogleService-Info.plist */; };
+		54CA71CC225C026900D09381 /* AccountManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54CA71CB225C026900D09381 /* AccountManager.swift */; };
 		5E99E2EDAC11B3134A51A4B2 /* Pods_nippohub_dailyUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C959E3B09DECB470B0B3AC1 /* Pods_nippohub_dailyUITests.framework */; };
 		68E1A26A7BB64FCEF4C78B4A /* Pods_nippohub_daily.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3763B8884410BDF84668DF2F /* Pods_nippohub_daily.framework */; };
 		BEE4D3ED4041D11317B0C135 /* Pods_nippohub_dailyTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0526FC9D8890CE3F9BD45EC8 /* Pods_nippohub_dailyTests.framework */; };
@@ -79,6 +80,7 @@
 		54C1FD21224446D600AB4FC8 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		54C1FD23224446E900AB4FC8 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		54C1FD25224446F900AB4FC8 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		54CA71CB225C026900D09381 /* AccountManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountManager.swift; sourceTree = "<group>"; };
 		6E29FA28320AE5E76C86423E /* Pods-nippohub-dailyUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-nippohub-dailyUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-nippohub-dailyUITests/Pods-nippohub-dailyUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		7C959E3B09DECB470B0B3AC1 /* Pods_nippohub_dailyUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_nippohub_dailyUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		83869DF114DC7D4A8F8FE69B /* Pods-nippohub-dailyTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-nippohub-dailyTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-nippohub-dailyTests/Pods-nippohub-dailyTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -152,6 +154,7 @@
 			isa = PBXGroup;
 			children = (
 				5472CE3622504B38001158E4 /* DateConverter.swift */,
+				54CA71CB225C026900D09381 /* AccountManager.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -491,6 +494,7 @@
 				545729A0224D853B001F20CD /* DailyReportShowViewController.swift in Sources */,
 				545159C22246DB80005854CE /* SignUpViewController.swift in Sources */,
 				54C1FCEB224444CA00AB4FC8 /* AppDelegate.swift in Sources */,
+				54CA71CC225C026900D09381 /* AccountManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
