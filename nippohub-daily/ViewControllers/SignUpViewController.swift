@@ -7,7 +7,6 @@
 //
 
 import UIKit
-import Firebase
 
 class SignUpViewController: UIViewController {
     @IBOutlet var formEmail: UITextField!
@@ -25,7 +24,7 @@ class SignUpViewController: UIViewController {
             print("パスワードが異なります")
         }
         
-        Auth.auth().createUser(withEmail: email, password: password) { _, error in
+        AccountManager.manager.signUp(email: email, password: password) { _, error in
             // TODO: nilじゃない時の処理
             if error == nil {
                 self.performSegue(withIdentifier: "signUpToDailyReportsSegue", sender: nil)
