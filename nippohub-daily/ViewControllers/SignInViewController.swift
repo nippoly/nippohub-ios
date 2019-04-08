@@ -7,7 +7,6 @@
 //
 
 import UIKit
-import Firebase
 
 class SignInViewController: UIViewController {
     
@@ -23,7 +22,7 @@ class SignInViewController: UIViewController {
         let email = formEmail.text!
         let password = formPassword.text!
         
-        Auth.auth().signIn(withEmail: email, password: password) { _, error in
+        AccountManager.manager.signIn(email: email, password: password) { _, error in
             
             // TODO: nilじゃない時の処理
             if error == nil {
