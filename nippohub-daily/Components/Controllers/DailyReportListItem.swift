@@ -9,5 +9,5 @@
 import UIKit
 
 class DailyReportListItem: UITableViewCell {
-    @IBOutlet var labelTitle: UILabel!
+    @IBOutlet weak var labelTitle: UILabel!
 }

@@ -11,8 +11,8 @@ import UIKit
 class DailyReportShowViewController: UIViewController {
     var dailyReport: DailyReport!
     
-    @IBOutlet var labelTitle: UILabel!
-    @IBOutlet var labelContent: UILabel!
+    @IBOutlet private weak var labelTitle: UILabel!
+    @IBOutlet private weak var labelContent: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()

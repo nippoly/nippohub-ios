@@ -9,9 +9,9 @@
 import UIKit
 
 class SignUpViewController: UIViewController {
-    @IBOutlet var formEmail: UITextField!
-    @IBOutlet var formPassword: UITextField!
-    @IBOutlet var formPasswordConfirmation: UITextField!
+    @IBOutlet private weak var formEmail: UITextField!
+    @IBOutlet private weak var formPassword: UITextField!
+    @IBOutlet private weak var formPasswordConfirmation: UITextField!
     
     @IBAction
     func signUp() {

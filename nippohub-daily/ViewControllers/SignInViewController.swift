@@ -10,8 +10,8 @@ import UIKit
 
 class SignInViewController: UIViewController {
     
-    @IBOutlet var formEmail: UITextField!
-    @IBOutlet var formPassword: UITextField!
+    @IBOutlet private weak var formEmail: UITextField!
+    @IBOutlet private weak var formPassword: UITextField!
 
     override func viewDidLoad() {
         super.viewDidLoad()
