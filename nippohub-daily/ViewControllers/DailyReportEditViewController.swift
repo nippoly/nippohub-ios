@@ -10,11 +10,11 @@ import UIKit
 import Firebase
 
 class DailyReportEditViewController: UIViewController {
-    var dailyReport: DailyReport!
-    
     @IBOutlet private weak var formDate: UIDatePicker!
     @IBOutlet private weak var formTitle: UITextField!
     @IBOutlet private weak var formContent: UITextView!
+    
+    var dailyReport: DailyReport!
     
     override func viewDidLoad() {
         super.viewDidLoad()

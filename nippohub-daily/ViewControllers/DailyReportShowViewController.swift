@@ -9,10 +9,10 @@
 import UIKit
 
 class DailyReportShowViewController: UIViewController {
-    var dailyReport: DailyReport!
-    
     @IBOutlet private weak var labelTitle: UILabel!
     @IBOutlet private weak var labelContent: UILabel!
+    
+    var dailyReport: DailyReport!
     
     override func viewDidLoad() {
         super.viewDidLoad()
