@@ -10,9 +10,9 @@ import UIKit
 import Firebase
 
 class DailyReportNewViewController: UIViewController {
-    @IBOutlet var formDate: UIDatePicker!
-    @IBOutlet var formTitle: UITextField!
-    @IBOutlet var formContent: UITextView!
+    @IBOutlet private weak var formDate: UIDatePicker!
+    @IBOutlet private weak var formTitle: UITextField!
+    @IBOutlet private weak var formContent: UITextView!
     
     @IBAction
     func sendDailyReport() {

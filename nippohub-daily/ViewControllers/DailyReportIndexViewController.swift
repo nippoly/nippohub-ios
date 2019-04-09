@@ -10,7 +10,7 @@ import UIKit
 import Firebase
 
 class DailyReportIndexViewController: UIViewController {
-    @IBOutlet var tableDailyReports: UITableView!
+    @IBOutlet private weak var tableDailyReports: UITableView!
     var dailyReports: [DailyReport] = []
     
     override func viewDidLoad() {
