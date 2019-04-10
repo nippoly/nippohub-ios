@@ -29,12 +29,12 @@ class DailyReportEditViewController: UIViewController {
         let date = DateConverter.converter.toString(from: formDate.date)
         let title = formTitle.text!
         let content = formContent.text!
-        let currentUser = Auth.auth().currentUser // TODO: 確実に取得できていることを担保する
+        let currentUser = AccountManager.manager.currentUser()
         
-        if currentUser != nil {
+        if let user = currentUser {
             let ref: DatabaseReference! = Database.database().reference()
             
-            ref.child("daily_reports/\(dailyReport.id)").updateChildValues([
+            ref.child("/users/\(user.uid)/daily_reports/\(dailyReport.id)").updateChildValues([
                 "date": date,
                 "title": title,
                 "content": content

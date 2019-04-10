@@ -16,26 +16,27 @@ class DailyReportIndexViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        let currentUser = AccountManager.manager.currentUser()
+        
         tableDailyReports.register(UINib(nibName: "DailyReportListItem", bundle: nil), forCellReuseIdentifier: "DailyReportListItem")
         tableDailyReports.dataSource = self
         tableDailyReports.delegate = self
         
-        Auth.auth().addStateDidChangeListener { auth, currentUser in
-            if let user = currentUser {
-                let ref: DatabaseReference! = Database.database().reference()
-                var dailyReports: [DailyReport] = []
-                
-                ref.child("daily_reports").queryOrdered(byChild: "userId").queryEqual(toValue: user.uid).observe(.childAdded, with: { snapshot -> Void in
+        if let user = currentUser {
+            let ref: DatabaseReference! = Database.database().reference()
+
+            ref.child("users/\(user.uid)/daily_reports").observe(.value, with: { snapshot -> Void in
+                let dailyReports = snapshot.children.map({ dailyReportRaw -> DailyReport in
+                    let dailyReport = dailyReportRaw as! DataSnapshot
                     // TODO: 変換失敗時の処理を考える
-                    let date = (try? DateConverter.converter.toDate(from: snapshot.childSnapshot(forPath: "date").value as! String)) ?? Date()
-                   
-                    dailyReports.append(DailyReport(id: snapshot.key, date: date, title: snapshot.childSnapshot(forPath: "title").value as! String, content: snapshot.childSnapshot(forPath: "content").value as! String))
-                    
-                    // TODO: ループ毎ではなくまとめて処理できるようにする
-                    self.dailyReports = dailyReports
-                    self.tableDailyReports.reloadData()
+                    let date = (try? DateConverter.converter.toDate(from: dailyReport.childSnapshot(forPath: "date").value as! String)) ?? Date()
+
+                    return DailyReport(id: dailyReport.key, date: date, title: dailyReport.childSnapshot(forPath: "title").value as! String, content: dailyReport.childSnapshot(forPath: "content").value as! String)
                 })
-            }
+                
+                self.dailyReports = dailyReports
+                self.tableDailyReports.reloadData()
+            })
         }
     }
     
