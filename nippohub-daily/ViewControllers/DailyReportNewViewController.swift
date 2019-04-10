@@ -19,16 +19,15 @@ class DailyReportNewViewController: UIViewController {
         let date = DateConverter.converter.toString(from: formDate.date)
         let title = formTitle.text!
         let content = formContent.text!
-        let currentUser = Auth.auth().currentUser // TODO: 確実に取得できていることを担保する
+        let currentUser = AccountManager.manager.currentUser()
         
         if let user = currentUser {
             let ref: DatabaseReference! = Database.database().reference()
 
-            ref.child("daily_reports").childByAutoId().setValue([
+            ref.child("users/\(user.uid)/daily_reports").childByAutoId().setValue([
                 "date": date,
                 "title": title,
                 "content": content,
-                "userId": user.uid,
                 "createdAt": Int(Date().timeIntervalSince1970 * 1000)
             ])
         }
