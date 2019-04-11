@@ -29,6 +29,13 @@ class DailyReportShowViewController: UIViewController, WKNavigationDelegate {
         
         webKitForContents.load(req)
     }
+
+    func webView(_ webView: WKWebView, didFinish navigation: WKNavigation!) {
+        let title = dailyReport.title // TODO: date追加
+        let content = dailyReport.content.split(separator: "\n").joined(separator: "\\n") // TODO: 引用符のエスケープ
+
+        webKitForContents.evaluateJavaScript("rendering('\(title)', \"\(content)\")", completionHandler: nil)
+    }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "dailyReportShowToDailyReportEditSegue" {
