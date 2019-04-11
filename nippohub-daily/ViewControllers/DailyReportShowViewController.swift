@@ -7,10 +7,12 @@
 //
 
 import UIKit
+import WebKit
 
-class DailyReportShowViewController: UIViewController {
+class DailyReportShowViewController: UIViewController, WKNavigationDelegate {
     @IBOutlet private weak var labelTitle: UILabel!
     @IBOutlet private weak var labelContent: UILabel!
+    @IBOutlet private weak var webKitForContents: WKWebView!
     
     var dailyReport: DailyReport!
     
@@ -19,6 +21,13 @@ class DailyReportShowViewController: UIViewController {
         
         labelTitle.text = dailyReport.title // TODO: date追加
         labelContent.text = dailyReport.content
+        
+        webKitForContents.navigationDelegate = self
+        
+        let url = Bundle.main.url(forResource: "daily_report_show", withExtension: "html")!
+        let req = URLRequest(url: url)
+        
+        webKitForContents.load(req)
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {

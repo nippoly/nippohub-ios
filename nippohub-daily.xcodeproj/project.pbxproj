@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		540F0694225FF8D800A9CCA1 /* daily_report_show.html in Resources */ = {isa = PBXBuildFile; fileRef = 540F0693225FF8D800A9CCA1 /* daily_report_show.html */; };
+		540F0697225FF9AD00A9CCA1 /* daily_report_show.js in Resources */ = {isa = PBXBuildFile; fileRef = 540F0696225FF9AD00A9CCA1 /* daily_report_show.js */; };
+		540F069C225FFE7700A9CCA1 /* marked.min.js in Resources */ = {isa = PBXBuildFile; fileRef = 540F069B225FFE7700A9CCA1 /* marked.min.js */; };
 		545159C22246DB80005854CE /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 545159C12246DB80005854CE /* SignUpViewController.swift */; };
 		545159C4224996AB005854CE /* DailyReportIndexViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 545159C3224996AB005854CE /* DailyReportIndexViewController.swift */; };
 		54572997224AE01F001F20CD /* DailyReportListItem.xib in Resources */ = {isa = PBXBuildFile; fileRef = 54572996224AE01F001F20CD /* DailyReportListItem.xib */; };
@@ -55,6 +58,9 @@
 		0526FC9D8890CE3F9BD45EC8 /* Pods_nippohub_dailyTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_nippohub_dailyTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3763B8884410BDF84668DF2F /* Pods_nippohub_daily.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_nippohub_daily.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		416D323E47E2F2B26E527DAB /* Pods-nippohub-daily.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-nippohub-daily.release.xcconfig"; path = "Pods/Target Support Files/Pods-nippohub-daily/Pods-nippohub-daily.release.xcconfig"; sourceTree = "<group>"; };
+		540F0693225FF8D800A9CCA1 /* daily_report_show.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = daily_report_show.html; sourceTree = "<group>"; };
+		540F0696225FF9AD00A9CCA1 /* daily_report_show.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = daily_report_show.js; sourceTree = "<group>"; };
+		540F069B225FFE7700A9CCA1 /* marked.min.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = marked.min.js; sourceTree = "<group>"; };
 		545159C12246DB80005854CE /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		545159C3224996AB005854CE /* DailyReportIndexViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyReportIndexViewController.swift; sourceTree = "<group>"; };
 		54572996224AE01F001F20CD /* DailyReportListItem.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DailyReportListItem.xib; sourceTree = "<group>"; };
@@ -119,6 +125,32 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		540F0690225FF87D00A9CCA1 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				540F069A225FFE1700A9CCA1 /* JavaScripts */,
+				540F0691225FF88A00A9CCA1 /* HTML */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		540F0691225FF88A00A9CCA1 /* HTML */ = {
+			isa = PBXGroup;
+			children = (
+				540F0693225FF8D800A9CCA1 /* daily_report_show.html */,
+			);
+			path = HTML;
+			sourceTree = "<group>";
+		};
+		540F069A225FFE1700A9CCA1 /* JavaScripts */ = {
+			isa = PBXGroup;
+			children = (
+				540F0696225FF9AD00A9CCA1 /* daily_report_show.js */,
+				540F069B225FFE7700A9CCA1 /* marked.min.js */,
+			);
+			path = JavaScripts;
+			sourceTree = "<group>";
+		};
 		54572993224ADFCA001F20CD /* Components */ = {
 			isa = PBXGroup;
 			children = (
@@ -209,6 +241,7 @@
 		54C1FCE9224444CA00AB4FC8 /* nippohub-daily */ = {
 			isa = PBXGroup;
 			children = (
+				540F0690225FF87D00A9CCA1 /* Assets */,
 				5472CE3522504AA3001158E4 /* Utilities */,
 				5457299A224AE3A1001F20CD /* Models */,
 				54572993224ADFCA001F20CD /* Components */,
@@ -379,6 +412,9 @@
 				54572997224AE01F001F20CD /* DailyReportListItem.xib in Resources */,
 				54C1FCF5224444CD00AB4FC8 /* Assets.xcassets in Resources */,
 				54C1FCF0224444CA00AB4FC8 /* Main.storyboard in Resources */,
+				540F0694225FF8D800A9CCA1 /* daily_report_show.html in Resources */,
+				540F069C225FFE7700A9CCA1 /* marked.min.js in Resources */,
+				540F0697225FF9AD00A9CCA1 /* daily_report_show.js in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
