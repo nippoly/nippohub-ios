@@ -9,9 +9,7 @@
 import UIKit
 import WebKit
 
-class DailyReportShowViewController: UIViewController, WKNavigationDelegate {
-    @IBOutlet private weak var labelTitle: UILabel!
-    @IBOutlet private weak var labelContent: UILabel!
+class DailyReportShowViewController: UIViewController {
     @IBOutlet private weak var webKitForContents: WKWebView!
     
     var dailyReport: DailyReport!
@@ -19,22 +17,11 @@ class DailyReportShowViewController: UIViewController, WKNavigationDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        labelTitle.text = dailyReport.title // TODO: date追加
-        labelContent.text = dailyReport.content
-        
-        webKitForContents.navigationDelegate = self
-        
         let url = Bundle.main.url(forResource: "daily_report_show", withExtension: "html")!
         let req = URLRequest(url: url)
         
+        webKitForContents.navigationDelegate = self
         webKitForContents.load(req)
-    }
-
-    func webView(_ webView: WKWebView, didFinish navigation: WKNavigation!) {
-        let title = dailyReport.title // TODO: date追加
-        let content = dailyReport.content.split(separator: "\n").joined(separator: "\\n") // TODO: 引用符のエスケープ
-
-        webKitForContents.evaluateJavaScript("rendering('\(title)', \"\(content)\")", completionHandler: nil)
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -43,5 +30,14 @@ class DailyReportShowViewController: UIViewController, WKNavigationDelegate {
             
             destController.dailyReport = self.dailyReport
         }
+    }
+}
+
+extension DailyReportShowViewController: WKNavigationDelegate {
+    func webView(_ webView: WKWebView, didFinish navigation: WKNavigation!) {
+        let title = dailyReport.title // TODO: date追加
+        let content = dailyReport.content.split(separator: "\n").joined(separator: "\\n") // TODO: 引用符のエスケープ
+        
+        webKitForContents.evaluateJavaScript("rendering('\(title)', \"\(content)\")", completionHandler: nil)
     }
 }
