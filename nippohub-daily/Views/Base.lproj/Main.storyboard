@@ -143,9 +143,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <wkWebView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="nZe-8j-cxm">
-                                <rect key="frame" x="16" y="207" width="324" height="394"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nZe-8j-cxm">
+                                <rect key="frame" x="20" y="64" width="335" height="603"/>
                                 <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <wkWebViewConfiguration key="configuration">
                                     <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
@@ -154,10 +153,16 @@
                             </wkWebView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="tpL-xB-Of8" firstAttribute="trailing" secondItem="nZe-8j-cxm" secondAttribute="trailing" constant="20" id="9WL-W6-qJw"/>
+                            <constraint firstItem="nZe-8j-cxm" firstAttribute="leading" secondItem="tpL-xB-Of8" secondAttribute="leading" constant="20" id="I2V-8C-v7F"/>
+                            <constraint firstItem="tpL-xB-Of8" firstAttribute="bottom" secondItem="nZe-8j-cxm" secondAttribute="bottom" id="TNF-Ur-SUm"/>
+                            <constraint firstItem="nZe-8j-cxm" firstAttribute="top" secondItem="tpL-xB-Of8" secondAttribute="top" id="weI-c8-Cof"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="tpL-xB-Of8"/>
                     </view>
                     <navigationItem key="navigationItem" id="ite-de-dWg">
-                        <barButtonItem key="rightBarButtonItem" title="Edit" id="Px0-Wi-vhX">
+                        <barButtonItem key="rightBarButtonItem" title="編集" id="Px0-Wi-vhX">
                             <connections>
                                 <segue destination="R3j-ry-KSR" kind="show" identifier="dailyReportShowToDailyReportEditSegue" id="uwP-u5-BXW"/>
                             </connections>
