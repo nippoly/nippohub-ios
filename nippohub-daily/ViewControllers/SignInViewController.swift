@@ -22,7 +22,6 @@ class SignInViewController: UIViewController {
         let password = formPassword.text!
         
         AccountManager.manager.signIn(email: email, password: password) { [unowned self] _, error in
-
             if error == nil {
                 self.performSegue(withIdentifier: "signInToDailyReportsSegue", sender: nil)
             } else {
