@@ -23,7 +23,7 @@ class SignUpViewController: UIViewController {
             AlertOnlyOK.show(controller: self, title: "パスワードの不一致", message: "入力されたパスワードが一致していません")
         }
         
-        AccountManager.manager.signUp(email: email, password: password) { _, error in
+        AccountManager.manager.signUp(email: email, password: password) { [unowned self] _, error in
             if error == nil {
                 self.performSegue(withIdentifier: "signUpToDailyReportsSegue", sender: nil)
             } else {
