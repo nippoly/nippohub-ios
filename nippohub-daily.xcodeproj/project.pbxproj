@@ -10,6 +10,7 @@
 		540F0694225FF8D800A9CCA1 /* daily_report_show.html in Resources */ = {isa = PBXBuildFile; fileRef = 540F0693225FF8D800A9CCA1 /* daily_report_show.html */; };
 		540F0697225FF9AD00A9CCA1 /* daily_report_show.js in Resources */ = {isa = PBXBuildFile; fileRef = 540F0696225FF9AD00A9CCA1 /* daily_report_show.js */; };
 		540F069C225FFE7700A9CCA1 /* marked.min.js in Resources */ = {isa = PBXBuildFile; fileRef = 540F069B225FFE7700A9CCA1 /* marked.min.js */; };
+		540F069E2263EAD400A9CCA1 /* AlertOnlyOK.swift in Sources */ = {isa = PBXBuildFile; fileRef = 540F069D2263EAD400A9CCA1 /* AlertOnlyOK.swift */; };
 		545159C22246DB80005854CE /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 545159C12246DB80005854CE /* SignUpViewController.swift */; };
 		545159C4224996AB005854CE /* DailyReportIndexViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 545159C3224996AB005854CE /* DailyReportIndexViewController.swift */; };
 		54572997224AE01F001F20CD /* DailyReportListItem.xib in Resources */ = {isa = PBXBuildFile; fileRef = 54572996224AE01F001F20CD /* DailyReportListItem.xib */; };
@@ -61,6 +62,7 @@
 		540F0693225FF8D800A9CCA1 /* daily_report_show.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = daily_report_show.html; sourceTree = "<group>"; };
 		540F0696225FF9AD00A9CCA1 /* daily_report_show.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = daily_report_show.js; sourceTree = "<group>"; };
 		540F069B225FFE7700A9CCA1 /* marked.min.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = marked.min.js; sourceTree = "<group>"; };
+		540F069D2263EAD400A9CCA1 /* AlertOnlyOK.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertOnlyOK.swift; sourceTree = "<group>"; };
 		545159C12246DB80005854CE /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		545159C3224996AB005854CE /* DailyReportIndexViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyReportIndexViewController.swift; sourceTree = "<group>"; };
 		54572996224AE01F001F20CD /* DailyReportListItem.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DailyReportListItem.xib; sourceTree = "<group>"; };
@@ -189,6 +191,7 @@
 			children = (
 				5472CE3622504B38001158E4 /* DateConverter.swift */,
 				54CA71CB225C026900D09381 /* AccountManager.swift */,
+				540F069D2263EAD400A9CCA1 /* AlertOnlyOK.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -528,6 +531,7 @@
 				545729A2224EDFDA001F20CD /* DailyReportNewViewController.swift in Sources */,
 				54C1FCF3224444CB00AB4FC8 /* nippohub_daily.xcdatamodeld in Sources */,
 				5472CE3722504B38001158E4 /* DateConverter.swift in Sources */,
+				540F069E2263EAD400A9CCA1 /* AlertOnlyOK.swift in Sources */,
 				545159C4224996AB005854CE /* DailyReportIndexViewController.swift in Sources */,
 				54C1FCED224444CA00AB4FC8 /* SignInViewController.swift in Sources */,
 				5472CE3422504098001158E4 /* DailyReportEditViewController.swift in Sources */,
