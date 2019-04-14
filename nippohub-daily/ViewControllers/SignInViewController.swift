@@ -22,10 +22,12 @@ class SignInViewController: UIViewController {
         let password = formPassword.text!
         
         AccountManager.manager.signIn(email: email, password: password) { _, error in
-            
-            // TODO: nilじゃない時の処理
+
             if error == nil {
                 self.performSegue(withIdentifier: "signInToDailyReportsSegue", sender: nil)
+            } else {
+                // TODO: ネットワークエラーの時の文言
+                AlertOnlyOK.show(controller: self, title: "サインイン失敗", message: "メールアドレスとパスワードが一致しません")
             }
         }
     }

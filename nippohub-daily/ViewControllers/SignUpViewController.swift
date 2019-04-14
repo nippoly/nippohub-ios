@@ -20,14 +20,15 @@ class SignUpViewController: UIViewController {
         let passwordConfirmation = formPasswordConfirmation.text!
         
         if password != passwordConfirmation {
-            // TODO: アラート入れる
-            print("パスワードが異なります")
+            AlertOnlyOK.show(controller: self, title: "パスワードの不一致", message: "入力されたパスワードが一致していません")
         }
         
         AccountManager.manager.signUp(email: email, password: password) { _, error in
-            // TODO: nilじゃない時の処理
             if error == nil {
                 self.performSegue(withIdentifier: "signUpToDailyReportsSegue", sender: nil)
+            } else {
+                // TODO: 細かく分ける
+                AlertOnlyOK.show(controller: self, title: "アカウント作成失敗", message: "アカウント作成できませんでした")
             }
         }
     }
