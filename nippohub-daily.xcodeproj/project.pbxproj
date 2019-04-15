@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		540381792265479B0077F687 /* UIView+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 540381782265479B0077F687 /* UIView+.swift */; };
 		540F0694225FF8D800A9CCA1 /* daily_report_show.html in Resources */ = {isa = PBXBuildFile; fileRef = 540F0693225FF8D800A9CCA1 /* daily_report_show.html */; };
 		540F0697225FF9AD00A9CCA1 /* daily_report_show.js in Resources */ = {isa = PBXBuildFile; fileRef = 540F0696225FF9AD00A9CCA1 /* daily_report_show.js */; };
 		540F069C225FFE7700A9CCA1 /* marked.min.js in Resources */ = {isa = PBXBuildFile; fileRef = 540F069B225FFE7700A9CCA1 /* marked.min.js */; };
@@ -59,6 +60,7 @@
 		0526FC9D8890CE3F9BD45EC8 /* Pods_nippohub_dailyTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_nippohub_dailyTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3763B8884410BDF84668DF2F /* Pods_nippohub_daily.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_nippohub_daily.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		416D323E47E2F2B26E527DAB /* Pods-nippohub-daily.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-nippohub-daily.release.xcconfig"; path = "Pods/Target Support Files/Pods-nippohub-daily/Pods-nippohub-daily.release.xcconfig"; sourceTree = "<group>"; };
+		540381782265479B0077F687 /* UIView+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+.swift"; sourceTree = "<group>"; };
 		540F0693225FF8D800A9CCA1 /* daily_report_show.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = daily_report_show.html; sourceTree = "<group>"; };
 		540F0696225FF9AD00A9CCA1 /* daily_report_show.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = daily_report_show.js; sourceTree = "<group>"; };
 		540F069B225FFE7700A9CCA1 /* marked.min.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = marked.min.js; sourceTree = "<group>"; };
@@ -192,6 +194,7 @@
 				5472CE3622504B38001158E4 /* DateConverter.swift */,
 				54CA71CB225C026900D09381 /* AccountManager.swift */,
 				540F069D2263EAD400A9CCA1 /* AlertOnlyOK.swift */,
+				540381782265479B0077F687 /* UIView+.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -534,6 +537,7 @@
 				540F069E2263EAD400A9CCA1 /* AlertOnlyOK.swift in Sources */,
 				545159C4224996AB005854CE /* DailyReportIndexViewController.swift in Sources */,
 				54C1FCED224444CA00AB4FC8 /* SignInViewController.swift in Sources */,
+				540381792265479B0077F687 /* UIView+.swift in Sources */,
 				5472CE3422504098001158E4 /* DailyReportEditViewController.swift in Sources */,
 				545729A0224D853B001F20CD /* DailyReportShowViewController.swift in Sources */,
 				545159C22246DB80005854CE /* SignUpViewController.swift in Sources */,
