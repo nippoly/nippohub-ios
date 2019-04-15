@@ -191,7 +191,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="HoC-ge-9OG">
-                                <rect key="frame" x="20" y="159" width="414" height="216"/>
+                                <rect key="frame" x="20" y="159" width="374" height="216"/>
                                 <date key="date" timeIntervalSinceReferenceDate="575593465.40687704">
                                     <!--2019-03-29 23:04:25 +0000-->
                                 </date>
@@ -238,11 +238,11 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="Owk-aB-X1Y" firstAttribute="trailing" secondItem="eui-rz-wxn" secondAttribute="trailing" constant="20" id="1wp-vO-1TK"/>
+                            <constraint firstItem="Owk-aB-X1Y" firstAttribute="trailing" secondItem="HoC-ge-9OG" secondAttribute="trailing" constant="20" id="1yc-iv-I5j"/>
                             <constraint firstItem="Owk-aB-X1Y" firstAttribute="trailing" secondItem="DUb-te-der" secondAttribute="trailing" constant="20" id="GgJ-Pg-C3p"/>
                             <constraint firstItem="HoC-ge-9OG" firstAttribute="leading" secondItem="Owk-aB-X1Y" secondAttribute="leading" constant="20" id="Oea-WM-BzX"/>
                             <constraint firstItem="oTq-Uf-iE0" firstAttribute="centerX" secondItem="f8k-bs-6Sb" secondAttribute="centerX" id="Oln-dk-AO5"/>
                             <constraint firstItem="flH-wp-qOR" firstAttribute="leading" secondItem="Owk-aB-X1Y" secondAttribute="leading" constant="20" id="PEP-I6-kGW"/>
-                            <constraint firstItem="HoC-ge-9OG" firstAttribute="trailing" secondItem="Owk-aB-X1Y" secondAttribute="trailing" constant="20" id="Qw2-Hd-8yd"/>
                             <constraint firstItem="MPg-ob-Dha" firstAttribute="leading" secondItem="Owk-aB-X1Y" secondAttribute="leading" constant="20" id="Qxv-8I-tfl"/>
                             <constraint firstItem="eui-rz-wxn" firstAttribute="leading" secondItem="Owk-aB-X1Y" secondAttribute="leading" constant="20" id="RCC-oP-ni6"/>
                             <constraint firstItem="DUb-te-der" firstAttribute="top" secondItem="flH-wp-qOR" secondAttribute="bottom" constant="10" id="TKw-Ar-ayv"/>
@@ -268,7 +268,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yr7-cX-rf4" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4056.8000000000002" y="26.53673163418291"/>
+            <point key="canvasLocation" x="4056.521739130435" y="26.116071428571427"/>
         </scene>
         <!--Daily Report New View Controller-->
         <scene sceneID="5xK-Bj-4SZ">
