@@ -35,9 +35,9 @@ class DailyReportShowViewController: UIViewController {
 
 extension DailyReportShowViewController: WKNavigationDelegate {
     func webView(_ webView: WKWebView, didFinish navigation: WKNavigation!) {
-        let title = "\(DateConverter.converter.toString(from: dailyReport.date)) \(dailyReport.title)"
-        let content = dailyReport.content.split(separator: "\n").joined(separator: "\\n") // TODO: 引用符のエスケープ
-        
+        let title = "\(DateConverter.converter.toString(from: dailyReport.date)) \(dailyReport.title)".split(separator: "'").joined(separator: "\\'")
+        let content = dailyReport.content.split(separator: "\\").joined(separator: "\\\\").split(separator: "\n").joined(separator: "\\n").split(separator: "\"").joined(separator: "\\\"")
+
         webKitForContents.evaluateJavaScript("rendering('\(title)', \"\(content)\")", completionHandler: nil)
     }
 }
