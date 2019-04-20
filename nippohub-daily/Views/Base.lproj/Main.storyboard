@@ -309,20 +309,52 @@
             </objects>
             <point key="canvasLocation" x="4055.1999999999998" y="25.123152709359609"/>
         </scene>
-        <!--View Controller-->
+        <!--Agreements View Controller-->
         <scene sceneID="dDf-x8-rP2">
             <objects>
-                <viewController id="yuN-w5-Vau" sceneMemberID="viewController">
+                <viewController id="yuN-w5-Vau" customClass="AgreementsViewController" customModule="nippohub_daily" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8t5-1j-IsW">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Lia-mI-TU0">
+                                <rect key="frame" x="20" y="40" width="280" height="448"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <wkWebViewConfiguration key="configuration">
+                                    <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                                    <wkPreferences key="preferences"/>
+                                </wkWebViewConfiguration>
+                            </wkWebView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rYi-3C-QR6">
+                                <rect key="frame" x="110" y="508" width="100" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="0Lh-iT-UkX"/>
+                                    <constraint firstAttribute="height" constant="40" id="hJ5-5B-yKY"/>
+                                </constraints>
+                                <state key="normal" title="戻る"/>
+                                <connections>
+                                    <action selector="back" destination="yuN-w5-Vau" eventType="touchDown" id="MJb-VG-WI3"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="rYi-3C-QR6" firstAttribute="centerX" secondItem="8t5-1j-IsW" secondAttribute="centerX" id="Cqu-kR-DRn"/>
+                            <constraint firstItem="Lia-mI-TU0" firstAttribute="leading" secondItem="0uW-cM-RfO" secondAttribute="leading" constant="20" id="T5j-WS-rMJ"/>
+                            <constraint firstItem="rYi-3C-QR6" firstAttribute="top" secondItem="Lia-mI-TU0" secondAttribute="bottom" constant="20" id="Yq8-bx-p3a"/>
+                            <constraint firstAttribute="trailing" secondItem="Lia-mI-TU0" secondAttribute="trailing" constant="20" id="fKg-KG-yXz"/>
+                            <constraint firstItem="Lia-mI-TU0" firstAttribute="top" secondItem="0uW-cM-RfO" secondAttribute="top" constant="20" id="jpr-vV-y36"/>
+                            <constraint firstItem="0uW-cM-RfO" firstAttribute="bottom" secondItem="rYi-3C-QR6" secondAttribute="bottom" constant="20" id="yaP-ep-SHh"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="0uW-cM-RfO"/>
                     </view>
+                    <connections>
+                        <outlet property="webviewAgreements" destination="Lia-mI-TU0" id="axY-S1-sdk"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZEn-zm-O3c" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1084" y="773"/>
+            <point key="canvasLocation" x="1083.75" y="772.18309859154931"/>
         </scene>
         <!--Daily Report New View Controller-->
         <scene sceneID="5xK-Bj-4SZ">
@@ -457,20 +489,52 @@
             </objects>
             <point key="canvasLocation" x="2024.8" y="772.26386806596713"/>
         </scene>
-        <!--View Controller-->
+        <!--Privacy View Controller-->
         <scene sceneID="Ph7-dM-wB1">
             <objects>
-                <viewController id="JzT-ap-m3a" sceneMemberID="viewController">
+                <viewController id="JzT-ap-m3a" customClass="PrivacyViewController" customModule="nippohub_daily" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="XWL-Mf-3bK">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Etb-aK-AwH">
+                                <rect key="frame" x="20" y="40" width="280" height="448"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <wkWebViewConfiguration key="configuration">
+                                    <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                                    <wkPreferences key="preferences"/>
+                                </wkWebViewConfiguration>
+                            </wkWebView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Za5-PG-zkU">
+                                <rect key="frame" x="110" y="508" width="100" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="csQ-hh-Wcj"/>
+                                    <constraint firstAttribute="width" constant="100" id="qhe-5b-u98"/>
+                                </constraints>
+                                <state key="normal" title="戻る"/>
+                                <connections>
+                                    <action selector="back" destination="JzT-ap-m3a" eventType="touchDown" id="OHO-Cc-Lib"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Etb-aK-AwH" firstAttribute="leading" secondItem="ZTv-Dh-Pgm" secondAttribute="leading" constant="20" id="Gkk-Ff-Iq2"/>
+                            <constraint firstAttribute="trailing" secondItem="Etb-aK-AwH" secondAttribute="trailing" constant="20" id="H7i-46-nXC"/>
+                            <constraint firstItem="Za5-PG-zkU" firstAttribute="centerX" secondItem="XWL-Mf-3bK" secondAttribute="centerX" id="bOL-XT-lF6"/>
+                            <constraint firstItem="Za5-PG-zkU" firstAttribute="top" secondItem="Etb-aK-AwH" secondAttribute="bottom" constant="20" id="jnI-lm-vfa"/>
+                            <constraint firstItem="ZTv-Dh-Pgm" firstAttribute="bottom" secondItem="Za5-PG-zkU" secondAttribute="bottom" constant="20" id="xhS-BI-pz0"/>
+                            <constraint firstItem="Etb-aK-AwH" firstAttribute="top" secondItem="ZTv-Dh-Pgm" secondAttribute="top" constant="20" id="zoE-cx-if6"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="ZTv-Dh-Pgm"/>
                     </view>
+                    <connections>
+                        <outlet property="webviewPrivacy" destination="Etb-aK-AwH" id="T9N-xe-pCi"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="A7f-fe-XGP" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="51" y="1564"/>
+            <point key="canvasLocation" x="50.625" y="1563.3802816901409"/>
         </scene>
         <!--Sign Up View Controller-->
         <scene sceneID="8fs-Ah-sMd">
