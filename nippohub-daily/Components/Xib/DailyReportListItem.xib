@@ -19,13 +19,14 @@
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="20xx-xx-xx タイトルタイトルタイトル" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KdC-6h-kmo">
-                        <rect key="frame" x="25" y="36" width="298" height="21"/>
+                        <rect key="frame" x="25" y="36" width="297.5" height="21"/>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
                 </subviews>
                 <constraints>
+                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="KdC-6h-kmo" secondAttribute="trailing" constant="20" id="19v-Px-TTc"/>
                     <constraint firstItem="KdC-6h-kmo" firstAttribute="leading" secondItem="lzZ-rc-dhY" secondAttribute="leading" constant="25" id="B5S-fS-tEh"/>
                     <constraint firstItem="KdC-6h-kmo" firstAttribute="centerY" secondItem="lzZ-rc-dhY" secondAttribute="centerY" id="wZR-GU-oba"/>
                 </constraints>
