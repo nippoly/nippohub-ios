@@ -350,6 +350,7 @@
                                     <constraint firstAttribute="width" constant="100" id="0Lh-iT-UkX"/>
                                     <constraint firstAttribute="height" constant="40" id="hJ5-5B-yKY"/>
                                 </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                 <state key="normal" title="戻る"/>
                                 <connections>
                                     <action selector="back" destination="yuN-w5-Vau" eventType="touchDown" id="MJb-VG-WI3"/>
@@ -530,6 +531,7 @@
                                     <constraint firstAttribute="height" constant="40" id="csQ-hh-Wcj"/>
                                     <constraint firstAttribute="width" constant="100" id="qhe-5b-u98"/>
                                 </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                 <state key="normal" title="戻る"/>
                                 <connections>
                                     <action selector="back" destination="JzT-ap-m3a" eventType="touchDown" id="OHO-Cc-Lib"/>
