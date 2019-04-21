@@ -25,13 +25,15 @@ class DailyReportIndexViewController: UIViewController {
         if let user = currentUser {
             let ref: DatabaseReference! = Database.database().reference()
 
-            ref.child("users/\(user.uid)/daily_reports").observe(.value, with: { snapshot -> Void in
+            ref.child("users/\(user.uid)/daily_reports").queryOrdered(byChild: "date").queryLimited(toLast: 30).observe(.value, with: { snapshot -> Void in
                 let dailyReports = snapshot.children.map({ dailyReportRaw -> DailyReport in
                     let dailyReport = dailyReportRaw as! DataSnapshot
                     // TODO: 変換失敗時の処理を考える
                     let date = (try? DateConverter.converter.toDate(from: dailyReport.childSnapshot(forPath: "date").value as! String)) ?? Date()
 
                     return DailyReport(id: dailyReport.key, date: date, title: dailyReport.childSnapshot(forPath: "title").value as! String, content: dailyReport.childSnapshot(forPath: "content").value as! String)
+                }).sorted(by: { (report1, report2) -> Bool in
+                    report1.date >= report2.date
                 })
                 
                 self.dailyReports = dailyReports
