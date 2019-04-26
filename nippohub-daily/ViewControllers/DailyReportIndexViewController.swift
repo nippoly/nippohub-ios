@@ -61,7 +61,7 @@ extension DailyReportIndexViewController: UITableViewDataSource, UITableViewDele
         let cell = tableView.dequeueReusableCell(withIdentifier: "DailyReportListItem") as! DailyReportListItem
         let dailyReport = dailyReports[indexPath.row]
         
-        cell.labelTitle.text = "\(DateConverter.converter.toString(from: dailyReport.date)) \(dailyReport.title)" // TODO: Date追加
+        cell.title = "\(DateConverter.converter.toString(from: dailyReport.date)) \(dailyReport.title)" // TODO: Date追加
         
         return cell
     }
