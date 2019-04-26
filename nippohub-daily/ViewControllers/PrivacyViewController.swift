@@ -9,7 +9,7 @@
 import UIKit
 import WebKit
 
-class PrivacyViewController: UIViewController {
+final class PrivacyViewController: UIViewController {
     @IBOutlet private weak var webviewPrivacy: WKWebView!
     
     override func viewDidLoad() {

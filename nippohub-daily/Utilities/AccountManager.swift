@@ -9,7 +9,7 @@
 import Foundation
 import Firebase
 
-class AccountManager {
+final class AccountManager {
     static let manager = AccountManager()
     
     private let auth = Auth.auth()

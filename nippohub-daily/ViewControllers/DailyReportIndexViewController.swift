@@ -9,7 +9,7 @@
 import UIKit
 import Firebase
 
-class DailyReportIndexViewController: UIViewController {
+final class DailyReportIndexViewController: UIViewController {
     @IBOutlet private weak var tableDailyReports: UITableView!
     var dailyReports: [DailyReport] = []
     

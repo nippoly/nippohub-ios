@@ -8,7 +8,7 @@
 
 import Foundation
 
-class DateConverter {
+final class DateConverter {
     private let formatter = DateFormatter()
     static let converter = DateConverter()
     
