@@ -9,7 +9,7 @@
 import UIKit
 import WebKit
 
-class DailyReportShowViewController: UIViewController {
+final class DailyReportShowViewController: UIViewController {
     @IBOutlet private weak var webKitForContents: WKWebView!
     
     var dailyReport: DailyReport!

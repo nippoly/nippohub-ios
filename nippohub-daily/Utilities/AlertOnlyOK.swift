@@ -8,7 +8,7 @@
 
 import UIKit
 
-class AlertOnlyOK {
+final class AlertOnlyOK {
     static func show(controller: UIViewController, title: String, message: String) {
         let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
         let btnOK = UIAlertAction(title: "OK", style: .default, handler: nil)

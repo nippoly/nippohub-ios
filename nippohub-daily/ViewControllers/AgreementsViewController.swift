@@ -9,7 +9,7 @@
 import UIKit
 import WebKit
 
-class AgreementsViewController: UIViewController {
+final class AgreementsViewController: UIViewController {
     @IBOutlet private weak var webviewAgreements: WKWebView!
     
     override func viewDidLoad() {

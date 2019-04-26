@@ -8,7 +8,7 @@
 
 import UIKit
 
-class SignUpViewController: UIViewController {
+final class SignUpViewController: UIViewController {
     @IBOutlet private weak var formEmail: UITextField!
     @IBOutlet private weak var formPassword: UITextField!
     @IBOutlet private weak var formPasswordConfirmation: UITextField!

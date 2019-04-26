@@ -9,7 +9,7 @@
 import UIKit
 import Firebase
 
-class DailyReportNewViewController: UIViewController {
+final class DailyReportNewViewController: UIViewController {
     @IBOutlet private weak var formDate: UIDatePicker!
     @IBOutlet private weak var formTitle: UITextField!
     @IBOutlet private weak var formContent: UITextView!

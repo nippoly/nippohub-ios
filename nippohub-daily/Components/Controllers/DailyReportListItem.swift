@@ -8,6 +8,6 @@
 
 import UIKit
 
-class DailyReportListItem: UITableViewCell {
+final class DailyReportListItem: UITableViewCell {
     @IBOutlet weak var labelTitle: UILabel!
 }
