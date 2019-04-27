@@ -23,6 +23,7 @@
 		545729A2224EDFDA001F20CD /* DailyReportNewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 545729A1224EDFDA001F20CD /* DailyReportNewViewController.swift */; };
 		5472CE3422504098001158E4 /* DailyReportEditViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5472CE3322504098001158E4 /* DailyReportEditViewController.swift */; };
 		5472CE3722504B38001158E4 /* DateConverter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5472CE3622504B38001158E4 /* DateConverter.swift */; };
+		547A97FE2273D05600D175CC /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 547A97FD2273D05600D175CC /* SettingViewController.swift */; };
 		54C1FCEB224444CA00AB4FC8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54C1FCEA224444CA00AB4FC8 /* AppDelegate.swift */; };
 		54C1FCED224444CA00AB4FC8 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54C1FCEC224444CA00AB4FC8 /* SignInViewController.swift */; };
 		54C1FCF0224444CA00AB4FC8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 54C1FCEE224444CA00AB4FC8 /* Main.storyboard */; };
@@ -78,6 +79,7 @@
 		545729A1224EDFDA001F20CD /* DailyReportNewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyReportNewViewController.swift; sourceTree = "<group>"; };
 		5472CE3322504098001158E4 /* DailyReportEditViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyReportEditViewController.swift; sourceTree = "<group>"; };
 		5472CE3622504B38001158E4 /* DateConverter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateConverter.swift; sourceTree = "<group>"; };
+		547A97FD2273D05600D175CC /* SettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
 		54C1FCE7224444CA00AB4FC8 /* nippohub-daily.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "nippohub-daily.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		54C1FCEA224444CA00AB4FC8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		54C1FCEC224444CA00AB4FC8 /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
@@ -224,6 +226,7 @@
 				54CA71CD225C06DB00D09381 /* LaunchViewController.swift */,
 				54408D44226BC97000DF8F7E /* AgreementsViewController.swift */,
 				54408D46226BD4C000DF8F7E /* PrivacyViewController.swift */,
+				547A97FD2273D05600D175CC /* SettingViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -539,6 +542,7 @@
 				5457299C224AE3B9001F20CD /* DailyReport.swift in Sources */,
 				54408D45226BC97000DF8F7E /* AgreementsViewController.swift in Sources */,
 				545729A2224EDFDA001F20CD /* DailyReportNewViewController.swift in Sources */,
+				547A97FE2273D05600D175CC /* SettingViewController.swift in Sources */,
 				54C1FCF3224444CB00AB4FC8 /* nippohub_daily.xcdatamodeld in Sources */,
 				5472CE3722504B38001158E4 /* DateConverter.swift in Sources */,
 				540F069E2263EAD400A9CCA1 /* AlertOnlyOK.swift in Sources */,
