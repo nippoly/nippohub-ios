@@ -346,7 +346,7 @@
         <!--Agreements View Controller-->
         <scene sceneID="dDf-x8-rP2">
             <objects>
-                <viewController id="yuN-w5-Vau" customClass="AgreementsViewController" customModule="nippohub_daily" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="AgreementsViewController" id="yuN-w5-Vau" customClass="AgreementsViewController" customModule="nippohub_daily" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8t5-1j-IsW">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -391,10 +391,10 @@
             </objects>
             <point key="canvasLocation" x="1083.75" y="772.18309859154931"/>
         </scene>
-        <!--Table View Controller-->
+        <!--Setting View Controller-->
         <scene sceneID="NdW-P8-YGd">
             <objects>
-                <tableViewController id="hrg-xY-syt" sceneMemberID="viewController">
+                <tableViewController id="hrg-xY-syt" customClass="SettingViewController" customModule="nippohub_daily" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="GLH-KS-Uum">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -595,7 +595,7 @@
         <!--Privacy View Controller-->
         <scene sceneID="Ph7-dM-wB1">
             <objects>
-                <viewController id="JzT-ap-m3a" customClass="PrivacyViewController" customModule="nippohub_daily" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="PrivacyViewController" id="JzT-ap-m3a" customClass="PrivacyViewController" customModule="nippohub_daily" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="XWL-Mf-3bK">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
