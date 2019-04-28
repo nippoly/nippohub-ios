@@ -21,6 +21,12 @@ class SettingViewController: UITableViewController {
             let privacyViewController = storyBoard.instantiateViewController(withIdentifier: "PrivacyViewController")
             
             self.present(privacyViewController, animated: true, completion: nil)
+        } else if index == 2 {
+            let signInViewController = storyBoard.instantiateViewController(withIdentifier: "SignInViewController")
+            
+            if AccountManager.manager.signOut() {
+                self.present(signInViewController, animated: true, completion: nil)
+            }
         }
     }
 }
