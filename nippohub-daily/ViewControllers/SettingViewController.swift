@@ -8,7 +8,7 @@
 
 import UIKit
 
-class SettingViewController: UITableViewController {
+final class SettingViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let index = indexPath.row
         let storyBoard = self.storyboard!
