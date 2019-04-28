@@ -9,8 +9,9 @@
 import Foundation
 
 final class DateConverter {
-    private let instance = DateFormatter()
     static let converter = DateConverter()
+    
+    private let instance = DateFormatter()
     
     private init() {
         instance.dateFormat = "yyyy-MM-dd"
