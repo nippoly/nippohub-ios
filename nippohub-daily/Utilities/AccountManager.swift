@@ -29,6 +29,17 @@ final class AccountManager {
         auth.createUser(withEmail: email, password: password, completion: completion)
     }
     
+    @discardableResult
+    func signOut() -> Bool {
+        do {
+           try auth.signOut()
+            
+            return true
+        } catch {
+            return false
+        }
+    }
+    
     func currentUser() -> User? {
         return auth.currentUser
     }
