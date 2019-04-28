@@ -14,6 +14,10 @@ final class AccountManager {
     
     private let auth = Auth.auth()
     
+    var currentUser: User? {
+        return auth.currentUser
+    }
+    
     private init() {
     }
     
@@ -38,9 +42,5 @@ final class AccountManager {
         } catch {
             return false
         }
-    }
-    
-    func currentUser() -> User? {
-        return auth.currentUser
     }
 }
