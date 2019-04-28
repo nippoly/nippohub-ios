@@ -8,7 +8,7 @@
 
 import UIKit
 
-class SettingViewController: UITableViewController {
+final class SettingViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let index = indexPath.row
         let storyBoard = self.storyboard!
@@ -24,7 +24,7 @@ class SettingViewController: UITableViewController {
         } else if index == 2 {
             let signInViewController = storyBoard.instantiateViewController(withIdentifier: "SignInViewController")
             
-            if AccountManager.manager.signOut() {
+            if AccountManager.instance.signOut() {
                 self.present(signInViewController, animated: true, completion: nil)
             }
         }

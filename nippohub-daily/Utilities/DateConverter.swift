@@ -9,15 +9,16 @@
 import Foundation
 
 final class DateConverter {
-    private let formatter = DateFormatter()
     static let converter = DateConverter()
     
+    private let instance = DateFormatter()
+    
     private init() {
-        formatter.dateFormat = "yyyy-MM-dd"
+        instance.dateFormat = "yyyy-MM-dd"
     }
     
     func toDate(from: String) throws -> Date  {
-        let dateOptional = formatter.date(from: from)
+        let dateOptional = instance.date(from: from)
         
         if let date = dateOptional {
             return date
@@ -27,7 +28,7 @@ final class DateConverter {
     }
     
     func toString(from: Date) -> String {
-        return formatter.string(from: from)
+        return instance.string(from: from)
     }
     
     class InvalidDate: Error {}

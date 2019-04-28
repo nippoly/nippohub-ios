@@ -29,7 +29,7 @@ final class DailyReportEditViewController: UIViewController {
         let date = DateConverter.converter.toString(from: formDate.date)
         let title = formTitle.text!
         let content = formContent.text!
-        let currentUser = AccountManager.manager.currentUser()
+        let currentUser = AccountManager.instance.currentUser
         
         if let user = currentUser {
             let ref: DatabaseReference! = Database.database().reference()
