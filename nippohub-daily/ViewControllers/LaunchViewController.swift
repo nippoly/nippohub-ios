@@ -12,7 +12,7 @@ final class LaunchViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        AccountManager.manager.didSetUp { [unowned self] auth, user in
+        AccountManager.instance.didSetUp { [unowned self] auth, user in
             if user != nil {
                 self.performSegue(withIdentifier: "launchToDailyReportIndexSegue", sender: nil)
             } else {

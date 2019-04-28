@@ -10,7 +10,7 @@ import Foundation
 import Firebase
 
 final class AccountManager {
-    static let manager = AccountManager()
+    static let instance = AccountManager()
     
     private let auth = Auth.auth()
     

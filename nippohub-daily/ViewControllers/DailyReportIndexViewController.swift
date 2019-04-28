@@ -16,7 +16,7 @@ final class DailyReportIndexViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let currentUser = AccountManager.manager.currentUser()
+        let currentUser = AccountManager.instance.currentUser()
         
         tableDailyReports.register(UINib(nibName: "DailyReportListItem", bundle: nil), forCellReuseIdentifier: "DailyReportListItem")
         tableDailyReports.dataSource = self

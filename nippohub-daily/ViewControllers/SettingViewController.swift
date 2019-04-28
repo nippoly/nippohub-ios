@@ -24,7 +24,7 @@ final class SettingViewController: UITableViewController {
         } else if index == 2 {
             let signInViewController = storyBoard.instantiateViewController(withIdentifier: "SignInViewController")
             
-            if AccountManager.manager.signOut() {
+            if AccountManager.instance.signOut() {
                 self.present(signInViewController, animated: true, completion: nil)
             }
         }
