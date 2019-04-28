@@ -1,0 +1,54 @@
+name: Firebase, nameSpecified: 
+body: Copyright 2018 Googl…
+version: 5.0.1
+
+name: FirebaseAnalytics, nameSpecified: 
+body: Copyright 2018 Googl…
+version: 5.0.0
+
+name: FirebaseAuth, nameSpecified: 
+body: 
+                   …
+version: 5.0.0
+
+name: FirebaseCore, nameSpecified: 
+body: 
+                   …
+version: 5.0.1
+
+name: FirebaseDatabase, nameSpecified: 
+body: 
+                   …
+version: 5.0.0
+
+name: FirebaseInstanceID, nameSpecified: 
+body: Copyright 2018 Googl…
+version: 3.0.0
+
+name: GoogleToolboxForMac, nameSpecified: 
+body: 
+                   …
+version: 2.1.4
+
+name: GTMSessionFetcher, nameSpecified: 
+body: 
+                   …
+version: 1.1.15
+
+name: leveldb-library, nameSpecified: 
+body: Copyright (c) 2011 T…
+version: 1.20
+
+name: LicensePlist, nameSpecified: 
+body: MIT License
+
+Copyrig…
+version: 1.8.3
+
+name: nanopb, nameSpecified: 
+body: Copyright (c) 2011 P…
+version: 0.3.8
+
+add-version-numbers: false
+
+LicensePlist Version: 1.8.3
