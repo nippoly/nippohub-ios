@@ -24,6 +24,8 @@
 		5472CE3422504098001158E4 /* DailyReportEditViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5472CE3322504098001158E4 /* DailyReportEditViewController.swift */; };
 		5472CE3722504B38001158E4 /* DateConverter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5472CE3622504B38001158E4 /* DateConverter.swift */; };
 		547A97FE2273D05600D175CC /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 547A97FD2273D05600D175CC /* SettingViewController.swift */; };
+		548F974E227670F40018D8D9 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 548F974D227670F40018D8D9 /* GoogleService-Info.plist */; };
+		548F9750227670FC0018D8D9 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 548F974F227670FC0018D8D9 /* GoogleService-Info.plist */; };
 		54C1FCEB224444CA00AB4FC8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54C1FCEA224444CA00AB4FC8 /* AppDelegate.swift */; };
 		54C1FCED224444CA00AB4FC8 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54C1FCEC224444CA00AB4FC8 /* SignInViewController.swift */; };
 		54C1FCF0224444CA00AB4FC8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 54C1FCEE224444CA00AB4FC8 /* Main.storyboard */; };
@@ -32,8 +34,6 @@
 		54C1FCF8224444CD00AB4FC8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 54C1FCF6224444CD00AB4FC8 /* LaunchScreen.storyboard */; };
 		54C1FD03224444CD00AB4FC8 /* nippohub_dailyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54C1FD02224444CD00AB4FC8 /* nippohub_dailyTests.swift */; };
 		54C1FD0E224444CD00AB4FC8 /* nippohub_dailyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54C1FD0D224444CD00AB4FC8 /* nippohub_dailyUITests.swift */; };
-		54C1FD22224446D600AB4FC8 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 54C1FD21224446D600AB4FC8 /* GoogleService-Info.plist */; };
-		54C1FD24224446E900AB4FC8 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 54C1FD23224446E900AB4FC8 /* GoogleService-Info.plist */; };
 		54C1FD26224446F900AB4FC8 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 54C1FD25224446F900AB4FC8 /* GoogleService-Info.plist */; };
 		54CA71CC225C026900D09381 /* AccountManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54CA71CB225C026900D09381 /* AccountManager.swift */; };
 		54CA71CE225C06DB00D09381 /* LaunchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54CA71CD225C06DB00D09381 /* LaunchViewController.swift */; };
@@ -80,6 +80,8 @@
 		5472CE3322504098001158E4 /* DailyReportEditViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyReportEditViewController.swift; sourceTree = "<group>"; };
 		5472CE3622504B38001158E4 /* DateConverter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateConverter.swift; sourceTree = "<group>"; };
 		547A97FD2273D05600D175CC /* SettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
+		548F974D227670F40018D8D9 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		548F974F227670FC0018D8D9 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		54C1FCE7224444CA00AB4FC8 /* nippohub-daily.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "nippohub-daily.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		54C1FCEA224444CA00AB4FC8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		54C1FCEC224444CA00AB4FC8 /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
@@ -94,8 +96,6 @@
 		54C1FD09224444CD00AB4FC8 /* nippohub-dailyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "nippohub-dailyUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		54C1FD0D224444CD00AB4FC8 /* nippohub_dailyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = nippohub_dailyUITests.swift; sourceTree = "<group>"; };
 		54C1FD0F224444CD00AB4FC8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		54C1FD21224446D600AB4FC8 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
-		54C1FD23224446E900AB4FC8 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		54C1FD25224446F900AB4FC8 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		54CA71CB225C026900D09381 /* AccountManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountManager.swift; sourceTree = "<group>"; };
 		54CA71CD225C06DB00D09381 /* LaunchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchViewController.swift; sourceTree = "<group>"; };
@@ -274,8 +274,8 @@
 		54C1FD01224444CD00AB4FC8 /* nippohub-dailyTests */ = {
 			isa = PBXGroup;
 			children = (
+				548F974D227670F40018D8D9 /* GoogleService-Info.plist */,
 				54C1FD02224444CD00AB4FC8 /* nippohub_dailyTests.swift */,
-				54C1FD23224446E900AB4FC8 /* GoogleService-Info.plist */,
 				54C1FD04224444CD00AB4FC8 /* Info.plist */,
 			);
 			path = "nippohub-dailyTests";
@@ -284,8 +284,8 @@
 		54C1FD0C224444CD00AB4FC8 /* nippohub-dailyUITests */ = {
 			isa = PBXGroup;
 			children = (
+				548F974F227670FC0018D8D9 /* GoogleService-Info.plist */,
 				54C1FD0D224444CD00AB4FC8 /* nippohub_dailyUITests.swift */,
-				54C1FD21224446D600AB4FC8 /* GoogleService-Info.plist */,
 				54C1FD0F224444CD00AB4FC8 /* Info.plist */,
 			);
 			path = "nippohub-dailyUITests";
@@ -386,13 +386,16 @@
 				TargetAttributes = {
 					54C1FCE6224444CA00AB4FC8 = {
 						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1020;
 					};
 					54C1FCFD224444CD00AB4FC8 = {
 						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1020;
 						TestTargetID = 54C1FCE6224444CA00AB4FC8;
 					};
 					54C1FD08224444CD00AB4FC8 = {
 						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1020;
 						TestTargetID = 54C1FCE6224444CA00AB4FC8;
 					};
 				};
@@ -437,7 +440,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				54C1FD24224446E900AB4FC8 /* GoogleService-Info.plist in Resources */,
+				548F974E227670F40018D8D9 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -445,7 +448,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				54C1FD22224446D600AB4FC8 /* GoogleService-Info.plist in Resources */,
+				548F9750227670FC0018D8D9 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -738,7 +741,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "jp.sasurai-usagi3.nippohub-daily";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -756,7 +759,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "jp.sasurai-usagi3.nippohub-daily";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
@@ -776,7 +779,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "jp.sasurai-usagi3.nippohub-dailyTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/nippohub-daily.app/nippohub-daily";
 			};
@@ -797,7 +800,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "jp.sasurai-usagi3.nippohub-dailyTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/nippohub-daily.app/nippohub-daily";
 			};
@@ -817,7 +820,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "jp.sasurai-usagi3.nippohub-dailyUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = "nippohub-daily";
 			};
@@ -837,7 +840,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "jp.sasurai-usagi3.nippohub-dailyUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = "nippohub-daily";
 			};
