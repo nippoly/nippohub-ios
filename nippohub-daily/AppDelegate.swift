@@ -18,7 +18,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
-        FirebaseApp.configure()
+        
+        #if DEBUG
+        let path = Bundle.main.path(forResource: "GoogleService-Info--Development", ofType: "plist")!
+        #else
+        let path = Bundle.main.path(forResource: "GoogleService-Info--Production", ofType: "plist")!
+        #endif
+        
+        let options = FirebaseOptions(contentsOfFile: path)!
+        FirebaseApp.configure(options: options)
         return true
     }
 
