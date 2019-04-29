@@ -16,4 +16,5 @@ DerivedData
 *.xcuserstate
 
 Pods/*
-GoogleService-Info.plist
+GoogleService-Info--Development.plist
+GoogleService-Info--Production.plist
