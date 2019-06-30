@@ -16,7 +16,7 @@ final class DailyReportIndexViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let currentUser = AccountManager.instance.currentUser
+        let currentUser = AccountRepository.instance.currentUser
         
         tableDailyReports.register(UINib(nibName: "DailyReportListItem", bundle: nil), forCellReuseIdentifier: "DailyReportListItem")
         tableDailyReports.dataSource = self
@@ -25,7 +25,7 @@ final class DailyReportIndexViewController: UIViewController {
         if let user = currentUser {
             let ref: DatabaseReference! = Database.database().reference()
 
-            ref.child("users/\(user.uid)/daily_reports").queryOrdered(byChild: "date").queryLimited(toLast: 30).observe(.value, with: { snapshot -> Void in
+            ref.child("users/\(user.id)/daily_reports").queryOrdered(byChild: "date").queryLimited(toLast: 30).observe(.value, with: { snapshot -> Void in
                 let dailyReports = snapshot.children.map({ dailyReportRaw -> DailyReport in
                     let dailyReport = dailyReportRaw as! DataSnapshot
                     // TODO: 変換失敗時の処理を考える
