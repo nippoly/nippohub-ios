@@ -9,8 +9,8 @@
 import Foundation
 import Firebase
 
-final class AccountManager {
-    static let instance = AccountManager()
+final class AccountRepository {
+    static let instance = AccountRepository()
     
     private let auth = Auth.auth()
     

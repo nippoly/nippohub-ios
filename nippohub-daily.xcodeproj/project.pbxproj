@@ -102,7 +102,7 @@
 		54C1FD0D224444CD00AB4FC8 /* nippohub_dailyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = nippohub_dailyUITests.swift; sourceTree = "<group>"; };
 		54C1FD0F224444CD00AB4FC8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		54C1FD25224446F900AB4FC8 /* GoogleService-Info--Development.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info--Development.plist"; sourceTree = "<group>"; };
-		54CA71CB225C026900D09381 /* AccountManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountManager.swift; sourceTree = "<group>"; };
+		54CA71CB225C026900D09381 /* AccountManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AccountManager.swift; path = ../Utilities/AccountManager.swift; sourceTree = "<group>"; };
 		54CA71CD225C06DB00D09381 /* LaunchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchViewController.swift; sourceTree = "<group>"; };
 		54E6485A22C9703100C20EF6 /* Account.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Account.swift; sourceTree = "<group>"; };
 		6E29FA28320AE5E76C86423E /* Pods-nippohub-dailyUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-nippohub-dailyUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-nippohub-dailyUITests/Pods-nippohub-dailyUITests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -205,7 +205,6 @@
 			isa = PBXGroup;
 			children = (
 				5472CE3622504B38001158E4 /* DateConverter.swift */,
-				54CA71CB225C026900D09381 /* AccountManager.swift */,
 				540F069D2263EAD400A9CCA1 /* AlertOnlyOK.swift */,
 				540381782265479B0077F687 /* UIView+.swift */,
 			);
@@ -264,6 +263,7 @@
 		54C1FCE9224444CA00AB4FC8 /* nippohub-daily */ = {
 			isa = PBXGroup;
 			children = (
+				54E6485C22C9748700C20EF6 /* Repositories */,
 				540F0690225FF87D00A9CCA1 /* Assets */,
 				5472CE3522504AA3001158E4 /* Utilities */,
 				5457299A224AE3A1001F20CD /* Models */,
@@ -298,6 +298,14 @@
 				54C1FD0F224444CD00AB4FC8 /* Info.plist */,
 			);
 			path = "nippohub-dailyUITests";
+			sourceTree = "<group>";
+		};
+		54E6485C22C9748700C20EF6 /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+				54CA71CB225C026900D09381 /* AccountManager.swift */,
+			);
+			path = Repositories;
 			sourceTree = "<group>";
 		};
 		619111258795E4B5C38DD7C7 /* Frameworks */ = {
