@@ -27,18 +27,23 @@ final class AccountManager {
         auth.addStateDidChangeListener(listener)
     }
     
-    func signIn(email: String, password: String, completion: @escaping AuthDataResultCallback) {
-        auth.signIn(withEmail: email, password: password, completion: completion)
+    // TODO: error型を返さないようにする
+    func signIn(email: String, password: String, completion: @escaping (Error?) -> Void) {
+        auth.signIn(withEmail: email, password: password) { res, err in
+            completion(err)
+        }
     }
     
-    func signUp(email: String, password: String, completion: @escaping AuthDataResultCallback) {
-        auth.createUser(withEmail: email, password: password, completion: completion)
+    func signUp(email: String, password: String, completion: @escaping (Error?) -> Void) {
+        auth.createUser(withEmail: email, password: password) { res, err in
+            completion(err)
+        }
     }
     
     @discardableResult
     func signOut() -> Bool {
         do {
-           try auth.signOut()
+            try auth.signOut()
             
             return true
         } catch {
