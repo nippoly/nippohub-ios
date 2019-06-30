@@ -21,7 +21,7 @@ final class SignInViewController: UIViewController {
         let email = formEmail.text!
         let password = formPassword.text!
         
-        AccountManager.instance.signIn(email: email, password: password) { [unowned self] _, error in
+        AccountManager.instance.signIn(email: email, password: password) { [unowned self] error in
             if error == nil {
                 self.performSegue(withIdentifier: "signInToDailyReportsSegue", sender: nil)
             } else {

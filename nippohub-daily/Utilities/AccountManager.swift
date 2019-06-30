@@ -14,8 +14,10 @@ final class AccountManager {
     
     private let auth = Auth.auth()
     
-    var currentUser: User? {
-        return auth.currentUser
+    var currentUser: Account? {
+        guard let user = auth.currentUser else { return nil }
+        
+        return Account(id: user.uid, email: user.email!)
     }
     
     private init() {

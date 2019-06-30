@@ -24,7 +24,7 @@ final class DailyReportNewViewController: UIViewController {
         if let user = currentUser {
             let ref: DatabaseReference! = Database.database().reference()
 
-            ref.child("users/\(user.uid)/daily_reports").childByAutoId().setValue([
+            ref.child("users/\(user.id)/daily_reports").childByAutoId().setValue([
                 "date": date,
                 "title": title,
                 "content": content,

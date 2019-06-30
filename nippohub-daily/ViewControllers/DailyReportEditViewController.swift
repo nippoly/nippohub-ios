@@ -34,7 +34,7 @@ final class DailyReportEditViewController: UIViewController {
         if let user = currentUser {
             let ref: DatabaseReference! = Database.database().reference()
             
-            ref.child("/users/\(user.uid)/daily_reports/\(dailyReport.id)").updateChildValues([
+            ref.child("/users/\(user.id)/daily_reports/\(dailyReport.id)").updateChildValues([
                 "date": date,
                 "title": title,
                 "content": content
