@@ -40,6 +40,7 @@
 		54CA71CC225C026900D09381 /* AccountRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54CA71CB225C026900D09381 /* AccountRepository.swift */; };
 		54CA71CE225C06DB00D09381 /* LaunchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54CA71CD225C06DB00D09381 /* LaunchViewController.swift */; };
 		54E6485B22C9703100C20EF6 /* Account.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54E6485A22C9703100C20EF6 /* Account.swift */; };
+		54E6485E22CABEBC00C20EF6 /* DailyReportRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54E6485D22CABEBC00C20EF6 /* DailyReportRepository.swift */; };
 		5E99E2EDAC11B3134A51A4B2 /* Pods_nippohub_dailyUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C959E3B09DECB470B0B3AC1 /* Pods_nippohub_dailyUITests.framework */; };
 		68E1A26A7BB64FCEF4C78B4A /* Pods_nippohub_daily.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3763B8884410BDF84668DF2F /* Pods_nippohub_daily.framework */; };
 		BEE4D3ED4041D11317B0C135 /* Pods_nippohub_dailyTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0526FC9D8890CE3F9BD45EC8 /* Pods_nippohub_dailyTests.framework */; };
@@ -105,6 +106,7 @@
 		54CA71CB225C026900D09381 /* AccountRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AccountRepository.swift; path = ../Utilities/AccountRepository.swift; sourceTree = "<group>"; };
 		54CA71CD225C06DB00D09381 /* LaunchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchViewController.swift; sourceTree = "<group>"; };
 		54E6485A22C9703100C20EF6 /* Account.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Account.swift; sourceTree = "<group>"; };
+		54E6485D22CABEBC00C20EF6 /* DailyReportRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyReportRepository.swift; sourceTree = "<group>"; };
 		6E29FA28320AE5E76C86423E /* Pods-nippohub-dailyUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-nippohub-dailyUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-nippohub-dailyUITests/Pods-nippohub-dailyUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		7C959E3B09DECB470B0B3AC1 /* Pods_nippohub_dailyUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_nippohub_dailyUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		83869DF114DC7D4A8F8FE69B /* Pods-nippohub-dailyTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-nippohub-dailyTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-nippohub-dailyTests/Pods-nippohub-dailyTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -304,6 +306,7 @@
 			isa = PBXGroup;
 			children = (
 				54CA71CB225C026900D09381 /* AccountRepository.swift */,
+				54E6485D22CABEBC00C20EF6 /* DailyReportRepository.swift */,
 			);
 			path = Repositories;
 			sourceTree = "<group>";
@@ -568,6 +571,7 @@
 				54C1FCF3224444CB00AB4FC8 /* nippohub_daily.xcdatamodeld in Sources */,
 				5472CE3722504B38001158E4 /* DateConverter.swift in Sources */,
 				540F069E2263EAD400A9CCA1 /* AlertOnlyOK.swift in Sources */,
+				54E6485E22CABEBC00C20EF6 /* DailyReportRepository.swift in Sources */,
 				545159C4224996AB005854CE /* DailyReportIndexViewController.swift in Sources */,
 				54C1FCED224444CA00AB4FC8 /* SignInViewController.swift in Sources */,
 				540381792265479B0077F687 /* UIView+.swift in Sources */,
