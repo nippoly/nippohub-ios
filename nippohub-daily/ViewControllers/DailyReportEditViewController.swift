@@ -42,6 +42,7 @@ final class DailyReportEditViewController: UIViewController {
             dailyReportRepository.update(user: user, dailyReport: dailyReport)
         }
         
+        (self.navigationController?.viewControllers[self.navigationController!.viewControllers.count - 2] as! DailyReportShowViewController).dailyReport = dailyReport
         self.navigationController?.popViewController(animated: true)
     }
 }

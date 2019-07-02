@@ -16,7 +16,9 @@ final class DailyReportShowViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
         let url = Bundle.main.url(forResource: "daily_report_show", withExtension: "html")!
         let req = URLRequest(url: url)
         
