@@ -39,6 +39,26 @@ final class DailyReportIndexViewController: UIViewController {
             destController.dailyReport = dailyReports[index]
         }
     }
+    
+    // 日報に更新があった時日報一覧を最新にする
+    func updateDailyReports(dailyReport: DailyReport) {
+        let index = dailyReports.firstIndex { $0.id == dailyReport.id }
+        
+        if let index = index {
+            dailyReports[index] = dailyReport
+            dailyReports.sort { $0.date >= $1.date }
+        } else {
+            let indexToInsert = dailyReports.firstIndex { $0.date <= dailyReport.date }
+            
+            if let indexToInsert = indexToInsert {
+                dailyReports.insert(dailyReport, at: indexToInsert)
+            } else {
+                dailyReports.append(dailyReport)
+            }
+        }
+        
+        tableDailyReports.reloadData()
+    }
 }
 
 extension DailyReportIndexViewController: UITableViewDataSource, UITableViewDelegate {

@@ -43,6 +43,9 @@ final class DailyReportEditViewController: UIViewController {
         }
         
         (self.navigationController?.viewControllers[self.navigationController!.viewControllers.count - 2] as! DailyReportShowViewController).dailyReport = dailyReport
+        // TODO: nilチェックする
+        // TODO: showで処理する
+        (self.navigationController!.viewControllers[self.navigationController!.viewControllers.count - 3] as! DailyReportIndexViewController).updateDailyReports(dailyReport: dailyReport)
         self.navigationController?.popViewController(animated: true)
     }
 }
