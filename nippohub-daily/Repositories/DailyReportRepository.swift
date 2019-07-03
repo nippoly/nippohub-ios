@@ -34,13 +34,17 @@ final class DailyReportRepository {
             })
     }
     
-    func create(user: Account, date: Date, title: String, content: String) {
-        ref.child("users/\(user.id)/daily_reports").childByAutoId().setValue([
+    @discardableResult
+    func create(user: Account, date: Date, title: String, content: String) -> DailyReport {
+        let newRecord = ref.child("users/\(user.id)/daily_reports").childByAutoId()
+        newRecord.setValue([
             "date": DateConverter.converter.toString(from: date),
             "title": title,
             "content": content,
             "createdAt": Int(Date().timeIntervalSince1970 * 1000)
         ])
+        
+        return DailyReport(id: newRecord.key, date: date, title: title, content: content)
     }
     
     func update(user: Account, dailyReport: DailyReport) {
