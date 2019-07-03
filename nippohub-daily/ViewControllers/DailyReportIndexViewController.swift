@@ -11,7 +11,7 @@ import Firebase
 
 final class DailyReportIndexViewController: UIViewController {
     @IBOutlet private weak var tableDailyReports: UITableView!
-    var dailyReports: [DailyReport] = []
+    private var dailyReports: [DailyReport] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
