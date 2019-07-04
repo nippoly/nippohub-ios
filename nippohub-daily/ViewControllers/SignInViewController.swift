@@ -23,13 +23,18 @@ final class SignInViewController: UIViewController {
         
         AccountRepository.instance.signIn(email: email, password: password) { [unowned self] error in
             if error == nil {
-                self.performSegue(withIdentifier: "signInToDailyReportsSegue", sender: nil)
+                let viewController = DailyReportIndexViewController.instantiate()
+
+                self.present(viewController, animated: true)
             } else {
                 // TODO: ネットワークエラーの時の文言
                 AlertOnlyOK.show(controller: self, title: "サインイン失敗", message: "メールアドレスとパスワードが一致しません")
             }
         }
     }
-
+    
+    static func instantiate() -> SignInViewController {
+        return UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "SignInViewController") as! SignInViewController
+    }
 }
 

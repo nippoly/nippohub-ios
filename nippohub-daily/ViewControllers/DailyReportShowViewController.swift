@@ -33,6 +33,10 @@ final class DailyReportShowViewController: UIViewController {
             destController.dailyReport = self.dailyReport
         }
     }
+    
+    static func instantiate() -> DailyReportShowViewController {
+        return UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "DailyReportShowViewController") as! DailyReportShowViewController
+    }
 }
 
 extension DailyReportShowViewController: WKNavigationDelegate {

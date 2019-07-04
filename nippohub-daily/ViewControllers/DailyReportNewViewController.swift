@@ -31,4 +31,8 @@ final class DailyReportNewViewController: UIViewController {
         
         self.navigationController?.popViewController(animated: true)
     }
+    
+    static func instantiate() -> DailyReportNewViewController {
+        return UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "DailyReportNewViewController") as! DailyReportNewViewController
+    }
 }

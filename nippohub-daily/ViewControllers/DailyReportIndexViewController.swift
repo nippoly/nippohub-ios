@@ -59,6 +59,10 @@ final class DailyReportIndexViewController: UIViewController {
         
         tableDailyReports.reloadData()
     }
+    
+    static func instantiate() -> DailyReportIndexViewController {
+        return UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "DailyReportIndexViewController") as! DailyReportIndexViewController
+    }
 }
 
 extension DailyReportIndexViewController: UITableViewDataSource, UITableViewDelegate {

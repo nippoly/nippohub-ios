@@ -11,22 +11,25 @@ import UIKit
 final class SettingViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let index = indexPath.row
-        let storyBoard = self.storyboard!
         
         if index == 0 {
-            let agreementsViewController = storyBoard.instantiateViewController(withIdentifier: "AgreementsViewController")
+            let agreementsViewController = AgreementsViewController.instantiate()
             
-            self.present(agreementsViewController, animated: true, completion: nil)
+            present(agreementsViewController, animated: true)
         } else if index == 1 {
-            let privacyViewController = storyBoard.instantiateViewController(withIdentifier: "PrivacyViewController")
+            let privacyViewController = PrivacyViewController.instantiate()
             
-            self.present(privacyViewController, animated: true, completion: nil)
+            present(privacyViewController, animated: true)
         } else if index == 2 {
-            let signInViewController = storyBoard.instantiateViewController(withIdentifier: "SignInViewController")
-            
             if AccountRepository.instance.signOut() {
-                self.present(signInViewController, animated: true, completion: nil)
+                let signInViewController = SignInViewController.instantiate()
+
+                present(signInViewController, animated: true)
             }
         }
+    }
+    
+    static func instantiate() -> SettingViewController {
+        return UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "SettingViewController") as! SettingViewController
     }
 }

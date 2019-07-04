@@ -48,4 +48,8 @@ final class DailyReportEditViewController: UIViewController {
         (self.navigationController!.viewControllers[self.navigationController!.viewControllers.count - 3] as! DailyReportIndexViewController).updateDailyReports(dailyReport: dailyReport)
         self.navigationController?.popViewController(animated: true)
     }
+    
+    static func instantiate() -> DailyReportEditViewController {
+        return UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "DailyReportEditViewController") as! DailyReportEditViewController
+    }
 }
