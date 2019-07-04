@@ -118,7 +118,7 @@
         <!--Daily Report Index View Controller-->
         <scene sceneID="8GS-Eg-Qp6">
             <objects>
-                <viewController id="hnM-0d-X7s" customClass="DailyReportIndexViewController" customModule="nippohub_daily" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="DailyReportIndexViewController" id="hnM-0d-X7s" customClass="DailyReportIndexViewController" customModule="nippohub_daily" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="e4f-73-jNb">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -164,7 +164,7 @@
         <!--Daily Report Show View Controller-->
         <scene sceneID="Ayz-f0-cun">
             <objects>
-                <viewController id="s0i-vd-TDa" customClass="DailyReportShowViewController" customModule="nippohub_daily" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="DailyReportShowViewController" id="s0i-vd-TDa" customClass="DailyReportShowViewController" customModule="nippohub_daily" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="6Sq-5z-P3B">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -205,7 +205,7 @@
         <!--Daily Report Edit View Controller-->
         <scene sceneID="qMQ-zc-cra">
             <objects>
-                <viewController id="R3j-ry-KSR" customClass="DailyReportEditViewController" customModule="nippohub_daily" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="DailyReportEditViewController" id="R3j-ry-KSR" customClass="DailyReportEditViewController" customModule="nippohub_daily" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="f8k-bs-6Sb">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -394,7 +394,7 @@
         <!--Setting View Controller-->
         <scene sceneID="NdW-P8-YGd">
             <objects>
-                <tableViewController id="hrg-xY-syt" customClass="SettingViewController" customModule="nippohub_daily" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController storyboardIdentifier="SettingViewController" id="hrg-xY-syt" customClass="SettingViewController" customModule="nippohub_daily" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="GLH-KS-Uum">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -470,7 +470,7 @@
         <!--Daily Report New View Controller-->
         <scene sceneID="5xK-Bj-4SZ">
             <objects>
-                <viewController id="1m7-cl-HxT" customClass="DailyReportNewViewController" customModule="nippohub_daily" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="DailyReportNewViewController" id="1m7-cl-HxT" customClass="DailyReportNewViewController" customModule="nippohub_daily" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="TUV-A5-cl4">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -660,7 +660,7 @@
         <!--Sign Up View Controller-->
         <scene sceneID="8fs-Ah-sMd">
             <objects>
-                <viewController id="ZRo-s0-vBl" customClass="SignUpViewController" customModule="nippohub_daily" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SignUpVIewController" id="ZRo-s0-vBl" customClass="SignUpViewController" customModule="nippohub_daily" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="wMP-v9-edg">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -818,7 +818,7 @@
         <!--Launch View Controller-->
         <scene sceneID="yns-Zp-eft">
             <objects>
-                <viewController id="eU9-Uz-eLT" customClass="LaunchViewController" customModule="nippohub_daily" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="LaunchViewController" id="eU9-Uz-eLT" customClass="LaunchViewController" customModule="nippohub_daily" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ifA-rQ-Ug0">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -836,6 +836,6 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="UyU-EY-Xlu"/>
+        <segue reference="LPX-3e-4QO"/>
     </inferredMetricsTieBreakers>
 </document>
