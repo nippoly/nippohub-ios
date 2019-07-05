@@ -25,9 +25,11 @@ final class SignUpViewController: UIViewController {
         
         AccountRepository.instance.signUp(email: email, password: password) { [unowned self] error in
             if error == nil {
+                let navigationController = UINavigationController()
                 let viewController = DailyReportIndexViewController.instantiate()
 
-                self.present(viewController, animated: true)
+                self.present(navigationController, animated: true)
+                navigationController.pushViewController(viewController, animated: false)
             } else {
                 // TODO: 細かく分ける
                 AlertOnlyOK.show(controller: self, title: "アカウント作成失敗", message: "アカウント作成できませんでした")

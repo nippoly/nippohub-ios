@@ -23,9 +23,11 @@ final class SignInViewController: UIViewController {
         
         AccountRepository.instance.signIn(email: email, password: password) { [unowned self] error in
             if error == nil {
+                let navigationController = UINavigationController()
                 let viewController = DailyReportIndexViewController.instantiate()
 
-                self.present(viewController, animated: true)
+                self.present(navigationController, animated: true)
+                navigationController.pushViewController(viewController, animated: false)
             } else {
                 // TODO: ネットワークエラーの時の文言
                 AlertOnlyOK.show(controller: self, title: "サインイン失敗", message: "メールアドレスとパスワードが一致しません")
