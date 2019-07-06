@@ -21,6 +21,8 @@ final class SignUpViewController: UIViewController {
         
         if password != passwordConfirmation {
             AlertOnlyOK.show(controller: self, title: "パスワードの不一致", message: "入力されたパスワードが一致していません")
+
+            return
         }
         
         AccountRepository.instance.signUp(email: email, password: password) { [unowned self] error in
