@@ -26,6 +26,10 @@ final class AgreementsViewController: UIViewController {
     func back() {
         self.dismiss(animated: true, completion: nil)
     }
+    
+    static func instantiate() -> AgreementsViewController {
+        return UIStoryboard(name: "Agreements", bundle: nil).instantiateInitialViewController() as! AgreementsViewController
+    }
 }
 
 extension AgreementsViewController: WKNavigationDelegate {

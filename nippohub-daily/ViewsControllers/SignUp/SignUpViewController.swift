@@ -25,11 +25,31 @@ final class SignUpViewController: UIViewController {
         
         AccountRepository.instance.signUp(email: email, password: password) { [unowned self] error in
             if error == nil {
-                self.performSegue(withIdentifier: "signUpToDailyReportsSegue", sender: nil)
+                let navigationController = UINavigationController()
+                let viewController = DailyReportIndexViewController.instantiate()
+
+                self.present(navigationController, animated: true)
+                navigationController.pushViewController(viewController, animated: false)
             } else {
                 // TODO: 細かく分ける
                 AlertOnlyOK.show(controller: self, title: "アカウント作成失敗", message: "アカウント作成できませんでした")
             }
         }
+    }
+
+    @IBAction func transitToAgreements() {
+        let viewController = AgreementsViewController.instantiate()
+
+        present(viewController, animated: true)
+    }
+
+    @IBAction func transitToPrivacy() {
+        let viewController = PrivacyViewController.instantiate()
+
+        present(viewController, animated: true)
+    }
+    
+    static func instantiate() -> SignUpViewController {
+        return UIStoryboard(name: "SignUp", bundle: nil).instantiateInitialViewController() as! SignUpViewController
     }
 }

@@ -26,6 +26,10 @@ final class PrivacyViewController: UIViewController {
     func back() {
         self.dismiss(animated: true, completion: nil)
     }
+    
+    static func instantiate() -> PrivacyViewController {
+        return UIStoryboard(name: "Privacy", bundle: nil).instantiateInitialViewController() as! PrivacyViewController
+    }
 }
 
 extension PrivacyViewController: WKNavigationDelegate {

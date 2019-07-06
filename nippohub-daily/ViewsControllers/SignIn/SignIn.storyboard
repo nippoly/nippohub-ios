@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="GM1-Me-Sey">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Sign In View Controller-->
+        <scene sceneID="zoQ-G4-daA">
+            <objects>
+                <viewController id="GM1-Me-Sey" customClass="SignInViewController" customModule="nippohub_daily" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="UlR-nI-Ny7">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="UZh-Ga-pHm">
+                                <rect key="frame" x="20" y="111" width="374" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="6aa-2b-HIK">
+                                <rect key="frame" x="20" y="188" width="374" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="メールアドレス" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jsi-In-tKL">
+                                <rect key="frame" x="20" y="84" width="374" height="17"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="パスワード" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2G9-g4-Pve">
+                                <rect key="frame" x="20" y="161" width="374" height="17"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nwu-XA-uVO">
+                                <rect key="frame" x="20" y="248" width="374" height="40"/>
+                                <color key="backgroundColor" red="0.59046330950000003" green="0.78793077659999999" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="p6W-Oz-F1r"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <state key="normal" title="サインイン">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="3"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="signIn" destination="GM1-Me-Sey" eventType="touchDown" id="vHj-5Q-vCn"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cgH-D6-vOi">
+                                <rect key="frame" x="20" y="298" width="374" height="40"/>
+                                <color key="backgroundColor" red="0.60647783379999998" green="1" blue="0.65168396760000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="lam-X2-zQP"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <state key="normal" title="登録する">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="3"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="transitToSignUp" destination="GM1-Me-Sey" eventType="touchUpInside" id="bat-dD-kIn"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="aDG-LS-b2K" firstAttribute="trailing" secondItem="jsi-In-tKL" secondAttribute="trailing" constant="20" id="3s5-lQ-fNP"/>
+                            <constraint firstItem="aDG-LS-b2K" firstAttribute="trailing" secondItem="cgH-D6-vOi" secondAttribute="trailing" constant="20" id="AfK-2H-Dv1"/>
+                            <constraint firstItem="Nwu-XA-uVO" firstAttribute="leading" secondItem="aDG-LS-b2K" secondAttribute="leading" constant="20" id="BSv-zI-6Rb"/>
+                            <constraint firstItem="UZh-Ga-pHm" firstAttribute="top" secondItem="jsi-In-tKL" secondAttribute="bottom" constant="10" id="IPA-QA-7zS"/>
+                            <constraint firstItem="cgH-D6-vOi" firstAttribute="centerX" secondItem="UlR-nI-Ny7" secondAttribute="centerX" id="KJm-J9-7Fs"/>
+                            <constraint firstItem="aDG-LS-b2K" firstAttribute="trailing" secondItem="6aa-2b-HIK" secondAttribute="trailing" constant="20" id="MH5-fg-YGC"/>
+                            <constraint firstItem="jsi-In-tKL" firstAttribute="top" secondItem="aDG-LS-b2K" secondAttribute="top" constant="40" id="Rwk-wg-MBN"/>
+                            <constraint firstItem="jsi-In-tKL" firstAttribute="leading" secondItem="aDG-LS-b2K" secondAttribute="leading" constant="20" id="SPi-hS-f5k"/>
+                            <constraint firstItem="aDG-LS-b2K" firstAttribute="trailing" secondItem="UZh-Ga-pHm" secondAttribute="trailing" constant="20" id="TKZ-HN-oMX"/>
+                            <constraint firstItem="6aa-2b-HIK" firstAttribute="leading" secondItem="aDG-LS-b2K" secondAttribute="leading" constant="20" id="VIc-Oe-fVG"/>
+                            <constraint firstItem="6aa-2b-HIK" firstAttribute="top" secondItem="2G9-g4-Pve" secondAttribute="bottom" constant="10" id="WD7-rY-ntC"/>
+                            <constraint firstItem="2G9-g4-Pve" firstAttribute="top" secondItem="UZh-Ga-pHm" secondAttribute="bottom" constant="20" id="YU7-oy-oto"/>
+                            <constraint firstItem="UZh-Ga-pHm" firstAttribute="leading" secondItem="aDG-LS-b2K" secondAttribute="leading" constant="20" id="a1a-Hk-Aph"/>
+                            <constraint firstItem="cgH-D6-vOi" firstAttribute="top" secondItem="Nwu-XA-uVO" secondAttribute="bottom" constant="10" id="biM-tf-Mys"/>
+                            <constraint firstItem="aDG-LS-b2K" firstAttribute="trailing" secondItem="2G9-g4-Pve" secondAttribute="trailing" constant="20" id="dbO-qi-pWo"/>
+                            <constraint firstItem="2G9-g4-Pve" firstAttribute="leading" secondItem="aDG-LS-b2K" secondAttribute="leading" constant="20" id="hRF-in-BdV"/>
+                            <constraint firstItem="aDG-LS-b2K" firstAttribute="trailing" secondItem="Nwu-XA-uVO" secondAttribute="trailing" constant="20" id="nHr-d6-Emf"/>
+                            <constraint firstItem="cgH-D6-vOi" firstAttribute="leading" secondItem="aDG-LS-b2K" secondAttribute="leading" constant="20" id="yXe-ac-HTF"/>
+                            <constraint firstItem="Nwu-XA-uVO" firstAttribute="top" secondItem="6aa-2b-HIK" secondAttribute="bottom" constant="30" id="zOv-lN-szd"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="aDG-LS-b2K"/>
+                    </view>
+                    <connections>
+                        <outlet property="formEmail" destination="UZh-Ga-pHm" id="SBI-sP-k75"/>
+                        <outlet property="formPassword" destination="6aa-2b-HIK" id="kVg-OH-82n"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="njB-XJ-06H" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="422" y="-38"/>
+        </scene>
+    </scenes>
+</document>
