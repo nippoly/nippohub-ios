@@ -50,6 +50,6 @@ final class SignUpViewController: UIViewController {
     }
     
     static func instantiate() -> SignUpViewController {
-        return UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "SignUpViewController") as! SignUpViewController
+        return UIStoryboard(name: "SignUp", bundle: nil).instantiateInitialViewController() as! SignUpViewController
     }
 }

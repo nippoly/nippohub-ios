@@ -30,6 +30,6 @@ final class SettingViewController: UITableViewController {
     }
     
     static func instantiate() -> SettingViewController {
-        return UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "SettingViewController") as! SettingViewController
+        return UIStoryboard(name: "Setting", bundle: nil).instantiateInitialViewController() as! SettingViewController
     }
 }

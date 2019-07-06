@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="kFG-p2-xan">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Daily Report Index View Controller-->
+        <scene sceneID="5va-3C-Dc4">
+            <objects>
+                <viewController id="kFG-p2-xan" customClass="DailyReportIndexViewController" customModule="nippohub_daily" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="UrQ-of-f6s">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="hCA-Tc-Oqb">
+                                <rect key="frame" x="0.0" y="128" width="414" height="734"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Zmb-wM-B4F" firstAttribute="trailing" secondItem="hCA-Tc-Oqb" secondAttribute="trailing" id="AJI-Yn-vpg"/>
+                            <constraint firstItem="hCA-Tc-Oqb" firstAttribute="top" secondItem="Zmb-wM-B4F" secondAttribute="top" constant="40" id="Bzp-Eg-U4k"/>
+                            <constraint firstItem="hCA-Tc-Oqb" firstAttribute="leading" secondItem="Zmb-wM-B4F" secondAttribute="leading" id="IUm-T6-Qkc"/>
+                            <constraint firstItem="Zmb-wM-B4F" firstAttribute="bottom" secondItem="hCA-Tc-Oqb" secondAttribute="bottom" id="u58-Vl-Osw"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Zmb-wM-B4F"/>
+                    </view>
+                    <navigationItem key="navigationItem" leftItemsSupplementBackButton="YES" id="HtB-Vf-Kul">
+                        <rightBarButtonItems>
+                            <barButtonItem title="新規作成" id="B2l-04-lqG">
+                                <connections>
+                                    <action selector="transitToNewDailyReport" destination="kFG-p2-xan" id="Uc8-Ac-QyB"/>
+                                </connections>
+                            </barButtonItem>
+                            <barButtonItem title="設定" id="g57-qe-8AO">
+                                <connections>
+                                    <action selector="transitToSettings" destination="kFG-p2-xan" id="Po6-GE-sav"/>
+                                </connections>
+                            </barButtonItem>
+                        </rightBarButtonItems>
+                    </navigationItem>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <connections>
+                        <outlet property="tableDailyReports" destination="hCA-Tc-Oqb" id="jcu-UN-ITs"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="A1A-lB-4cF" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2024.8" y="27.436281859070466"/>
+        </scene>
+    </scenes>
+</document>

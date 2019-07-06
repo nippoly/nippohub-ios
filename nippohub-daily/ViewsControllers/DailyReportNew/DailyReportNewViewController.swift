@@ -33,6 +33,6 @@ final class DailyReportNewViewController: UIViewController {
     }
     
     static func instantiate() -> DailyReportNewViewController {
-        return UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "DailyReportNewViewController") as! DailyReportNewViewController
+        return UIStoryboard(name: "DailyReportNew", bundle: nil).instantiateInitialViewController() as! DailyReportNewViewController
     }
 }

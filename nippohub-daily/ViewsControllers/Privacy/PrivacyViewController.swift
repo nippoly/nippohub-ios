@@ -28,7 +28,7 @@ final class PrivacyViewController: UIViewController {
     }
     
     static func instantiate() -> PrivacyViewController {
-        return UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "PrivacyViewController") as! PrivacyViewController
+        return UIStoryboard(name: "Privacy", bundle: nil).instantiateInitialViewController() as! PrivacyViewController
     }
 }
 

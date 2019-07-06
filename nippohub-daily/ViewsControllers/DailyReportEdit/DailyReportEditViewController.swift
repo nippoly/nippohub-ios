@@ -50,6 +50,6 @@ final class DailyReportEditViewController: UIViewController {
     }
     
     static func instantiate() -> DailyReportEditViewController {
-        return UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "DailyReportEditViewController") as! DailyReportEditViewController
+        return UIStoryboard(name: "DailyReportEdit", bundle: nil).instantiateInitialViewController() as! DailyReportEditViewController
     }
 }

@@ -28,7 +28,7 @@ final class AgreementsViewController: UIViewController {
     }
     
     static func instantiate() -> AgreementsViewController {
-        return UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "AgreementsViewController") as! AgreementsViewController
+        return UIStoryboard(name: "Agreements", bundle: nil).instantiateInitialViewController() as! AgreementsViewController
     }
 }
 

@@ -42,7 +42,7 @@ final class SignInViewController: UIViewController {
     }
     
     static func instantiate() -> SignInViewController {
-        return UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "SignInViewController") as! SignInViewController
+        return UIStoryboard(name: "SignIn", bundle: nil).instantiateInitialViewController() as! SignInViewController
     }
 }
 

@@ -64,7 +64,7 @@ final class DailyReportIndexViewController: UIViewController {
     }
     
     static func instantiate() -> DailyReportIndexViewController {
-        return UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "DailyReportIndexViewController") as! DailyReportIndexViewController
+        return UIStoryboard(name: "DailyReportIndex", bundle: nil).instantiateInitialViewController() as! DailyReportIndexViewController
     }
 }
 
