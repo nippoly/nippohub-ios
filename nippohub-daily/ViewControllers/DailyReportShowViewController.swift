@@ -25,13 +25,13 @@ final class DailyReportShowViewController: UIViewController {
         webKitForContents.navigationDelegate = self
         webKitForContents.load(req)
     }
-    
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if segue.identifier == "dailyReportShowToDailyReportEditSegue" {
-            let destController = segue.destination as! DailyReportEditViewController
-            
-            destController.dailyReport = self.dailyReport
-        }
+
+    @IBAction func transitToEdit() {
+        let viewController = DailyReportEditViewController.instantiate()
+
+        viewController.dailyReport = dailyReport
+
+        navigationController?.pushViewController(viewController, animated: true)
     }
     
     static func instantiate() -> DailyReportShowViewController {

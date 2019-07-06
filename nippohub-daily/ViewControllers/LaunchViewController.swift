@@ -14,9 +14,15 @@ final class LaunchViewController: UIViewController {
         
         AccountRepository.instance.didSetUp { [unowned self] auth, user in
             if user != nil {
-                self.performSegue(withIdentifier: "launchToDailyReportIndexSegue", sender: nil)
+                let navigationController = UINavigationController()
+                let viewController = DailyReportIndexViewController.instantiate()
+
+                self.present(navigationController, animated: false)
+                navigationController.pushViewController(viewController, animated: false)
             } else {
-                self.performSegue(withIdentifier: "launchToSignInSegue", sender: nil)
+                let viewController = SignInViewController.instantiate()
+
+                self.present(viewController, animated: false)
             }
         }
     }

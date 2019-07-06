@@ -36,6 +36,18 @@ final class SignUpViewController: UIViewController {
             }
         }
     }
+
+    @IBAction func transitToAgreements() {
+        let viewController = AgreementsViewController.instantiate()
+
+        present(viewController, animated: true)
+    }
+
+    @IBAction func transitToPrivacy() {
+        let viewController = PrivacyViewController.instantiate()
+
+        present(viewController, animated: true)
+    }
     
     static func instantiate() -> SignUpViewController {
         return UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "SignUpViewController") as! SignUpViewController

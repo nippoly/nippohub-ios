@@ -31,15 +31,6 @@ final class DailyReportIndexViewController: UIViewController {
         }
     }
     
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if segue.identifier == "dailyReportIndexToDailyReportShowSegue" {
-            let destController = segue.destination as! DailyReportShowViewController
-            let index = sender as! Int
-            
-            destController.dailyReport = dailyReports[index]
-        }
-    }
-    
     // 日報に更新があった時日報一覧を最新にする
     func updateDailyReports(dailyReport: DailyReport) {
         let index = dailyReports.firstIndex { $0.id == dailyReport.id }
@@ -58,6 +49,18 @@ final class DailyReportIndexViewController: UIViewController {
         }
         
         tableDailyReports.reloadData()
+    }
+
+    @IBAction func transitToNewDailyReport() {
+        let viewController = DailyReportNewViewController.instantiate()
+
+        navigationController?.pushViewController(viewController, animated: true)
+    }
+
+    @IBAction func transitToSettings() {
+        let viewController = SettingViewController.instantiate()
+
+        navigationController?.pushViewController(viewController, animated: true)
     }
     
     static func instantiate() -> DailyReportIndexViewController {
@@ -80,6 +83,10 @@ extension DailyReportIndexViewController: UITableViewDataSource, UITableViewDele
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        performSegue(withIdentifier: "dailyReportIndexToDailyReportShowSegue", sender: indexPath.row)
+        let viewController = DailyReportShowViewController.instantiate()
+
+        viewController.dailyReport = dailyReports[indexPath.row]
+
+        navigationController?.pushViewController(viewController, animated: true)
     }
 }

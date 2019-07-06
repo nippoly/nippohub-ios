@@ -34,6 +34,12 @@ final class SignInViewController: UIViewController {
             }
         }
     }
+
+    @IBAction func transitToSignUp() {
+        let viewController = SignUpViewController.instantiate()
+
+        present(viewController, animated: true)
+    }
     
     static func instantiate() -> SignInViewController {
         return UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "SignInViewController") as! SignInViewController

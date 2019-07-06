@@ -77,7 +77,7 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <segue destination="ZRo-s0-vBl" kind="show" id="ilJ-0L-FTU"/>
+                                    <action selector="transitToSignUp" destination="BYZ-38-t0r" eventType="touchUpInside" id="jCa-cA-hae"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -108,7 +108,6 @@
                     <connections>
                         <outlet property="formEmail" destination="oyc-GJ-9nS" id="kfy-Hq-uVC"/>
                         <outlet property="formPassword" destination="k8c-aa-al6" id="brQ-2m-y67"/>
-                        <segue destination="SBW-LQ-sth" kind="show" identifier="signInToDailyReportsSegue" id="UyU-EY-Xlu"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -142,19 +141,19 @@
                         <rightBarButtonItems>
                             <barButtonItem title="新規作成" id="YQk-lR-xSo">
                                 <connections>
-                                    <segue destination="1m7-cl-HxT" kind="show" id="UuH-37-ugK"/>
+                                    <action selector="transitToNewDailyReport" destination="hnM-0d-X7s" id="o8Z-hk-2Lp"/>
                                 </connections>
                             </barButtonItem>
                             <barButtonItem title="設定" id="Tuk-Dx-IYG">
                                 <connections>
-                                    <segue destination="hrg-xY-syt" kind="show" id="Mlx-5U-Ho2"/>
+                                    <action selector="transitToSettings" destination="hnM-0d-X7s" id="hEB-OM-dIg"/>
                                 </connections>
                             </barButtonItem>
                         </rightBarButtonItems>
                     </navigationItem>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
                     <connections>
                         <outlet property="tableDailyReports" destination="eCK-t7-vxW" id="HCK-6L-l4V"/>
-                        <segue destination="s0i-vd-TDa" kind="show" identifier="dailyReportIndexToDailyReportShowSegue" id="1je-8Y-1DD"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6Me-5j-I0J" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -190,10 +189,11 @@
                     <navigationItem key="navigationItem" id="ite-de-dWg">
                         <barButtonItem key="rightBarButtonItem" title="編集" id="Px0-Wi-vhX">
                             <connections>
-                                <segue destination="R3j-ry-KSR" kind="show" identifier="dailyReportShowToDailyReportEditSegue" id="uwP-u5-BXW"/>
+                                <action selector="transitToEdit" destination="s0i-vd-TDa" id="mgN-2N-vgp"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
                     <connections>
                         <outlet property="webKitForContents" destination="nZe-8j-cxm" id="K6X-Dd-yyP"/>
                     </connections>
@@ -333,6 +333,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Owk-aB-X1Y"/>
                     </view>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
                     <connections>
                         <outlet property="formContent" destination="DUb-te-der" id="jnF-NN-q8j"/>
                         <outlet property="formDate" destination="HoC-ge-9OG" id="6wd-QT-c8c"/>
@@ -462,6 +463,7 @@
                             <outlet property="delegate" destination="hrg-xY-syt" id="yg8-pn-p0h"/>
                         </connections>
                     </tableView>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3X5-ZJ-OaK" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -599,6 +601,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="dqh-AO-moC"/>
                     </view>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
                     <connections>
                         <outlet property="formContent" destination="8yI-pa-K5b" id="DRQ-5b-N3G"/>
                         <outlet property="formDate" destination="TsH-PF-PwT" id="wLP-LD-cB2"/>
@@ -660,7 +663,7 @@
         <!--Sign Up View Controller-->
         <scene sceneID="8fs-Ah-sMd">
             <objects>
-                <viewController storyboardIdentifier="SignUpVIewController" id="ZRo-s0-vBl" customClass="SignUpViewController" customModule="nippohub_daily" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SignUpViewController" id="ZRo-s0-vBl" customClass="SignUpViewController" customModule="nippohub_daily" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="wMP-v9-edg">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -738,7 +741,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                 <state key="normal" title="プライバシーポリシー"/>
                                 <connections>
-                                    <segue destination="JzT-ap-m3a" kind="show" id="nVU-K9-rdh"/>
+                                    <action selector="transitToPrivacy" destination="ZRo-s0-vBl" eventType="touchUpInside" id="18f-9z-y6q"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pOk-JL-eYO">
@@ -749,7 +752,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                 <state key="normal" title="利用規約"/>
                                 <connections>
-                                    <segue destination="yuN-w5-Vau" kind="show" id="24i-bX-G4L"/>
+                                    <action selector="transitToAgreements" destination="ZRo-s0-vBl" eventType="touchUpInside" id="Mut-8g-ubJ"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -790,30 +793,11 @@
                         <outlet property="formEmail" destination="sU8-4k-vTo" id="T9D-3n-RAa"/>
                         <outlet property="formPassword" destination="Eea-RJ-V49" id="paJ-k5-oOs"/>
                         <outlet property="formPasswordConfirmation" destination="puk-m9-q7R" id="EsV-uD-17I"/>
-                        <segue destination="SBW-LQ-sth" kind="show" identifier="signUpToDailyReportsSegue" id="LPX-3e-4QO"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Z5a-Bb-yO4" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="50.625" y="773.23943661971828"/>
-        </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="r6c-yq-bjg">
-            <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="SBW-LQ-sth" sceneMemberID="viewController">
-                    <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="pUR-NF-PwB">
-                        <rect key="frame" x="0.0" y="20" width="320" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="hnM-0d-X7s" kind="relationship" relationship="rootViewController" id="lgR-k5-ESS"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="f8b-RZ-i1M" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1085.5999999999999" y="27.436281859070466"/>
         </scene>
         <!--Launch View Controller-->
         <scene sceneID="yns-Zp-eft">
@@ -825,17 +809,10 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="1Je-ak-yTd"/>
                     </view>
-                    <connections>
-                        <segue destination="BYZ-38-t0r" kind="show" identifier="launchToSignInSegue" id="hL5-dt-1sE"/>
-                        <segue destination="SBW-LQ-sth" kind="show" identifier="launchToDailyReportIndexSegue" id="e05-Tq-XXE"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BbQ-pg-166" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="52" y="-728"/>
         </scene>
     </scenes>
-    <inferredMetricsTieBreakers>
-        <segue reference="LPX-3e-4QO"/>
-    </inferredMetricsTieBreakers>
 </document>
