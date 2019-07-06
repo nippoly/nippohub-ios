@@ -83,9 +83,7 @@ extension DailyReportIndexViewController: UITableViewDataSource, UITableViewDele
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let viewController = DailyReportShowViewController.instantiate()
-
-        viewController.dailyReport = dailyReports[indexPath.row]
+        let viewController = DailyReportShowViewController.instantiate(dailyReport: dailyReports[indexPath.row])
 
         navigationController?.pushViewController(viewController, animated: true)
     }

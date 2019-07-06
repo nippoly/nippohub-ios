@@ -27,15 +27,19 @@ final class DailyReportShowViewController: UIViewController {
     }
 
     @IBAction func transitToEdit() {
-        let viewController = DailyReportEditViewController.instantiate()
+        let viewController = DailyReportEditViewController.instantiate(dailyReport: dailyReport)
 
         viewController.dailyReport = dailyReport
 
         navigationController?.pushViewController(viewController, animated: true)
     }
     
-    static func instantiate() -> DailyReportShowViewController {
-        return UIStoryboard(name: "DailyReportShow", bundle: nil).instantiateInitialViewController() as! DailyReportShowViewController
+    static func instantiate(dailyReport: DailyReport) -> DailyReportShowViewController {
+        let viewController = UIStoryboard(name: "DailyReportShow", bundle: nil).instantiateInitialViewController() as! DailyReportShowViewController
+
+        viewController.dailyReport = dailyReport
+
+        return viewController
     }
 }
 

@@ -49,7 +49,11 @@ final class DailyReportEditViewController: UIViewController {
         self.navigationController?.popViewController(animated: true)
     }
     
-    static func instantiate() -> DailyReportEditViewController {
-        return UIStoryboard(name: "DailyReportEdit", bundle: nil).instantiateInitialViewController() as! DailyReportEditViewController
+    static func instantiate(dailyReport: DailyReport) -> DailyReportEditViewController {
+        let viewController = UIStoryboard(name: "DailyReportEdit", bundle: nil).instantiateInitialViewController() as! DailyReportEditViewController
+
+        viewController.dailyReport = dailyReport
+
+        return viewController
     }
 }
