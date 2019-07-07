@@ -15,21 +15,30 @@ final class DailyReportRepository {
     
     private init() {}
     
-    func fetch(user: Account, callBack: @escaping ([DailyReport]) -> Void) {
-        self.ref.child("users/\(user.id)/daily_reports")
+    func fetch(user: Account, dateGt: Date? = nil, dateLt: Date? = nil, callBack: @escaping ([DailyReport]) -> Void) {
+        var query = self.ref.child("users/\(user.id)/daily_reports")
             .queryOrdered(byChild: "date")
             .queryLimited(toLast: 30)
-            .observeSingleEvent(of: .value, with: { snapshot in
-                let dailyReports = snapshot.children.map({ dailyReportRaw -> DailyReport in
-                    let dailyReport = dailyReportRaw as! DataSnapshot
-                    // TODO: 変換失敗時の処理を考える
-                    let date = (try? DateConverter.converter.toDate(from: dailyReport.childSnapshot(forPath: "date").value as! String)) ?? Date()
-                    
-                    return DailyReport(id: dailyReport.key, date: date, title: dailyReport.childSnapshot(forPath: "title").value as! String, content: dailyReport.childSnapshot(forPath: "content").value as! String)
-                }).sorted { $0.date >= $1.date }
-                
-                callBack(dailyReports)
-            })
+
+        if let startDate = dateGt {
+            query = query.queryStarting(atValue: DateConverter.converter.toString(from: startDate))
+        }
+
+        if let endDate = dateLt {
+            query = query.queryEnding(atValue: DateConverter.converter.toString(from: endDate))
+        }
+
+        query.observeSingleEvent(of: .value, with: { snapshot in
+            let dailyReports = snapshot.children.map({ dailyReportRaw -> DailyReport in
+                let dailyReport = dailyReportRaw as! DataSnapshot
+                // TODO: 変換失敗時の処理を考える
+                let date = (try? DateConverter.converter.toDate(from: dailyReport.childSnapshot(forPath: "date").value as! String)) ?? Date()
+
+                return DailyReport(id: dailyReport.key, date: date, title: dailyReport.childSnapshot(forPath: "title").value as! String, content: dailyReport.childSnapshot(forPath: "content").value as! String)
+            }).sorted { $0.date >= $1.date }
+
+            callBack(dailyReports)
+        })
     }
     
     @discardableResult
