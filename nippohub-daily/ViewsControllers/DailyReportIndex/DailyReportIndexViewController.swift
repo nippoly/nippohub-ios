@@ -11,6 +11,7 @@ import Firebase
 
 final class DailyReportIndexViewController: UIViewController {
     @IBOutlet private weak var tableDailyReports: UITableView!
+    @IBOutlet private weak var swipeGesture: UISwipeGestureRecognizer!
     private var dailyReports: [DailyReport] = []
     
     override func viewDidLoad() {
@@ -22,6 +23,8 @@ final class DailyReportIndexViewController: UIViewController {
         tableDailyReports.register(UINib(nibName: "DailyReportListItem", bundle: nil), forCellReuseIdentifier: "DailyReportListItem")
         tableDailyReports.dataSource = self
         tableDailyReports.delegate = self
+
+        swipeGesture.delegate = self
         
         if let user = currentUser {
             dailyReportRepository.fetch(user: user) { [unowned self] in
@@ -86,5 +89,13 @@ extension DailyReportIndexViewController: UITableViewDataSource, UITableViewDele
         let viewController = DailyReportShowViewController.instantiate(dailyReport: dailyReports[indexPath.row])
 
         navigationController?.pushViewController(viewController, animated: true)
+    }
+}
+
+extension DailyReportIndexViewController: UIGestureRecognizerDelegate {
+    func gestureRecognizerShouldBegin(_ gestureRecognizer: UIGestureRecognizer) -> Bool {
+        print("00000000000000")
+
+        return true
     }
 }

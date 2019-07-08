@@ -15,7 +15,8 @@ final class LaunchViewController: UIViewController {
         AccountRepository.instance.didSetUp { [unowned self] auth, user in
             if user != nil {
                 let navigationController = UINavigationController()
-                let viewController = DailyReportIndexViewController.instantiate()
+                let viewController = UIStoryboard(name: "DailyReportIndex", bundle: nil).instantiateInitialViewController()!
+                //DailyReportIndexViewController.instantiate()
 
                 self.present(navigationController, animated: false)
                 navigationController.pushViewController(viewController, animated: false)
