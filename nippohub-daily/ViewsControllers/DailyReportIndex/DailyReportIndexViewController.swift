@@ -24,7 +24,7 @@ final class DailyReportIndexViewController: UIViewController {
         tableDailyReports.dataSource = self
         tableDailyReports.delegate = self
 
-        swipeGesture.delegate = self
+        //swipeGesture.delegate = self
         
         if let user = currentUser {
             dailyReportRepository.fetch(user: user) { [unowned self] in
@@ -54,7 +54,7 @@ final class DailyReportIndexViewController: UIViewController {
         tableDailyReports.reloadData()
     }
 
-    @IBAction func transitToNewDailyReport() {
+    @objc @IBAction func transitToNewDailyReport() {
         let viewController = DailyReportNewViewController.instantiate()
 
         navigationController?.pushViewController(viewController, animated: true)
@@ -64,6 +64,10 @@ final class DailyReportIndexViewController: UIViewController {
         let viewController = SettingViewController.instantiate()
 
         navigationController?.pushViewController(viewController, animated: true)
+    }
+
+    @IBAction func test(gesture: UISwipeGestureRecognizer) {
+        print("aaaaaaaaaaaaaaaaaa")
     }
     
     static func instantiate() -> DailyReportIndexViewController {
@@ -88,7 +92,7 @@ extension DailyReportIndexViewController: UITableViewDataSource, UITableViewDele
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let viewController = DailyReportShowViewController.instantiate(dailyReport: dailyReports[indexPath.row])
 
-        navigationController?.pushViewController(viewController, animated: true)
+        //navigationController?.pushViewController(viewController, animated: true)
     }
 }
 
