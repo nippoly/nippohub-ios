@@ -11,6 +11,7 @@ target 'nippohub-daily' do
   pod 'Firebase/Auth'
   pod 'Firebase/Database'
   pod 'LicensePlist'
+  pod 'XLPagerTabStrip', '~> 9.0'
 
   target 'nippohub-dailyTests' do
     inherit! :search_paths
