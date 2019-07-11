@@ -12,7 +12,6 @@ import XLPagerTabStrip
 
 final class DailyReportIndexViewController: UIViewController {
     @IBOutlet private weak var tableDailyReports: UITableView!
-    @IBOutlet private weak var swipeGesture: UISwipeGestureRecognizer!
     private var dailyReports: [DailyReport] = []
     
     override func viewDidLoad() {
@@ -66,10 +65,6 @@ final class DailyReportIndexViewController: UIViewController {
 
         navigationController?.pushViewController(viewController, animated: true)
     }
-
-    @IBAction func test(gesture: UISwipeGestureRecognizer) {
-        print("aaaaaaaaaaaaaaaaaa")
-    }
     
     static func instantiate() -> DailyReportIndexViewController {
         return UIStoryboard(name: "DailyReportIndex", bundle: nil).instantiateInitialViewController() as! DailyReportIndexViewController
@@ -94,14 +89,6 @@ extension DailyReportIndexViewController: UITableViewDataSource, UITableViewDele
         let viewController = DailyReportShowViewController.instantiate(dailyReport: dailyReports[indexPath.row])
 
         //navigationController?.pushViewController(viewController, animated: true)
-    }
-}
-
-extension DailyReportIndexViewController: UIGestureRecognizerDelegate {
-    func gestureRecognizerShouldBegin(_ gestureRecognizer: UIGestureRecognizer) -> Bool {
-        print("00000000000000")
-
-        return true
     }
 }
 

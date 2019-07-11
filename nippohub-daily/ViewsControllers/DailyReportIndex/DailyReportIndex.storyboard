@@ -51,16 +51,10 @@
                     </navigationItem>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
                     <connections>
-                        <outlet property="swipeGesture" destination="cP0-xL-GlI" id="fLd-ON-I3y"/>
                         <outlet property="tableDailyReports" destination="hCA-Tc-Oqb" id="jcu-UN-ITs"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="A1A-lB-4cF" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <swipeGestureRecognizer direction="right" id="cP0-xL-GlI">
-                    <connections>
-                        <action selector="test" destination="kFG-p2-xan" id="DDo-gZ-LHi"/>
-                    </connections>
-                </swipeGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="101" y="-643"/>
         </scene>
