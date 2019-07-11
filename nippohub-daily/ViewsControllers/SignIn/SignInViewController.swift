@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import XLPagerTabStrip
 
 final class SignInViewController: UIViewController {
     @IBOutlet private weak var formEmail: UITextField!
@@ -46,3 +47,8 @@ final class SignInViewController: UIViewController {
     }
 }
 
+extension SignInViewController: IndicatorInfoProvider {
+    func indicatorInfo(for pagerTabStripController: PagerTabStripViewController) -> IndicatorInfo {
+        return IndicatorInfo(title: "Test")
+    }
+}

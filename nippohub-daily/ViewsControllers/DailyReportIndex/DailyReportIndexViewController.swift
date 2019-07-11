@@ -8,6 +8,7 @@
 
 import UIKit
 import Firebase
+import XLPagerTabStrip
 
 final class DailyReportIndexViewController: UIViewController {
     @IBOutlet private weak var tableDailyReports: UITableView!
@@ -101,5 +102,11 @@ extension DailyReportIndexViewController: UIGestureRecognizerDelegate {
         print("00000000000000")
 
         return true
+    }
+}
+
+extension DailyReportIndexViewController: IndicatorInfoProvider {
+    func indicatorInfo(for pagerTabStripController: PagerTabStripViewController) -> IndicatorInfo {
+        return IndicatorInfo(title: "My Child title")
     }
 }
