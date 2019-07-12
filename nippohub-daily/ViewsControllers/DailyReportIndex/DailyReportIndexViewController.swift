@@ -10,8 +10,7 @@ import UIKit
 import Firebase
 import XLPagerTabStrip
 
-final class DailyReportIndexViewController: UIViewController {
-    @IBOutlet private weak var tableDailyReports: UITableView!
+final class DailyReportIndexViewController: UITableViewController {
     private var dailyReports: [DailyReport] = []
     
     override func viewDidLoad() {
@@ -20,16 +19,12 @@ final class DailyReportIndexViewController: UIViewController {
         let currentUser = AccountRepository.instance.currentUser
         let dailyReportRepository = DailyReportRepository.instance
 
-        //tableDailyReports.register(UINib(nibName: "DailyReportListItem", bundle: nil), forCellReuseIdentifier: "DailyReportListItem")
-        //tableDailyReports.dataSource = self
-        //tableDailyReports.delegate = self
+        tableView.register(UINib(nibName: "DailyReportListItem", bundle: nil), forCellReuseIdentifier: "DailyReportListItem")
 
-        //swipeGesture.delegate = self
-        
         if let user = currentUser {
             dailyReportRepository.fetch(user: user) { [unowned self] in
                 self.dailyReports = $0
-                //self.tableDailyReports.reloadData()
+                self.tableView.reloadData()
             }
         }
     }
@@ -51,7 +46,7 @@ final class DailyReportIndexViewController: UIViewController {
             }
         }
         
-        tableDailyReports.reloadData()
+        tableView.reloadData()
     }
 
     @objc @IBAction func transitToNewDailyReport() {
@@ -71,12 +66,12 @@ final class DailyReportIndexViewController: UIViewController {
     }
 }
 
-extension DailyReportIndexViewController: UITableViewDataSource, UITableViewDelegate {
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+extension DailyReportIndexViewController {
+    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return dailyReports.count
     }
     
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "DailyReportListItem") as! DailyReportListItem
         let dailyReport = dailyReports[indexPath.row]
         
@@ -85,7 +80,7 @@ extension DailyReportIndexViewController: UITableViewDataSource, UITableViewDele
         return cell
     }
     
-    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let viewController = DailyReportShowViewController.instantiate(dailyReport: dailyReports[indexPath.row])
 
         //navigationController?.pushViewController(viewController, animated: true)
