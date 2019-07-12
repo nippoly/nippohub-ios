@@ -10,10 +10,6 @@ import UIKit
 import XLPagerTabStrip
 
 class DailyReportIndex2ViewController: ButtonBarPagerTabStripViewController {
-    override func viewDidLoad() {
-
-    }
-
     override public func viewControllers(for pagerTabStripController: PagerTabStripViewController) -> [UIViewController] {
         return [DailyReportIndexViewController(), DailyReportIndexViewController()]
     }

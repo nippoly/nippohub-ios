@@ -19,17 +19,17 @@ final class DailyReportIndexViewController: UIViewController {
         
         let currentUser = AccountRepository.instance.currentUser
         let dailyReportRepository = DailyReportRepository.instance
-        
-        tableDailyReports.register(UINib(nibName: "DailyReportListItem", bundle: nil), forCellReuseIdentifier: "DailyReportListItem")
-        tableDailyReports.dataSource = self
-        tableDailyReports.delegate = self
+
+        //tableDailyReports.register(UINib(nibName: "DailyReportListItem", bundle: nil), forCellReuseIdentifier: "DailyReportListItem")
+        //tableDailyReports.dataSource = self
+        //tableDailyReports.delegate = self
 
         //swipeGesture.delegate = self
         
         if let user = currentUser {
             dailyReportRepository.fetch(user: user) { [unowned self] in
                 self.dailyReports = $0
-                self.tableDailyReports.reloadData()
+                //self.tableDailyReports.reloadData()
             }
         }
     }

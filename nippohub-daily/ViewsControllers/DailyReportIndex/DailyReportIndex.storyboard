@@ -51,7 +51,7 @@
                     </navigationItem>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
                     <connections>
-                        <outlet property="tableDailyReports" destination="hCA-Tc-Oqb" id="jcu-UN-ITs"/>
+                        <outlet property="tableDailyReports" destination="hCA-Tc-Oqb" id="2bh-IF-1j3"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="A1A-lB-4cF" userLabel="First Responder" sceneMemberID="firstResponder"/>
