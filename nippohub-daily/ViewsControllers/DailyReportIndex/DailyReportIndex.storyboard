@@ -56,7 +56,25 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="A1A-lB-4cF" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="101" y="-643"/>
+            <point key="canvasLocation" x="-228" y="-644"/>
+        </scene>
+        <!--Table View Controller-->
+        <scene sceneID="8UP-gJ-uvX">
+            <objects>
+                <tableViewController id="1IF-qL-m2U" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="f6Z-Qn-ixA">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <connections>
+                            <outlet property="dataSource" destination="1IF-qL-m2U" id="zVO-Me-Gwn"/>
+                            <outlet property="delegate" destination="1IF-qL-m2U" id="Ipv-2M-5Um"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1pq-fF-XYz" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1039" y="-633"/>
         </scene>
         <!--Daily Report Index2 View Controller-->
         <scene sceneID="NKr-Ke-IQc">
@@ -86,6 +104,20 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="COO-wf-Jjo"/>
                     </view>
+                    <navigationItem key="navigationItem" id="KpV-oe-KJa">
+                        <rightBarButtonItems>
+                            <barButtonItem title="新規作成" id="57o-Er-EIV">
+                                <connections>
+                                    <action selector="transitToNewDailyReport" destination="SFo-rE-vKW" id="bta-yl-6OW"/>
+                                </connections>
+                            </barButtonItem>
+                            <barButtonItem title="設定" id="hUm-m0-4QM">
+                                <connections>
+                                    <action selector="transitToSettings" destination="SFo-rE-vKW" id="eFf-Sw-IRV"/>
+                                </connections>
+                            </barButtonItem>
+                        </rightBarButtonItems>
+                    </navigationItem>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
                     <connections>
                         <outlet property="buttonBarView" destination="xY6-Me-5Eo" id="6ee-PR-j0c"/>

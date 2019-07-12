@@ -13,4 +13,16 @@ class DailyReportIndex2ViewController: ButtonBarPagerTabStripViewController {
     override public func viewControllers(for pagerTabStripController: PagerTabStripViewController) -> [UIViewController] {
         return [DailyReportIndexViewController(), DailyReportIndexViewController()]
     }
+
+    @IBAction func transitToNewDailyReport() {
+        let viewController = DailyReportNewViewController.instantiate()
+
+        navigationController?.pushViewController(viewController, animated: true)
+    }
+
+    @IBAction func transitToSettings() {
+        let viewController = SettingViewController.instantiate()
+
+        navigationController?.pushViewController(viewController, animated: true)
+    }
 }
