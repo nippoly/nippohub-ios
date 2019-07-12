@@ -36,14 +36,15 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="aDS-pk-nGd">
-                                <rect key="frame" x="87" y="395" width="240" height="128"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aDS-pk-nGd">
+                                <rect key="frame" x="0.0" y="128" width="414" height="734"/>
                             </scrollView>
-                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="xY6-Me-5Eo" customClass="ButtonBarView" customModule="XLPagerTabStrip">
-                                <rect key="frame" x="0.0" y="88" width="414" height="80"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="xY6-Me-5Eo" customClass="ButtonBarView" customModule="XLPagerTabStrip">
+                                <rect key="frame" x="0.0" y="88" width="414" height="40"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="EZo-w1-Vpu"/>
+                                </constraints>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="b4G-7W-Mmf">
                                     <size key="itemSize" width="50" height="50"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
@@ -54,6 +55,15 @@
                             </collectionView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="xY6-Me-5Eo" firstAttribute="leading" secondItem="COO-wf-Jjo" secondAttribute="leading" id="2kY-9u-ZEm"/>
+                            <constraint firstItem="aDS-pk-nGd" firstAttribute="top" secondItem="xY6-Me-5Eo" secondAttribute="bottom" id="5bf-x6-q7Q"/>
+                            <constraint firstItem="aDS-pk-nGd" firstAttribute="leading" secondItem="COO-wf-Jjo" secondAttribute="leading" id="DvO-aT-0bu"/>
+                            <constraint firstItem="xY6-Me-5Eo" firstAttribute="top" secondItem="COO-wf-Jjo" secondAttribute="top" id="HhZ-E0-4gX"/>
+                            <constraint firstItem="COO-wf-Jjo" firstAttribute="bottom" secondItem="aDS-pk-nGd" secondAttribute="bottom" id="fzR-NE-y6h"/>
+                            <constraint firstItem="xY6-Me-5Eo" firstAttribute="trailing" secondItem="COO-wf-Jjo" secondAttribute="trailing" id="tFC-Aq-9yT"/>
+                            <constraint firstItem="COO-wf-Jjo" firstAttribute="trailing" secondItem="aDS-pk-nGd" secondAttribute="trailing" id="umS-Pq-4CT"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="COO-wf-Jjo"/>
                     </view>
                     <navigationItem key="navigationItem" id="KpV-oe-KJa">
