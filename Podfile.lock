@@ -36,12 +36,14 @@ PODS:
     - nanopb/encode (= 0.3.8)
   - nanopb/decode (0.3.8)
   - nanopb/encode (0.3.8)
+  - XLPagerTabStrip (9.0.0)
 
 DEPENDENCIES:
   - Firebase/Auth
   - Firebase/Core
   - Firebase/Database
   - LicensePlist
+  - XLPagerTabStrip (~> 9.0)
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
@@ -56,6 +58,7 @@ SPEC REPOS:
     - leveldb-library
     - LicensePlist
     - nanopb
+    - XLPagerTabStrip
 
 SPEC CHECKSUMS:
   Firebase: d6861c2059d8c32d1e6dd8932e22ada346d90a3a
@@ -69,7 +72,8 @@ SPEC CHECKSUMS:
   leveldb-library: 08cba283675b7ed2d99629a4bc5fd052cd2bb6a5
   LicensePlist: 3fda61ebe060afc8fc6d995df34a91401af5a244
   nanopb: 5601e6bca2dbf1ed831b519092ec110f66982ca3
+  XLPagerTabStrip: 61c57fd61f611ee5f01ff1495ad6fbee8bf496c5
 
-PODFILE CHECKSUM: adc1ddd66988b6f72eb56a6b655ee95824e860e2
+PODFILE CHECKSUM: 3dcddfea3eeb494c837e35f51f7e87acee8b1089
 
 COCOAPODS: 1.5.3

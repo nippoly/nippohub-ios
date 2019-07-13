@@ -15,7 +15,7 @@
 		54408D45226BC97000DF8F7E /* AgreementsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54408D44226BC97000DF8F7E /* AgreementsViewController.swift */; };
 		54408D47226BD4C000DF8F7E /* PrivacyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54408D46226BD4C000DF8F7E /* PrivacyViewController.swift */; };
 		545159C22246DB80005854CE /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 545159C12246DB80005854CE /* SignUpViewController.swift */; };
-		545159C4224996AB005854CE /* DailyReportIndexViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 545159C3224996AB005854CE /* DailyReportIndexViewController.swift */; };
+		545159C4224996AB005854CE /* DailyReportsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 545159C3224996AB005854CE /* DailyReportsTableViewController.swift */; };
 		54572997224AE01F001F20CD /* DailyReportListItem.xib in Resources */ = {isa = PBXBuildFile; fileRef = 54572996224AE01F001F20CD /* DailyReportListItem.xib */; };
 		54572999224AE0CF001F20CD /* DailyReportListItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54572998224AE0CF001F20CD /* DailyReportListItem.swift */; };
 		5457299C224AE3B9001F20CD /* DailyReport.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5457299B224AE3B9001F20CD /* DailyReport.swift */; };
@@ -50,6 +50,7 @@
 		54E6487822D01F0B00C20EF6 /* Agreements.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 54E6487722D01F0B00C20EF6 /* Agreements.storyboard */; };
 		54E6487A22D01F3D00C20EF6 /* Privacy.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 54E6487922D01F3D00C20EF6 /* Privacy.storyboard */; };
 		54E6487C22D01F8100C20EF6 /* Setting.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 54E6487B22D01F8100C20EF6 /* Setting.storyboard */; };
+		54E6487E22D7EF6400C20EF6 /* DailyReportIndexViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54E6487D22D7EF6400C20EF6 /* DailyReportIndexViewController.swift */; };
 		5E99E2EDAC11B3134A51A4B2 /* Pods_nippohub_dailyUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C959E3B09DECB470B0B3AC1 /* Pods_nippohub_dailyUITests.framework */; };
 		68E1A26A7BB64FCEF4C78B4A /* Pods_nippohub_daily.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3763B8884410BDF84668DF2F /* Pods_nippohub_daily.framework */; };
 		BEE4D3ED4041D11317B0C135 /* Pods_nippohub_dailyTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0526FC9D8890CE3F9BD45EC8 /* Pods_nippohub_dailyTests.framework */; };
@@ -84,7 +85,7 @@
 		54408D44226BC97000DF8F7E /* AgreementsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgreementsViewController.swift; sourceTree = "<group>"; };
 		54408D46226BD4C000DF8F7E /* PrivacyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrivacyViewController.swift; sourceTree = "<group>"; };
 		545159C12246DB80005854CE /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
-		545159C3224996AB005854CE /* DailyReportIndexViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyReportIndexViewController.swift; sourceTree = "<group>"; };
+		545159C3224996AB005854CE /* DailyReportsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyReportsTableViewController.swift; sourceTree = "<group>"; };
 		54572996224AE01F001F20CD /* DailyReportListItem.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DailyReportListItem.xib; sourceTree = "<group>"; };
 		54572998224AE0CF001F20CD /* DailyReportListItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyReportListItem.swift; sourceTree = "<group>"; };
 		5457299B224AE3B9001F20CD /* DailyReport.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyReport.swift; sourceTree = "<group>"; };
@@ -125,6 +126,7 @@
 		54E6487722D01F0B00C20EF6 /* Agreements.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Agreements.storyboard; sourceTree = "<group>"; };
 		54E6487922D01F3D00C20EF6 /* Privacy.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Privacy.storyboard; sourceTree = "<group>"; };
 		54E6487B22D01F8100C20EF6 /* Setting.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Setting.storyboard; sourceTree = "<group>"; };
+		54E6487D22D7EF6400C20EF6 /* DailyReportIndexViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyReportIndexViewController.swift; sourceTree = "<group>"; };
 		6E29FA28320AE5E76C86423E /* Pods-nippohub-dailyUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-nippohub-dailyUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-nippohub-dailyUITests/Pods-nippohub-dailyUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		7C959E3B09DECB470B0B3AC1 /* Pods_nippohub_dailyUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_nippohub_dailyUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		83869DF114DC7D4A8F8FE69B /* Pods-nippohub-dailyTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-nippohub-dailyTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-nippohub-dailyTests/Pods-nippohub-dailyTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -342,7 +344,8 @@
 			isa = PBXGroup;
 			children = (
 				54E6486D22D01DEE00C20EF6 /* DailyReportIndex.storyboard */,
-				545159C3224996AB005854CE /* DailyReportIndexViewController.swift */,
+				545159C3224996AB005854CE /* DailyReportsTableViewController.swift */,
+				54E6487D22D7EF6400C20EF6 /* DailyReportIndexViewController.swift */,
 			);
 			path = DailyReportIndex;
 			sourceTree = "<group>";
@@ -612,6 +615,7 @@
 				"${SRCROOT}/Pods/Target Support Files/Pods-nippohub-daily/Pods-nippohub-daily-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/XLPagerTabStrip/XLPagerTabStrip.framework",
 				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
 				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 			);
@@ -619,6 +623,7 @@
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/XLPagerTabStrip.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
 			);
@@ -672,6 +677,7 @@
 			files = (
 				54CA71CE225C06DB00D09381 /* LaunchViewController.swift in Sources */,
 				54572999224AE0CF001F20CD /* DailyReportListItem.swift in Sources */,
+				54E6487E22D7EF6400C20EF6 /* DailyReportIndexViewController.swift in Sources */,
 				5457299C224AE3B9001F20CD /* DailyReport.swift in Sources */,
 				54408D45226BC97000DF8F7E /* AgreementsViewController.swift in Sources */,
 				545729A2224EDFDA001F20CD /* DailyReportNewViewController.swift in Sources */,
@@ -680,7 +686,7 @@
 				5472CE3722504B38001158E4 /* DateConverter.swift in Sources */,
 				540F069E2263EAD400A9CCA1 /* AlertOnlyOK.swift in Sources */,
 				54E6485E22CABEBC00C20EF6 /* DailyReportRepository.swift in Sources */,
-				545159C4224996AB005854CE /* DailyReportIndexViewController.swift in Sources */,
+				545159C4224996AB005854CE /* DailyReportsTableViewController.swift in Sources */,
 				54C1FCED224444CA00AB4FC8 /* SignInViewController.swift in Sources */,
 				540381792265479B0077F687 /* UIView+.swift in Sources */,
 				5472CE3422504098001158E4 /* DailyReportEditViewController.swift in Sources */,
