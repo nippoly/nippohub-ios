@@ -83,7 +83,7 @@ extension DailyReportsTableViewController {
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let viewController = DailyReportShowViewController.instantiate(dailyReport: dailyReports[indexPath.row])
 
-        //navigationController?.pushViewController(viewController, animated: true)
+        navigationController?.pushViewController(viewController, animated: true)
     }
 }
 
