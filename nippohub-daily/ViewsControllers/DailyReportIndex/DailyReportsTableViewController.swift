@@ -15,11 +15,13 @@ final class DailyReportsTableViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        let currentUser = AccountRepository.instance.currentUser
-        let dailyReportRepository = DailyReportRepository.instance
 
         tableView.register(UINib(nibName: "DailyReportListItem", bundle: nil), forCellReuseIdentifier: "DailyReportListItem")
+    }
+
+    override func viewDidAppear(_ animated: Bool) {
+        let currentUser = AccountRepository.instance.currentUser
+        let dailyReportRepository = DailyReportRepository.instance
 
         if let user = currentUser {
             dailyReportRepository.fetch(user: user) { [unowned self] in
