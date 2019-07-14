@@ -12,6 +12,7 @@ import XLPagerTabStrip
 
 final class DailyReportsTableViewController: UITableViewController {
     private var dailyReports: [DailyReport] = []
+    var yearMonth: YearMonth!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -24,7 +25,7 @@ final class DailyReportsTableViewController: UITableViewController {
         let dailyReportRepository = DailyReportRepository.instance
 
         if let user = currentUser {
-            dailyReportRepository.fetch(user: user) { [unowned self] in
+            dailyReportRepository.fetch(user: user, dateGt: yearMonth.firstDateOfYearMonth(), dateLt: yearMonth.lastDateOfYearMonth()) { [unowned self] in
                 self.dailyReports = $0
                 self.tableView.reloadData()
             }
@@ -91,6 +92,6 @@ extension DailyReportsTableViewController {
 
 extension DailyReportsTableViewController: IndicatorInfoProvider {
     func indicatorInfo(for pagerTabStripController: PagerTabStripViewController) -> IndicatorInfo {
-        return IndicatorInfo(title: "My Child title")
+        return IndicatorInfo(title: yearMonth.string())
     }
 }
