@@ -11,7 +11,18 @@ import XLPagerTabStrip
 
 class DailyReportIndexViewController: ButtonBarPagerTabStripViewController {
     override public func viewControllers(for pagerTabStripController: PagerTabStripViewController) -> [UIViewController] {
-        return [DailyReportsTableViewController(), DailyReportsTableViewController()]
+        let currentDate = Date()
+        let calendar = Calendar.current
+        let year = calendar.component(.year, from: currentDate)
+        let month = calendar.component(.month, from: currentDate)
+        let currentYearMonth = YearMonth(year: year, month: month)
+
+        return (0...23).map {
+            let vc = DailyReportsTableViewController()
+            vc.yearMonth = currentYearMonth.sub(month: $0)
+
+            return vc
+        }.reversed()
     }
 
     @IBAction func transitToNewDailyReport() {
