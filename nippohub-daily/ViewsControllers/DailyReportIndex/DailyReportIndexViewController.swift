@@ -10,6 +10,19 @@ import UIKit
 import XLPagerTabStrip
 
 class DailyReportIndexViewController: ButtonBarPagerTabStripViewController {
+    override func viewDidLoad() {
+        settings.style.buttonBarItemTitleColor = UIColor.black
+        settings.style.buttonBarItemBackgroundColor = UIColor(red: 0, green: 0, blue: 0, alpha: 0)
+        settings.style.buttonBarBackgroundColor = UIColor(red: 0.97, green: 0.97, blue: 0.97, alpha: 1)
+        settings.style.selectedBarBackgroundColor = #colorLiteral(red: 0, green: 0.4784313725, blue: 1, alpha: 1)
+        settings.style.buttonBarMinimumLineSpacing = 0
+        settings.style.buttonBarLeftContentInset = 0
+        settings.style.buttonBarRightContentInset = 0
+        settings.style.selectedBarHeight = 2
+
+        super.viewDidLoad()
+    }
+
     override public func viewControllers(for pagerTabStripController: PagerTabStripViewController) -> [UIViewController] {
         let currentDate = Date()
         let calendar = Calendar.current
