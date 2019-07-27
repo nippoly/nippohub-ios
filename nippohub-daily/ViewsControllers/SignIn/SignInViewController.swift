@@ -21,9 +21,13 @@ final class SignInViewController: UIViewController {
         let email = formEmail.text!
         let password = formPassword.text!
         
-        AccountManager.instance.signIn(email: email, password: password) { [unowned self] _, error in
+        AccountRepository.instance.signIn(email: email, password: password) { [unowned self] error in
             if error == nil {
-                self.performSegue(withIdentifier: "signInToDailyReportsSegue", sender: nil)
+                let navigationController = UINavigationController()
+                let viewController = DailyReportIndexViewController.instantiate()
+
+                self.present(navigationController, animated: true)
+                navigationController.pushViewController(viewController, animated: false)
             } else {
                 // TODO: ネットワークエラーの時の文言
                 AlertOnlyOK.show(controller: self, title: "サインイン失敗", message: "メールアドレスとパスワードが一致しません")
@@ -31,5 +35,13 @@ final class SignInViewController: UIViewController {
         }
     }
 
-}
+    @IBAction func transitToSignUp() {
+        let viewController = SignUpViewController.instantiate()
 
+        present(viewController, animated: true)
+    }
+    
+    static func instantiate() -> SignInViewController {
+        return UIStoryboard(name: "SignIn", bundle: nil).instantiateInitialViewController() as! SignInViewController
+    }
+}

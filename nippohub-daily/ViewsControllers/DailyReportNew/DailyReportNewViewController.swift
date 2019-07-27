@@ -16,22 +16,20 @@ final class DailyReportNewViewController: UIViewController {
     
     @IBAction
     func sendDailyReport() {
-        let date = DateConverter.converter.toString(from: formDate.date)
+        let date = formDate.date
         let title = formTitle.text!
         let content = formContent.text!
-        let currentUser = AccountManager.instance.currentUser
+        let currentUser = AccountRepository.instance.currentUser
+        let dailyReportRepository = DailyReportRepository.instance
         
         if let user = currentUser {
-            let ref: DatabaseReference! = Database.database().reference()
-
-            ref.child("users/\(user.uid)/daily_reports").childByAutoId().setValue([
-                "date": date,
-                "title": title,
-                "content": content,
-                "createdAt": Int(Date().timeIntervalSince1970 * 1000)
-            ])
+            dailyReportRepository.create(user: user, date: date, title: title, content: content)
         }
         
         self.navigationController?.popViewController(animated: true)
+    }
+    
+    static func instantiate() -> DailyReportNewViewController {
+        return UIStoryboard(name: "DailyReportNew", bundle: nil).instantiateInitialViewController() as! DailyReportNewViewController
     }
 }

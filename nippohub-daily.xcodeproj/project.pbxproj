@@ -15,7 +15,7 @@
 		54408D45226BC97000DF8F7E /* AgreementsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54408D44226BC97000DF8F7E /* AgreementsViewController.swift */; };
 		54408D47226BD4C000DF8F7E /* PrivacyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54408D46226BD4C000DF8F7E /* PrivacyViewController.swift */; };
 		545159C22246DB80005854CE /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 545159C12246DB80005854CE /* SignUpViewController.swift */; };
-		545159C4224996AB005854CE /* DailyReportIndexViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 545159C3224996AB005854CE /* DailyReportIndexViewController.swift */; };
+		545159C4224996AB005854CE /* DailyReportsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 545159C3224996AB005854CE /* DailyReportsTableViewController.swift */; };
 		54572997224AE01F001F20CD /* DailyReportListItem.xib in Resources */ = {isa = PBXBuildFile; fileRef = 54572996224AE01F001F20CD /* DailyReportListItem.xib */; };
 		54572999224AE0CF001F20CD /* DailyReportListItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54572998224AE0CF001F20CD /* DailyReportListItem.swift */; };
 		5457299C224AE3B9001F20CD /* DailyReport.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5457299B224AE3B9001F20CD /* DailyReport.swift */; };
@@ -30,15 +30,28 @@
 		548F9754227676DF0018D8D9 /* GoogleService-Info--Production.plist in Resources */ = {isa = PBXBuildFile; fileRef = 548F9753227676DF0018D8D9 /* GoogleService-Info--Production.plist */; };
 		54C1FCEB224444CA00AB4FC8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54C1FCEA224444CA00AB4FC8 /* AppDelegate.swift */; };
 		54C1FCED224444CA00AB4FC8 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54C1FCEC224444CA00AB4FC8 /* SignInViewController.swift */; };
-		54C1FCF0224444CA00AB4FC8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 54C1FCEE224444CA00AB4FC8 /* Main.storyboard */; };
+		54C1FCF0224444CA00AB4FC8 /* Launch.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 54C1FCEE224444CA00AB4FC8 /* Launch.storyboard */; };
 		54C1FCF3224444CB00AB4FC8 /* nippohub_daily.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 54C1FCF1224444CA00AB4FC8 /* nippohub_daily.xcdatamodeld */; };
 		54C1FCF5224444CD00AB4FC8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 54C1FCF4224444CD00AB4FC8 /* Assets.xcassets */; };
 		54C1FCF8224444CD00AB4FC8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 54C1FCF6224444CD00AB4FC8 /* LaunchScreen.storyboard */; };
 		54C1FD03224444CD00AB4FC8 /* nippohub_dailyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54C1FD02224444CD00AB4FC8 /* nippohub_dailyTests.swift */; };
 		54C1FD0E224444CD00AB4FC8 /* nippohub_dailyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54C1FD0D224444CD00AB4FC8 /* nippohub_dailyUITests.swift */; };
 		54C1FD26224446F900AB4FC8 /* GoogleService-Info--Development.plist in Resources */ = {isa = PBXBuildFile; fileRef = 54C1FD25224446F900AB4FC8 /* GoogleService-Info--Development.plist */; };
-		54CA71CC225C026900D09381 /* AccountManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54CA71CB225C026900D09381 /* AccountManager.swift */; };
+		54CA71CC225C026900D09381 /* AccountRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54CA71CB225C026900D09381 /* AccountRepository.swift */; };
 		54CA71CE225C06DB00D09381 /* LaunchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54CA71CD225C06DB00D09381 /* LaunchViewController.swift */; };
+		54E6485B22C9703100C20EF6 /* Account.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54E6485A22C9703100C20EF6 /* Account.swift */; };
+		54E6485E22CABEBC00C20EF6 /* DailyReportRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54E6485D22CABEBC00C20EF6 /* DailyReportRepository.swift */; };
+		54E6486322D01CAC00C20EF6 /* SignIn.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 54E6486222D01CAC00C20EF6 /* SignIn.storyboard */; };
+		54E6486E22D01DEE00C20EF6 /* DailyReportIndex.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 54E6486D22D01DEE00C20EF6 /* DailyReportIndex.storyboard */; };
+		54E6487022D01E1800C20EF6 /* DailyReportShow.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 54E6486F22D01E1800C20EF6 /* DailyReportShow.storyboard */; };
+		54E6487222D01E4800C20EF6 /* DailyReportEdit.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 54E6487122D01E4800C20EF6 /* DailyReportEdit.storyboard */; };
+		54E6487422D01E6F00C20EF6 /* DailyReportNew.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 54E6487322D01E6F00C20EF6 /* DailyReportNew.storyboard */; };
+		54E6487622D01EB500C20EF6 /* SignUp.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 54E6487522D01EB500C20EF6 /* SignUp.storyboard */; };
+		54E6487822D01F0B00C20EF6 /* Agreements.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 54E6487722D01F0B00C20EF6 /* Agreements.storyboard */; };
+		54E6487A22D01F3D00C20EF6 /* Privacy.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 54E6487922D01F3D00C20EF6 /* Privacy.storyboard */; };
+		54E6487C22D01F8100C20EF6 /* Setting.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 54E6487B22D01F8100C20EF6 /* Setting.storyboard */; };
+		54E6487E22D7EF6400C20EF6 /* DailyReportIndexViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54E6487D22D7EF6400C20EF6 /* DailyReportIndexViewController.swift */; };
+		54E6488022DAAA4A00C20EF6 /* YearMonth.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54E6487F22DAAA4A00C20EF6 /* YearMonth.swift */; };
 		5E99E2EDAC11B3134A51A4B2 /* Pods_nippohub_dailyUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C959E3B09DECB470B0B3AC1 /* Pods_nippohub_dailyUITests.framework */; };
 		68E1A26A7BB64FCEF4C78B4A /* Pods_nippohub_daily.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3763B8884410BDF84668DF2F /* Pods_nippohub_daily.framework */; };
 		BEE4D3ED4041D11317B0C135 /* Pods_nippohub_dailyTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0526FC9D8890CE3F9BD45EC8 /* Pods_nippohub_dailyTests.framework */; };
@@ -73,7 +86,7 @@
 		54408D44226BC97000DF8F7E /* AgreementsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgreementsViewController.swift; sourceTree = "<group>"; };
 		54408D46226BD4C000DF8F7E /* PrivacyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrivacyViewController.swift; sourceTree = "<group>"; };
 		545159C12246DB80005854CE /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
-		545159C3224996AB005854CE /* DailyReportIndexViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyReportIndexViewController.swift; sourceTree = "<group>"; };
+		545159C3224996AB005854CE /* DailyReportsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyReportsTableViewController.swift; sourceTree = "<group>"; };
 		54572996224AE01F001F20CD /* DailyReportListItem.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DailyReportListItem.xib; sourceTree = "<group>"; };
 		54572998224AE0CF001F20CD /* DailyReportListItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyReportListItem.swift; sourceTree = "<group>"; };
 		5457299B224AE3B9001F20CD /* DailyReport.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyReport.swift; sourceTree = "<group>"; };
@@ -89,7 +102,7 @@
 		54C1FCE7224444CA00AB4FC8 /* nippohub-daily.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "nippohub-daily.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		54C1FCEA224444CA00AB4FC8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		54C1FCEC224444CA00AB4FC8 /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
-		54C1FCEF224444CA00AB4FC8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		54C1FCEF224444CA00AB4FC8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Launch.storyboard; sourceTree = "<group>"; };
 		54C1FCF2224444CA00AB4FC8 /* nippohub_daily.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = nippohub_daily.xcdatamodel; sourceTree = "<group>"; };
 		54C1FCF4224444CD00AB4FC8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		54C1FCF7224444CD00AB4FC8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -101,8 +114,21 @@
 		54C1FD0D224444CD00AB4FC8 /* nippohub_dailyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = nippohub_dailyUITests.swift; sourceTree = "<group>"; };
 		54C1FD0F224444CD00AB4FC8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		54C1FD25224446F900AB4FC8 /* GoogleService-Info--Development.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info--Development.plist"; sourceTree = "<group>"; };
-		54CA71CB225C026900D09381 /* AccountManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountManager.swift; sourceTree = "<group>"; };
+		54CA71CB225C026900D09381 /* AccountRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AccountRepository.swift; path = ../Utilities/AccountRepository.swift; sourceTree = "<group>"; };
 		54CA71CD225C06DB00D09381 /* LaunchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchViewController.swift; sourceTree = "<group>"; };
+		54E6485A22C9703100C20EF6 /* Account.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Account.swift; sourceTree = "<group>"; };
+		54E6485D22CABEBC00C20EF6 /* DailyReportRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyReportRepository.swift; sourceTree = "<group>"; };
+		54E6486222D01CAC00C20EF6 /* SignIn.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SignIn.storyboard; sourceTree = "<group>"; };
+		54E6486D22D01DEE00C20EF6 /* DailyReportIndex.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = DailyReportIndex.storyboard; sourceTree = "<group>"; };
+		54E6486F22D01E1800C20EF6 /* DailyReportShow.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = DailyReportShow.storyboard; sourceTree = "<group>"; };
+		54E6487122D01E4800C20EF6 /* DailyReportEdit.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = DailyReportEdit.storyboard; sourceTree = "<group>"; };
+		54E6487322D01E6F00C20EF6 /* DailyReportNew.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = DailyReportNew.storyboard; sourceTree = "<group>"; };
+		54E6487522D01EB500C20EF6 /* SignUp.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SignUp.storyboard; sourceTree = "<group>"; };
+		54E6487722D01F0B00C20EF6 /* Agreements.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Agreements.storyboard; sourceTree = "<group>"; };
+		54E6487922D01F3D00C20EF6 /* Privacy.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Privacy.storyboard; sourceTree = "<group>"; };
+		54E6487B22D01F8100C20EF6 /* Setting.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Setting.storyboard; sourceTree = "<group>"; };
+		54E6487D22D7EF6400C20EF6 /* DailyReportIndexViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyReportIndexViewController.swift; sourceTree = "<group>"; };
+		54E6487F22DAAA4A00C20EF6 /* YearMonth.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YearMonth.swift; sourceTree = "<group>"; };
 		6E29FA28320AE5E76C86423E /* Pods-nippohub-dailyUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-nippohub-dailyUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-nippohub-dailyUITests/Pods-nippohub-dailyUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		7C959E3B09DECB470B0B3AC1 /* Pods_nippohub_dailyUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_nippohub_dailyUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		83869DF114DC7D4A8F8FE69B /* Pods-nippohub-dailyTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-nippohub-dailyTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-nippohub-dailyTests/Pods-nippohub-dailyTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -194,6 +220,7 @@
 			isa = PBXGroup;
 			children = (
 				5457299B224AE3B9001F20CD /* DailyReport.swift */,
+				54E6485A22C9703100C20EF6 /* Account.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -202,37 +229,29 @@
 			isa = PBXGroup;
 			children = (
 				5472CE3622504B38001158E4 /* DateConverter.swift */,
-				54CA71CB225C026900D09381 /* AccountManager.swift */,
 				540F069D2263EAD400A9CCA1 /* AlertOnlyOK.swift */,
 				540381782265479B0077F687 /* UIView+.swift */,
+				54E6487F22DAAA4A00C20EF6 /* YearMonth.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
 		};
-		54BECCE122458DD80064BE83 /* Views */ = {
+		54BECCE122458DD80064BE83 /* ViewsControllers */ = {
 			isa = PBXGroup;
 			children = (
+				54E6486522D01CF000C20EF6 /* DailyReportIndex */,
+				54E6486622D01CF900C20EF6 /* DailyReportShow */,
+				54E6486722D01D0200C20EF6 /* DailyReportNew */,
+				54E6486822D01D0C00C20EF6 /* DailyReportEdit */,
+				54E6486422D01CEA00C20EF6 /* SignUp */,
+				54E6486122D01C7000C20EF6 /* SignIn */,
+				54E6486A22D01D1D00C20EF6 /* Agreements */,
+				54E6486B22D01D2600C20EF6 /* Privacy */,
+				54E6486C22D01D3500C20EF6 /* Setting */,
+				54E6486922D01D1300C20EF6 /* Launch */,
 				54C1FCF6224444CD00AB4FC8 /* LaunchScreen.storyboard */,
-				54C1FCEE224444CA00AB4FC8 /* Main.storyboard */,
 			);
-			path = Views;
-			sourceTree = "<group>";
-		};
-		54BECCE222458DFD0064BE83 /* ViewControllers */ = {
-			isa = PBXGroup;
-			children = (
-				54C1FCEC224444CA00AB4FC8 /* SignInViewController.swift */,
-				545159C12246DB80005854CE /* SignUpViewController.swift */,
-				545159C3224996AB005854CE /* DailyReportIndexViewController.swift */,
-				5457299F224D853B001F20CD /* DailyReportShowViewController.swift */,
-				545729A1224EDFDA001F20CD /* DailyReportNewViewController.swift */,
-				5472CE3322504098001158E4 /* DailyReportEditViewController.swift */,
-				54CA71CD225C06DB00D09381 /* LaunchViewController.swift */,
-				54408D44226BC97000DF8F7E /* AgreementsViewController.swift */,
-				54408D46226BD4C000DF8F7E /* PrivacyViewController.swift */,
-				547A97FD2273D05600D175CC /* SettingViewController.swift */,
-			);
-			path = ViewControllers;
+			path = ViewsControllers;
 			sourceTree = "<group>";
 		};
 		54C1FCDE224444CA00AB4FC8 = {
@@ -261,12 +280,12 @@
 		54C1FCE9224444CA00AB4FC8 /* nippohub-daily */ = {
 			isa = PBXGroup;
 			children = (
+				54E6485C22C9748700C20EF6 /* Repositories */,
 				540F0690225FF87D00A9CCA1 /* Assets */,
 				5472CE3522504AA3001158E4 /* Utilities */,
 				5457299A224AE3A1001F20CD /* Models */,
 				54572993224ADFCA001F20CD /* Components */,
-				54BECCE222458DFD0064BE83 /* ViewControllers */,
-				54BECCE122458DD80064BE83 /* Views */,
+				54BECCE122458DD80064BE83 /* ViewsControllers */,
 				54C1FD25224446F900AB4FC8 /* GoogleService-Info--Development.plist */,
 				548F9753227676DF0018D8D9 /* GoogleService-Info--Production.plist */,
 				54C1FCEA224444CA00AB4FC8 /* AppDelegate.swift */,
@@ -295,6 +314,106 @@
 				54C1FD0F224444CD00AB4FC8 /* Info.plist */,
 			);
 			path = "nippohub-dailyUITests";
+			sourceTree = "<group>";
+		};
+		54E6485C22C9748700C20EF6 /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+				54CA71CB225C026900D09381 /* AccountRepository.swift */,
+				54E6485D22CABEBC00C20EF6 /* DailyReportRepository.swift */,
+			);
+			path = Repositories;
+			sourceTree = "<group>";
+		};
+		54E6486122D01C7000C20EF6 /* SignIn */ = {
+			isa = PBXGroup;
+			children = (
+				54E6486222D01CAC00C20EF6 /* SignIn.storyboard */,
+				54C1FCEC224444CA00AB4FC8 /* SignInViewController.swift */,
+			);
+			path = SignIn;
+			sourceTree = "<group>";
+		};
+		54E6486422D01CEA00C20EF6 /* SignUp */ = {
+			isa = PBXGroup;
+			children = (
+				54E6487522D01EB500C20EF6 /* SignUp.storyboard */,
+				545159C12246DB80005854CE /* SignUpViewController.swift */,
+			);
+			path = SignUp;
+			sourceTree = "<group>";
+		};
+		54E6486522D01CF000C20EF6 /* DailyReportIndex */ = {
+			isa = PBXGroup;
+			children = (
+				54E6486D22D01DEE00C20EF6 /* DailyReportIndex.storyboard */,
+				545159C3224996AB005854CE /* DailyReportsTableViewController.swift */,
+				54E6487D22D7EF6400C20EF6 /* DailyReportIndexViewController.swift */,
+			);
+			path = DailyReportIndex;
+			sourceTree = "<group>";
+		};
+		54E6486622D01CF900C20EF6 /* DailyReportShow */ = {
+			isa = PBXGroup;
+			children = (
+				54E6486F22D01E1800C20EF6 /* DailyReportShow.storyboard */,
+				5457299F224D853B001F20CD /* DailyReportShowViewController.swift */,
+			);
+			path = DailyReportShow;
+			sourceTree = "<group>";
+		};
+		54E6486722D01D0200C20EF6 /* DailyReportNew */ = {
+			isa = PBXGroup;
+			children = (
+				54E6487322D01E6F00C20EF6 /* DailyReportNew.storyboard */,
+				545729A1224EDFDA001F20CD /* DailyReportNewViewController.swift */,
+			);
+			path = DailyReportNew;
+			sourceTree = "<group>";
+		};
+		54E6486822D01D0C00C20EF6 /* DailyReportEdit */ = {
+			isa = PBXGroup;
+			children = (
+				54E6487122D01E4800C20EF6 /* DailyReportEdit.storyboard */,
+				5472CE3322504098001158E4 /* DailyReportEditViewController.swift */,
+			);
+			path = DailyReportEdit;
+			sourceTree = "<group>";
+		};
+		54E6486922D01D1300C20EF6 /* Launch */ = {
+			isa = PBXGroup;
+			children = (
+				54C1FCEE224444CA00AB4FC8 /* Launch.storyboard */,
+				54CA71CD225C06DB00D09381 /* LaunchViewController.swift */,
+			);
+			path = Launch;
+			sourceTree = "<group>";
+		};
+		54E6486A22D01D1D00C20EF6 /* Agreements */ = {
+			isa = PBXGroup;
+			children = (
+				54E6487722D01F0B00C20EF6 /* Agreements.storyboard */,
+				54408D44226BC97000DF8F7E /* AgreementsViewController.swift */,
+			);
+			path = Agreements;
+			sourceTree = "<group>";
+		};
+		54E6486B22D01D2600C20EF6 /* Privacy */ = {
+			isa = PBXGroup;
+			children = (
+				54E6487922D01F3D00C20EF6 /* Privacy.storyboard */,
+				54408D46226BD4C000DF8F7E /* PrivacyViewController.swift */,
+			);
+			path = Privacy;
+			sourceTree = "<group>";
+		};
+		54E6486C22D01D3500C20EF6 /* Setting */ = {
+			isa = PBXGroup;
+			children = (
+				54E6487B22D01F8100C20EF6 /* Setting.storyboard */,
+				547A97FD2273D05600D175CC /* SettingViewController.swift */,
+			);
+			path = Setting;
 			sourceTree = "<group>";
 		};
 		619111258795E4B5C38DD7C7 /* Frameworks */ = {
@@ -433,14 +552,23 @@
 			files = (
 				54C1FCF8224444CD00AB4FC8 /* LaunchScreen.storyboard in Resources */,
 				54C1FD26224446F900AB4FC8 /* GoogleService-Info--Development.plist in Resources */,
+				54E6487822D01F0B00C20EF6 /* Agreements.storyboard in Resources */,
 				54572997224AE01F001F20CD /* DailyReportListItem.xib in Resources */,
+				54E6487422D01E6F00C20EF6 /* DailyReportNew.storyboard in Resources */,
+				54E6487C22D01F8100C20EF6 /* Setting.storyboard in Resources */,
 				54C1FCF5224444CD00AB4FC8 /* Assets.xcassets in Resources */,
-				54C1FCF0224444CA00AB4FC8 /* Main.storyboard in Resources */,
+				54C1FCF0224444CA00AB4FC8 /* Launch.storyboard in Resources */,
 				540F0694225FF8D800A9CCA1 /* daily_report_show.html in Resources */,
+				54E6486322D01CAC00C20EF6 /* SignIn.storyboard in Resources */,
+				54E6487022D01E1800C20EF6 /* DailyReportShow.storyboard in Resources */,
 				540F069C225FFE7700A9CCA1 /* marked.min.js in Resources */,
 				548F9752227673F20018D8D9 /* Settings.bundle in Resources */,
+				54E6486E22D01DEE00C20EF6 /* DailyReportIndex.storyboard in Resources */,
+				54E6487222D01E4800C20EF6 /* DailyReportEdit.storyboard in Resources */,
 				548F9754227676DF0018D8D9 /* GoogleService-Info--Production.plist in Resources */,
+				54E6487622D01EB500C20EF6 /* SignUp.storyboard in Resources */,
 				540F0697225FF9AD00A9CCA1 /* daily_report_show.js in Resources */,
+				54E6487A22D01F3D00C20EF6 /* Privacy.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -490,6 +618,7 @@
 				"${SRCROOT}/Pods/Target Support Files/Pods-nippohub-daily/Pods-nippohub-daily-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/XLPagerTabStrip/XLPagerTabStrip.framework",
 				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
 				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 			);
@@ -497,6 +626,7 @@
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/XLPagerTabStrip.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
 			);
@@ -550,6 +680,7 @@
 			files = (
 				54CA71CE225C06DB00D09381 /* LaunchViewController.swift in Sources */,
 				54572999224AE0CF001F20CD /* DailyReportListItem.swift in Sources */,
+				54E6487E22D7EF6400C20EF6 /* DailyReportIndexViewController.swift in Sources */,
 				5457299C224AE3B9001F20CD /* DailyReport.swift in Sources */,
 				54408D45226BC97000DF8F7E /* AgreementsViewController.swift in Sources */,
 				545729A2224EDFDA001F20CD /* DailyReportNewViewController.swift in Sources */,
@@ -557,7 +688,9 @@
 				54C1FCF3224444CB00AB4FC8 /* nippohub_daily.xcdatamodeld in Sources */,
 				5472CE3722504B38001158E4 /* DateConverter.swift in Sources */,
 				540F069E2263EAD400A9CCA1 /* AlertOnlyOK.swift in Sources */,
-				545159C4224996AB005854CE /* DailyReportIndexViewController.swift in Sources */,
+				54E6485E22CABEBC00C20EF6 /* DailyReportRepository.swift in Sources */,
+				54E6488022DAAA4A00C20EF6 /* YearMonth.swift in Sources */,
+				545159C4224996AB005854CE /* DailyReportsTableViewController.swift in Sources */,
 				54C1FCED224444CA00AB4FC8 /* SignInViewController.swift in Sources */,
 				540381792265479B0077F687 /* UIView+.swift in Sources */,
 				5472CE3422504098001158E4 /* DailyReportEditViewController.swift in Sources */,
@@ -565,7 +698,8 @@
 				545159C22246DB80005854CE /* SignUpViewController.swift in Sources */,
 				54408D47226BD4C000DF8F7E /* PrivacyViewController.swift in Sources */,
 				54C1FCEB224444CA00AB4FC8 /* AppDelegate.swift in Sources */,
-				54CA71CC225C026900D09381 /* AccountManager.swift in Sources */,
+				54E6485B22C9703100C20EF6 /* Account.swift in Sources */,
+				54CA71CC225C026900D09381 /* AccountRepository.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -601,12 +735,12 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		54C1FCEE224444CA00AB4FC8 /* Main.storyboard */ = {
+		54C1FCEE224444CA00AB4FC8 /* Launch.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				54C1FCEF224444CA00AB4FC8 /* Base */,
 			);
-			name = Main.storyboard;
+			name = Launch.storyboard;
 			sourceTree = "<group>";
 		};
 		54C1FCF6224444CD00AB4FC8 /* LaunchScreen.storyboard */ = {
@@ -747,6 +881,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6Q58FKBQ9T;
 				INFOPLIST_FILE = "nippohub-daily/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -768,6 +903,7 @@
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = 6Q58FKBQ9T;
 				INFOPLIST_FILE = "nippohub-daily/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

@@ -26,21 +26,32 @@ final class DailyReportEditViewController: UIViewController {
     
     @IBAction
     func sendDailyReport() {
-        let date = DateConverter.converter.toString(from: formDate.date)
+        let date = formDate.date
         let title = formTitle.text!
         let content = formContent.text!
-        let currentUser = AccountManager.instance.currentUser
+        let currentUser = AccountRepository.instance.currentUser
+        let dailyReportRepository = DailyReportRepository.instance
+        let dailyReport = DailyReport(
+            id: self.dailyReport.id,
+            date: date,
+            title: title,
+            content: content
+        )
         
         if let user = currentUser {
-            let ref: DatabaseReference! = Database.database().reference()
-            
-            ref.child("/users/\(user.uid)/daily_reports/\(dailyReport.id)").updateChildValues([
-                "date": date,
-                "title": title,
-                "content": content
-            ])
+            dailyReportRepository.update(user: user, dailyReport: dailyReport)
         }
         
+        (self.navigationController?.viewControllers[self.navigationController!.viewControllers.count - 2] as! DailyReportShowViewController).dailyReport = dailyReport
+        
         self.navigationController?.popViewController(animated: true)
+    }
+    
+    static func instantiate(dailyReport: DailyReport) -> DailyReportEditViewController {
+        let viewController = UIStoryboard(name: "DailyReportEdit", bundle: nil).instantiateInitialViewController() as! DailyReportEditViewController
+
+        viewController.dailyReport = dailyReport
+
+        return viewController
     }
 }
