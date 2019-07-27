@@ -35,7 +35,7 @@ class DailyReportIndexViewController: ButtonBarPagerTabStripViewController {
             vc.yearMonth = currentYearMonth.sub(month: $0)
 
             return vc
-        }.reversed()
+        }
     }
 
     @IBAction func transitToNewDailyReport() {
