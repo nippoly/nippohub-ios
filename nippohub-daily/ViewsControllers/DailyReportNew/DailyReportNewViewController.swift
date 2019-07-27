@@ -23,10 +23,7 @@ final class DailyReportNewViewController: UIViewController {
         let dailyReportRepository = DailyReportRepository.instance
         
         if let user = currentUser {
-            let dailyReport = dailyReportRepository.create(user: user, date: date, title: title, content: content)
-            
-            // TODO: nilチェックする
-            (self.navigationController!.viewControllers[self.navigationController!.viewControllers.count - 2] as! DailyReportIndexViewController)//.updateDailyReports(dailyReport: dailyReport)
+            dailyReportRepository.create(user: user, date: date, title: title, content: content)
         }
         
         self.navigationController?.popViewController(animated: true)
