@@ -20,8 +20,7 @@
 		54572999224AE0CF001F20CD /* DailyReportListItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54572998224AE0CF001F20CD /* DailyReportListItem.swift */; };
 		5457299C224AE3B9001F20CD /* DailyReport.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5457299B224AE3B9001F20CD /* DailyReport.swift */; };
 		545729A0224D853B001F20CD /* DailyReportShowViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5457299F224D853B001F20CD /* DailyReportShowViewController.swift */; };
-		545729A2224EDFDA001F20CD /* DailyReportNewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 545729A1224EDFDA001F20CD /* DailyReportNewViewController.swift */; };
-		5472CE3422504098001158E4 /* DailyReportEditViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5472CE3322504098001158E4 /* DailyReportEditViewController.swift */; };
+		545729A2224EDFDA001F20CD /* DailyReportPostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 545729A1224EDFDA001F20CD /* DailyReportPostViewController.swift */; };
 		5472CE3722504B38001158E4 /* DateConverter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5472CE3622504B38001158E4 /* DateConverter.swift */; };
 		547A97FE2273D05600D175CC /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 547A97FD2273D05600D175CC /* SettingViewController.swift */; };
 		548F974E227670F40018D8D9 /* GoogleService-Info--Development.plist in Resources */ = {isa = PBXBuildFile; fileRef = 548F974D227670F40018D8D9 /* GoogleService-Info--Development.plist */; };
@@ -44,8 +43,7 @@
 		54E6486322D01CAC00C20EF6 /* SignIn.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 54E6486222D01CAC00C20EF6 /* SignIn.storyboard */; };
 		54E6486E22D01DEE00C20EF6 /* DailyReportIndex.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 54E6486D22D01DEE00C20EF6 /* DailyReportIndex.storyboard */; };
 		54E6487022D01E1800C20EF6 /* DailyReportShow.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 54E6486F22D01E1800C20EF6 /* DailyReportShow.storyboard */; };
-		54E6487222D01E4800C20EF6 /* DailyReportEdit.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 54E6487122D01E4800C20EF6 /* DailyReportEdit.storyboard */; };
-		54E6487422D01E6F00C20EF6 /* DailyReportNew.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 54E6487322D01E6F00C20EF6 /* DailyReportNew.storyboard */; };
+		54E6487422D01E6F00C20EF6 /* DailyReportPost.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 54E6487322D01E6F00C20EF6 /* DailyReportPost.storyboard */; };
 		54E6487622D01EB500C20EF6 /* SignUp.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 54E6487522D01EB500C20EF6 /* SignUp.storyboard */; };
 		54E6487822D01F0B00C20EF6 /* Agreements.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 54E6487722D01F0B00C20EF6 /* Agreements.storyboard */; };
 		54E6487A22D01F3D00C20EF6 /* Privacy.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 54E6487922D01F3D00C20EF6 /* Privacy.storyboard */; };
@@ -91,8 +89,7 @@
 		54572998224AE0CF001F20CD /* DailyReportListItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyReportListItem.swift; sourceTree = "<group>"; };
 		5457299B224AE3B9001F20CD /* DailyReport.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyReport.swift; sourceTree = "<group>"; };
 		5457299F224D853B001F20CD /* DailyReportShowViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyReportShowViewController.swift; sourceTree = "<group>"; };
-		545729A1224EDFDA001F20CD /* DailyReportNewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyReportNewViewController.swift; sourceTree = "<group>"; };
-		5472CE3322504098001158E4 /* DailyReportEditViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyReportEditViewController.swift; sourceTree = "<group>"; };
+		545729A1224EDFDA001F20CD /* DailyReportPostViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyReportPostViewController.swift; sourceTree = "<group>"; };
 		5472CE3622504B38001158E4 /* DateConverter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateConverter.swift; sourceTree = "<group>"; };
 		547A97FD2273D05600D175CC /* SettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
 		548F974D227670F40018D8D9 /* GoogleService-Info--Development.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info--Development.plist"; sourceTree = "<group>"; };
@@ -121,8 +118,7 @@
 		54E6486222D01CAC00C20EF6 /* SignIn.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SignIn.storyboard; sourceTree = "<group>"; };
 		54E6486D22D01DEE00C20EF6 /* DailyReportIndex.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = DailyReportIndex.storyboard; sourceTree = "<group>"; };
 		54E6486F22D01E1800C20EF6 /* DailyReportShow.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = DailyReportShow.storyboard; sourceTree = "<group>"; };
-		54E6487122D01E4800C20EF6 /* DailyReportEdit.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = DailyReportEdit.storyboard; sourceTree = "<group>"; };
-		54E6487322D01E6F00C20EF6 /* DailyReportNew.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = DailyReportNew.storyboard; sourceTree = "<group>"; };
+		54E6487322D01E6F00C20EF6 /* DailyReportPost.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = DailyReportPost.storyboard; sourceTree = "<group>"; };
 		54E6487522D01EB500C20EF6 /* SignUp.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SignUp.storyboard; sourceTree = "<group>"; };
 		54E6487722D01F0B00C20EF6 /* Agreements.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Agreements.storyboard; sourceTree = "<group>"; };
 		54E6487922D01F3D00C20EF6 /* Privacy.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Privacy.storyboard; sourceTree = "<group>"; };
@@ -241,8 +237,7 @@
 			children = (
 				54E6486522D01CF000C20EF6 /* DailyReportIndex */,
 				54E6486622D01CF900C20EF6 /* DailyReportShow */,
-				54E6486722D01D0200C20EF6 /* DailyReportNew */,
-				54E6486822D01D0C00C20EF6 /* DailyReportEdit */,
+				54E6486722D01D0200C20EF6 /* DailyReportPost */,
 				54E6486422D01CEA00C20EF6 /* SignUp */,
 				54E6486122D01C7000C20EF6 /* SignIn */,
 				54E6486A22D01D1D00C20EF6 /* Agreements */,
@@ -362,22 +357,13 @@
 			path = DailyReportShow;
 			sourceTree = "<group>";
 		};
-		54E6486722D01D0200C20EF6 /* DailyReportNew */ = {
+		54E6486722D01D0200C20EF6 /* DailyReportPost */ = {
 			isa = PBXGroup;
 			children = (
-				54E6487322D01E6F00C20EF6 /* DailyReportNew.storyboard */,
-				545729A1224EDFDA001F20CD /* DailyReportNewViewController.swift */,
+				54E6487322D01E6F00C20EF6 /* DailyReportPost.storyboard */,
+				545729A1224EDFDA001F20CD /* DailyReportPostViewController.swift */,
 			);
-			path = DailyReportNew;
-			sourceTree = "<group>";
-		};
-		54E6486822D01D0C00C20EF6 /* DailyReportEdit */ = {
-			isa = PBXGroup;
-			children = (
-				54E6487122D01E4800C20EF6 /* DailyReportEdit.storyboard */,
-				5472CE3322504098001158E4 /* DailyReportEditViewController.swift */,
-			);
-			path = DailyReportEdit;
+			path = DailyReportPost;
 			sourceTree = "<group>";
 		};
 		54E6486922D01D1300C20EF6 /* Launch */ = {
@@ -554,7 +540,7 @@
 				54C1FD26224446F900AB4FC8 /* GoogleService-Info--Development.plist in Resources */,
 				54E6487822D01F0B00C20EF6 /* Agreements.storyboard in Resources */,
 				54572997224AE01F001F20CD /* DailyReportListItem.xib in Resources */,
-				54E6487422D01E6F00C20EF6 /* DailyReportNew.storyboard in Resources */,
+				54E6487422D01E6F00C20EF6 /* DailyReportPost.storyboard in Resources */,
 				54E6487C22D01F8100C20EF6 /* Setting.storyboard in Resources */,
 				54C1FCF5224444CD00AB4FC8 /* Assets.xcassets in Resources */,
 				54C1FCF0224444CA00AB4FC8 /* Launch.storyboard in Resources */,
@@ -564,7 +550,6 @@
 				540F069C225FFE7700A9CCA1 /* marked.min.js in Resources */,
 				548F9752227673F20018D8D9 /* Settings.bundle in Resources */,
 				54E6486E22D01DEE00C20EF6 /* DailyReportIndex.storyboard in Resources */,
-				54E6487222D01E4800C20EF6 /* DailyReportEdit.storyboard in Resources */,
 				548F9754227676DF0018D8D9 /* GoogleService-Info--Production.plist in Resources */,
 				54E6487622D01EB500C20EF6 /* SignUp.storyboard in Resources */,
 				540F0697225FF9AD00A9CCA1 /* daily_report_show.js in Resources */,
@@ -683,7 +668,7 @@
 				54E6487E22D7EF6400C20EF6 /* DailyReportIndexViewController.swift in Sources */,
 				5457299C224AE3B9001F20CD /* DailyReport.swift in Sources */,
 				54408D45226BC97000DF8F7E /* AgreementsViewController.swift in Sources */,
-				545729A2224EDFDA001F20CD /* DailyReportNewViewController.swift in Sources */,
+				545729A2224EDFDA001F20CD /* DailyReportPostViewController.swift in Sources */,
 				547A97FE2273D05600D175CC /* SettingViewController.swift in Sources */,
 				54C1FCF3224444CB00AB4FC8 /* nippohub_daily.xcdatamodeld in Sources */,
 				5472CE3722504B38001158E4 /* DateConverter.swift in Sources */,
@@ -693,7 +678,6 @@
 				545159C4224996AB005854CE /* DailyReportsTableViewController.swift in Sources */,
 				54C1FCED224444CA00AB4FC8 /* SignInViewController.swift in Sources */,
 				540381792265479B0077F687 /* UIView+.swift in Sources */,
-				5472CE3422504098001158E4 /* DailyReportEditViewController.swift in Sources */,
 				545729A0224D853B001F20CD /* DailyReportShowViewController.swift in Sources */,
 				545159C22246DB80005854CE /* SignUpViewController.swift in Sources */,
 				54408D47226BD4C000DF8F7E /* PrivacyViewController.swift in Sources */,
