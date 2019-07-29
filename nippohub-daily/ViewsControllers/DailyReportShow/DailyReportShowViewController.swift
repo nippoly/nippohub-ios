@@ -27,7 +27,7 @@ final class DailyReportShowViewController: UIViewController {
     }
 
     @IBAction func transitToEdit() {
-        let viewController = DailyReportEditViewController.instantiate(dailyReport: dailyReport)
+        let viewController = DailyReportPostViewController.instantiate(dailyReport: dailyReport)
 
         viewController.dailyReport = dailyReport
 

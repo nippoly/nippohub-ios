@@ -39,7 +39,7 @@ class DailyReportIndexViewController: ButtonBarPagerTabStripViewController {
     }
 
     @IBAction func transitToNewDailyReport() {
-        let viewController = DailyReportNewViewController.instantiate()
+        let viewController = DailyReportPostViewController.instantiate()
 
         navigationController?.pushViewController(viewController, animated: true)
     }
