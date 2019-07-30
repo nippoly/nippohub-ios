@@ -15,9 +15,9 @@ final class SignUpViewController: UIViewController {
     
     @IBAction
     func signUp() {
-        let email = formEmail.text!
-        let password = formPassword.text!
-        let passwordConfirmation = formPasswordConfirmation.text!
+        let email = formEmail.text ?? ""
+        let password = formPassword.text ?? ""
+        let passwordConfirmation = formPasswordConfirmation.text ?? ""
         
         if password != passwordConfirmation {
             AlertOnlyOK.show(controller: self, title: "パスワードの不一致", message: "入力されたパスワードが一致していません")

@@ -21,14 +21,12 @@ final class DailyReportsTableViewController: UITableViewController {
     }
 
     override func viewDidAppear(_ animated: Bool) {
-        let currentUser = AccountRepository.instance.currentUser
+        guard let currentUser = AccountRepository.instance.currentUser else { return }
         let dailyReportRepository = DailyReportRepository.instance
 
-        if let user = currentUser {
-            dailyReportRepository.fetch(user: user, dateGt: yearMonth.firstDateOfYearMonth(), dateLt: yearMonth.lastDateOfYearMonth()) { [unowned self] in
-                self.dailyReports = $0
-                self.tableView.reloadData()
-            }
+        dailyReportRepository.fetch(user: currentUser, dateGt: yearMonth.firstDateOfYearMonth(), dateLt: yearMonth.lastDateOfYearMonth()) { [unowned self] in
+            self.dailyReports = $0
+            self.tableView.reloadData()
         }
     }
     
