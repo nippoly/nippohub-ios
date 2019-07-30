@@ -1,5 +1,5 @@
 //
-//  DailyReportIndexViewController.swift
+//  DailyReportsTableViewController.swift
 //  nippohub-daily
 //
 //  Created by うさきち on 2019/03/26.
@@ -21,47 +21,13 @@ final class DailyReportsTableViewController: UITableViewController {
     }
 
     override func viewDidAppear(_ animated: Bool) {
-        let currentUser = AccountRepository.instance.currentUser
+        guard let currentUser = AccountRepository.instance.currentUser else { return }
         let dailyReportRepository = DailyReportRepository.instance
 
-        if let user = currentUser {
-            dailyReportRepository.fetch(user: user, dateGt: yearMonth.firstDateOfYearMonth(), dateLt: yearMonth.lastDateOfYearMonth()) { [unowned self] in
-                self.dailyReports = $0
-                self.tableView.reloadData()
-            }
+        dailyReportRepository.fetch(user: currentUser, dateGt: yearMonth.firstDateOfYearMonth(), dateLt: yearMonth.lastDateOfYearMonth()) { [unowned self] in
+            self.dailyReports = $0
+            self.tableView.reloadData()
         }
-    }
-    
-    // 日報に更新があった時日報一覧を最新にする
-    func updateDailyReports(dailyReport: DailyReport) {
-        let index = dailyReports.firstIndex { $0.id == dailyReport.id }
-        
-        if let index = index {
-            dailyReports[index] = dailyReport
-            dailyReports.sort { $0.date >= $1.date }
-        } else {
-            let indexToInsert = dailyReports.firstIndex { $0.date <= dailyReport.date }
-            
-            if let indexToInsert = indexToInsert {
-                dailyReports.insert(dailyReport, at: indexToInsert)
-            } else {
-                dailyReports.append(dailyReport)
-            }
-        }
-        
-        tableView.reloadData()
-    }
-
-    @objc @IBAction func transitToNewDailyReport() {
-        let viewController = DailyReportPostViewController.instantiate()
-
-        navigationController?.pushViewController(viewController, animated: true)
-    }
-
-    @IBAction func transitToSettings() {
-        let viewController = SettingViewController.instantiate()
-
-        navigationController?.pushViewController(viewController, animated: true)
     }
     
     static func instantiate() -> DailyReportIndexViewController {
@@ -78,7 +44,7 @@ extension DailyReportsTableViewController {
         let cell = tableView.dequeueReusableCell(withIdentifier: "DailyReportListItem") as! DailyReportListItem
         let dailyReport = dailyReports[indexPath.row]
         
-        cell.title = "\(DateConverter.converter.toString(from: dailyReport.date)) \(dailyReport.title)" // TODO: Date追加
+        cell.title = "\(DateConverter.converter.toString(from: dailyReport.date)) \(dailyReport.title)"
         
         return cell
     }

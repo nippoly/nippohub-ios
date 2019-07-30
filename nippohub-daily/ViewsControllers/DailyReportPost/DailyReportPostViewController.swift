@@ -28,8 +28,7 @@ final class DailyReportPostViewController: UIViewController {
     
     @IBAction
     func sendDailyReport() {
-        let currentUser = AccountRepository.instance.currentUser
-        guard let user = currentUser else { return }
+        guard let currentUser = AccountRepository.instance.currentUser else { return }
         let date = formDate.date
         let title = formTitle.text!
         let content = formContent.text!
@@ -43,13 +42,13 @@ final class DailyReportPostViewController: UIViewController {
                 content: content
             )
 
-            dailyReportRepository.update(user: user, dailyReport: updatedDailyReport)
+            dailyReportRepository.update(user: currentUser, dailyReport: updatedDailyReport)
 
             navigationController.flatMap {
                 $0.viewControllers[$0.viewControllers.count - 2] as? DailyReportShowViewController
             }?.dailyReport = updatedDailyReport
         } else {
-            dailyReportRepository.create(user: user, date: date, title: title, content: content)
+            dailyReportRepository.create(user: currentUser, date: date, title: title, content: content)
         }
         
         navigationController?.popViewController(animated: true)

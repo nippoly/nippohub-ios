@@ -18,8 +18,8 @@ final class SignInViewController: UIViewController {
 
     @IBAction
     func signIn() {
-        let email = formEmail.text!
-        let password = formPassword.text!
+        let email = formEmail.text ?? ""
+        let password = formPassword.text ?? ""
         
         AccountRepository.instance.signIn(email: email, password: password) { [unowned self] error in
             if error == nil {

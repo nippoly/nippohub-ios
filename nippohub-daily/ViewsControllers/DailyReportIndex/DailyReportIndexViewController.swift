@@ -1,5 +1,5 @@
 //
-//  DailyReportIndex2ViewController.swift
+//  DailyReportIndexViewController.swift
 //  nippohub-daily
 //
 //  Created by うさきち on 2019/07/12.
