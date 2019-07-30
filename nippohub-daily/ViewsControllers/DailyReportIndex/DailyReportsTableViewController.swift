@@ -51,18 +51,6 @@ final class DailyReportsTableViewController: UITableViewController {
         
         tableView.reloadData()
     }
-
-    @objc @IBAction func transitToNewDailyReport() {
-        let viewController = DailyReportPostViewController.instantiate()
-
-        navigationController?.pushViewController(viewController, animated: true)
-    }
-
-    @IBAction func transitToSettings() {
-        let viewController = SettingViewController.instantiate()
-
-        navigationController?.pushViewController(viewController, animated: true)
-    }
     
     static func instantiate() -> DailyReportIndexViewController {
         return UIStoryboard(name: "DailyReportIndex", bundle: nil).instantiateInitialViewController() as! DailyReportIndexViewController
