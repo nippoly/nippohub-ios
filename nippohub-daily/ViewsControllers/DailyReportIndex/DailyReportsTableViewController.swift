@@ -46,7 +46,7 @@ extension DailyReportsTableViewController {
         let cell = tableView.dequeueReusableCell(withIdentifier: "DailyReportListItem") as! DailyReportListItem
         let dailyReport = dailyReports[indexPath.row]
         
-        cell.title = "\(DateConverter.converter.toString(from: dailyReport.date)) \(dailyReport.title)" // TODO: Date追加
+        cell.title = "\(DateConverter.converter.toString(from: dailyReport.date)) \(dailyReport.title)"
         
         return cell
     }
