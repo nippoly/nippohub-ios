@@ -1,5 +1,5 @@
 //
-//  DailyReportIndexViewController.swift
+//  DailyReportsTableViewController.swift
 //  nippohub-daily
 //
 //  Created by うさきち on 2019/03/26.
