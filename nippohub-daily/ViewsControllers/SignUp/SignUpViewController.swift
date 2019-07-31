@@ -31,8 +31,14 @@ final class SignUpViewController: UIViewController {
 
             self.present(navigationController, animated: true)
             navigationController.pushViewController(viewController, animated: false)
-        }, onFail: { [unowned self] _ in
-            AlertOnlyOK.show(controller: self, title: "アカウント作成失敗", message: "アカウント作成できませんでした")
+        }, onFail: { [unowned self] err in
+            let msg = err.localizedDescription
+
+            if msg  == "The email address is already in use by another account." {
+                AlertOnlyOK.show(controller: self, title: "アカウント作成できませんでした", message: "登録済みのメールアドレスです")
+            } else {
+                AlertOnlyOK.show(controller: self, title: "アカウント作成できませんでした", message: "不明なエラー")
+            }
         })
     }
 
