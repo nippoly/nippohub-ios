@@ -28,15 +28,23 @@ final class AccountRepository {
     }
     
     // TODO: error型を返さないようにする
-    func signIn(email: String, password: String, completion: @escaping (Error?) -> Void) {
+    func signIn(email: String, password: String, onCompletion: (() -> Void)?, onFail: ((Error) -> Void)?) {
         auth.signIn(withEmail: email, password: password) { res, err in
-            completion(err)
+            if let err = err {
+                onFail?.self(err)
+            } else {
+                onCompletion?.self()
+            }
         }
     }
     
-    func signUp(email: String, password: String, completion: @escaping (Error?) -> Void) {
+    func signUp(email: String, password: String, onCompletion: (() -> Void)?, onFail: ((Error) -> Void)?) {
         auth.createUser(withEmail: email, password: password) { res, err in
-            completion(err)
+            if let err = err {
+                onFail?.self(err)
+            } else {
+                onCompletion?.self()
+            }
         }
     }
     

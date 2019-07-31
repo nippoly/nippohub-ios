@@ -25,18 +25,21 @@ final class SignUpViewController: UIViewController {
             return
         }
         
-        AccountRepository.instance.signUp(email: email, password: password) { [unowned self] error in
-            if error == nil {
-                let navigationController = UINavigationController()
-                let viewController = DailyReportIndexViewController.instantiate()
+        AccountRepository.instance.signUp(email: email, password: password, onCompletion: { [unowned self] in
+            let navigationController = UINavigationController()
+            let viewController = DailyReportIndexViewController.instantiate()
 
-                self.present(navigationController, animated: true)
-                navigationController.pushViewController(viewController, animated: false)
+            self.present(navigationController, animated: true)
+            navigationController.pushViewController(viewController, animated: false)
+        }, onFail: { [unowned self] err in
+            let msg = err.localizedDescription
+
+            if msg  == "The email address is already in use by another account." {
+                AlertOnlyOK.show(controller: self, title: "アカウント作成できませんでした", message: "登録済みのメールアドレスです")
             } else {
-                // TODO: 細かく分ける
-                AlertOnlyOK.show(controller: self, title: "アカウント作成失敗", message: "アカウント作成できませんでした")
+                AlertOnlyOK.show(controller: self, title: "アカウント作成できませんでした", message: "不明なエラー")
             }
-        }
+        })
     }
 
     @IBAction func transitToAgreements() {

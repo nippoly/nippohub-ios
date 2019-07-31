@@ -21,18 +21,15 @@ final class SignInViewController: UIViewController {
         let email = formEmail.text ?? ""
         let password = formPassword.text ?? ""
         
-        AccountRepository.instance.signIn(email: email, password: password) { [unowned self] error in
-            if error == nil {
-                let navigationController = UINavigationController()
-                let viewController = DailyReportIndexViewController.instantiate()
+        AccountRepository.instance.signIn(email: email, password: password, onCompletion: { [unowned self] in
+            let navigationController = UINavigationController()
+            let viewController = DailyReportIndexViewController.instantiate()
 
-                self.present(navigationController, animated: true)
-                navigationController.pushViewController(viewController, animated: false)
-            } else {
-                // TODO: ネットワークエラーの時の文言
-                AlertOnlyOK.show(controller: self, title: "サインイン失敗", message: "メールアドレスとパスワードが一致しません")
-            }
-        }
+            self.present(navigationController, animated: true)
+            navigationController.pushViewController(viewController, animated: false)
+        }, onFail: { [unowned self] _ in
+            AlertOnlyOK.show(controller: self, title: "サインイン失敗", message: "メールアドレスとパスワードが一致しません")
+        })
     }
 
     @IBAction func transitToSignUp() {
