@@ -25,18 +25,15 @@ final class SignUpViewController: UIViewController {
             return
         }
         
-        AccountRepository.instance.signUp(email: email, password: password) { [unowned self] error in
-            if error == nil {
-                let navigationController = UINavigationController()
-                let viewController = DailyReportIndexViewController.instantiate()
+        AccountRepository.instance.signUp(email: email, password: password, onCompletion: { [unowned self] in
+            let navigationController = UINavigationController()
+            let viewController = DailyReportIndexViewController.instantiate()
 
-                self.present(navigationController, animated: true)
-                navigationController.pushViewController(viewController, animated: false)
-            } else {
-                // TODO: 細かく分ける
-                AlertOnlyOK.show(controller: self, title: "アカウント作成失敗", message: "アカウント作成できませんでした")
-            }
-        }
+            self.present(navigationController, animated: true)
+            navigationController.pushViewController(viewController, animated: false)
+        }, onFail: { [unowned self] _ in
+            AlertOnlyOK.show(controller: self, title: "アカウント作成失敗", message: "アカウント作成できませんでした")
+        })
     }
 
     @IBAction func transitToAgreements() {
