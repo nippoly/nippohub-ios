@@ -23,6 +23,7 @@
 		545729A2224EDFDA001F20CD /* DailyReportPostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 545729A1224EDFDA001F20CD /* DailyReportPostViewController.swift */; };
 		5472CE3722504B38001158E4 /* DateConverter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5472CE3622504B38001158E4 /* DateConverter.swift */; };
 		547A97FE2273D05600D175CC /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 547A97FD2273D05600D175CC /* SettingViewController.swift */; };
+		548BE6EE22F39FE100620388 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 548BE6F022F39FE100620388 /* Localizable.strings */; };
 		548F974E227670F40018D8D9 /* GoogleService-Info--Development.plist in Resources */ = {isa = PBXBuildFile; fileRef = 548F974D227670F40018D8D9 /* GoogleService-Info--Development.plist */; };
 		548F9750227670FC0018D8D9 /* GoogleService-Info--Development.plist in Resources */ = {isa = PBXBuildFile; fileRef = 548F974F227670FC0018D8D9 /* GoogleService-Info--Development.plist */; };
 		548F9752227673F20018D8D9 /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 548F9751227673F20018D8D9 /* Settings.bundle */; };
@@ -94,6 +95,8 @@
 		547A97FD2273D05600D175CC /* SettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
 		548BE6EA22F39F1100620388 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/Launch.strings; sourceTree = "<group>"; };
 		548BE6EB22F39F1100620388 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		548BE6EF22F39FE100620388 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/Localizable.strings; sourceTree = "<group>"; };
+		548BE6F122F39FF100620388 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		548F974D227670F40018D8D9 /* GoogleService-Info--Development.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info--Development.plist"; sourceTree = "<group>"; };
 		548F974F227670FC0018D8D9 /* GoogleService-Info--Development.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info--Development.plist"; sourceTree = "<group>"; };
 		548F9751227673F20018D8D9 /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
@@ -254,6 +257,7 @@
 		54C1FCDE224444CA00AB4FC8 = {
 			isa = PBXGroup;
 			children = (
+				548BE6F022F39FE100620388 /* Localizable.strings */,
 				548F9751227673F20018D8D9 /* Settings.bundle */,
 				54C1FCE9224444CA00AB4FC8 /* nippohub-daily */,
 				54C1FD01224444CD00AB4FC8 /* nippohub-dailyTests */,
@@ -555,6 +559,7 @@
 				54E6486E22D01DEE00C20EF6 /* DailyReportIndex.storyboard in Resources */,
 				548F9754227676DF0018D8D9 /* GoogleService-Info--Production.plist in Resources */,
 				54E6487622D01EB500C20EF6 /* SignUp.storyboard in Resources */,
+				548BE6EE22F39FE100620388 /* Localizable.strings in Resources */,
 				540F0697225FF9AD00A9CCA1 /* daily_report_show.js in Resources */,
 				54E6487A22D01F3D00C20EF6 /* Privacy.storyboard in Resources */,
 			);
@@ -722,6 +727,15 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		548BE6F022F39FE100620388 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				548BE6EF22F39FE100620388 /* ja */,
+				548BE6F122F39FF100620388 /* en */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
 		54C1FCEE224444CA00AB4FC8 /* Launch.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
