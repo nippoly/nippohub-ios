@@ -20,7 +20,11 @@ final class SignUpViewController: UIViewController {
         let passwordConfirmation = formPasswordConfirmation.text ?? ""
         
         if password != passwordConfirmation {
-            AlertOnlyOK.show(controller: self, title: "パスワードの不一致", message: "入力されたパスワードが一致していません")
+            AlertOnlyOK.show(
+                controller: self,
+                title: NSLocalizedString("AuthFail.SignUp.Title", comment: ""),
+                message: NSLocalizedString("AuthFail.SignUp.PasswordErrorDescription", comment: "")
+            )
 
             return
         }
@@ -35,9 +39,17 @@ final class SignUpViewController: UIViewController {
             let msg = err.localizedDescription
 
             if msg  == "The email address is already in use by another account." {
-                AlertOnlyOK.show(controller: self, title: "アカウント作成できませんでした", message: "登録済みのメールアドレスです")
+                AlertOnlyOK.show(
+                    controller: self,
+                    title: NSLocalizedString("AuthFail.SignUp.Title", comment: ""),
+                    message: NSLocalizedString("AuthFail.SignUp.AlreadyUseEmailDescription", comment: "")
+                )
             } else {
-                AlertOnlyOK.show(controller: self, title: "アカウント作成できませんでした", message: "不明なエラー")
+                AlertOnlyOK.show(
+                    controller: self,
+                    title: NSLocalizedString("AuthFail.SignUp.Title", comment: ""),
+                    message: NSLocalizedString("AuthFail.SignUp.SomethingErrorDescriptione", comment: "")
+                )
             }
         })
     }

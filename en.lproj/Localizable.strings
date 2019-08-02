@@ -1,0 +1,14 @@
+/* 
+  Localizable.strings
+  nippohub-daily
+
+  Created by うさきち on 2019/08/02.
+  Copyright © 2019 うーぴょん. All rights reserved.
+*/
+
+"AuthFail.SignIn.Title" = "Sign in Failure";
+"AuthFail.SignIn.Description" = "Wrong Password.";
+"AuthFail.SignUp.Title" = "Sign Up Failure";
+"AuthFail.SignUp.PasswordErrorDescription" = "Password is not same.";
+"AuthFail.SignUp.AlreadyUseEmailDescription" = "This Email Already Used.";
+"AuthFail.SignUp.SomethingErrorDescription" = "Error";
