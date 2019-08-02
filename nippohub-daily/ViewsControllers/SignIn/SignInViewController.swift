@@ -28,7 +28,11 @@ final class SignInViewController: UIViewController {
             self.present(navigationController, animated: true)
             navigationController.pushViewController(viewController, animated: false)
         }, onFail: { [unowned self] _ in
-            AlertOnlyOK.show(controller: self, title: "サインイン失敗", message: "メールアドレスとパスワードが一致しません")
+            AlertOnlyOK.show(
+                controller: self,
+                title: NSLocalizedString("AuthFail.SignIn.Title", comment: ""),
+                message: NSLocalizedString("AuthFail.SignIn.Description", comment: "")
+            )
         })
     }
 

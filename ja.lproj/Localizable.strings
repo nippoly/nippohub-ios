@@ -5,3 +5,10 @@
   Created by うさきち on 2019/08/02.
   Copyright © 2019 うーぴょん. All rights reserved.
 */
+
+"AuthFail.SignIn.Title" = "サインインに失敗しました";
+"AuthFail.SignIn.Description" = "メールアドレスとパスワードが一致しません。";
+"AuthFail.SignUp.Title" = "アカウント作成に失敗しました";
+"AuthFail.SignUp.PasswordErrorDescription" = "パスワードが一致しません";
+"AuthFail.SignUp.AlreadyUseEmailDescription" = "このメールアドレスは登録済みです。";
+"AuthFail.SignUp.SomethingErrorDescription" = "予期せぬエラー";
