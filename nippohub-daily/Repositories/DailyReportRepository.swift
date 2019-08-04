@@ -34,7 +34,13 @@ final class DailyReportRepository {
                 // TODO: 変換失敗時の処理を考える
                 let date = (try? DateConverter.converter.toDate(from: dailyReport.childSnapshot(forPath: "date").value as! String)) ?? Date()
 
-                return DailyReport(id: dailyReport.key, date: date, title: dailyReport.childSnapshot(forPath: "title").value as! String, content: dailyReport.childSnapshot(forPath: "content").value as! String)
+                return DailyReport(
+                    id: dailyReport.key,
+                    date: date,
+                    title: dailyReport.childSnapshot(forPath: "title").value as! String,
+                    content: dailyReport.childSnapshot(forPath: "content").value as! String,
+                    accessKey: dailyReport.childSnapshot(forPath: "access_key").value as? String
+                )
             }).sorted { $0.date >= $1.date }
 
             callBack(dailyReports)
@@ -51,7 +57,7 @@ final class DailyReportRepository {
             "createdAt": Int(Date().timeIntervalSince1970 * 1000)
         ])
         
-        return DailyReport(id: newRecord.key, date: date, title: title, content: content)
+        return DailyReport(id: newRecord.key, date: date, title: title, content: content, accessKey: nil)
     }
     
     func update(user: Account, dailyReport: DailyReport) {

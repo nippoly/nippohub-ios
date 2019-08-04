@@ -39,7 +39,8 @@ final class DailyReportPostViewController: UIViewController {
                 id: dailyReport.id,
                 date: date,
                 title: title,
-                content: content
+                content: content,
+                accessKey: dailyReport.accessKey
             )
 
             dailyReportRepository.update(user: currentUser, dailyReport: updatedDailyReport)
