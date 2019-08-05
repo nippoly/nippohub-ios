@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="6RB-JE-eB2" customClass="DailyReportShareURLView" customModule="nippohub_daily" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Vyg-KR-O72">
+                    <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                    <subviews>
+                        <textField opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="249" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Ddc-sf-bSC">
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="788"/>
+                            <nil key="textColor"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </textField>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wNo-VB-XAZ">
+                            <rect key="frame" x="0.0" y="788" width="414" height="30"/>
+                            <state key="normal" title="共有解除する"/>
+                            <connections>
+                                <action selector="tapStopShare" destination="6RB-JE-eB2" eventType="touchUpOutside" id="veD-yn-yO7"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                </stackView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="Vyg-KR-O72" firstAttribute="top" secondItem="lSX-n9-0G8" secondAttribute="top" id="BsU-O6-Xk6"/>
+                <constraint firstItem="lSX-n9-0G8" firstAttribute="bottom" secondItem="Vyg-KR-O72" secondAttribute="bottom" id="dbe-cU-1eu"/>
+                <constraint firstItem="Vyg-KR-O72" firstAttribute="leading" secondItem="lSX-n9-0G8" secondAttribute="leading" id="scB-EG-Wor"/>
+                <constraint firstItem="lSX-n9-0G8" firstAttribute="trailing" secondItem="Vyg-KR-O72" secondAttribute="trailing" id="zR6-T0-O34"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="lSX-n9-0G8"/>
+            <connections>
+                <outlet property="buttonShareStop" destination="wNo-VB-XAZ" id="D5X-tW-W8D"/>
+                <outlet property="textFieldShareURL" destination="Ddc-sf-bSC" id="qWg-dq-HvA"/>
+            </connections>
+            <point key="canvasLocation" x="-458" y="-82"/>
+        </view>
+    </objects>
+</document>

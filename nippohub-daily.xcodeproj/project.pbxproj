@@ -24,6 +24,8 @@
 		5472CE3722504B38001158E4 /* DateConverter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5472CE3622504B38001158E4 /* DateConverter.swift */; };
 		547A97FE2273D05600D175CC /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 547A97FD2273D05600D175CC /* SettingViewController.swift */; };
 		548BE6EE22F39FE100620388 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 548BE6F022F39FE100620388 /* Localizable.strings */; };
+		548BE6FC22F8E45800620388 /* DailyReportShareURLView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 548BE6FB22F8E45800620388 /* DailyReportShareURLView.xib */; };
+		548BE6FE22F8E5E100620388 /* DailyReportShareURLView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 548BE6FD22F8E5E100620388 /* DailyReportShareURLView.swift */; };
 		548F974E227670F40018D8D9 /* GoogleService-Info--Development.plist in Resources */ = {isa = PBXBuildFile; fileRef = 548F974D227670F40018D8D9 /* GoogleService-Info--Development.plist */; };
 		548F9750227670FC0018D8D9 /* GoogleService-Info--Development.plist in Resources */ = {isa = PBXBuildFile; fileRef = 548F974F227670FC0018D8D9 /* GoogleService-Info--Development.plist */; };
 		548F9752227673F20018D8D9 /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 548F9751227673F20018D8D9 /* Settings.bundle */; };
@@ -97,6 +99,8 @@
 		548BE6EB22F39F1100620388 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
 		548BE6EF22F39FE100620388 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/Localizable.strings; sourceTree = "<group>"; };
 		548BE6F922F4FE1700620388 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		548BE6FB22F8E45800620388 /* DailyReportShareURLView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DailyReportShareURLView.xib; sourceTree = "<group>"; };
+		548BE6FD22F8E5E100620388 /* DailyReportShareURLView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyReportShareURLView.swift; sourceTree = "<group>"; };
 		548F974D227670F40018D8D9 /* GoogleService-Info--Development.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info--Development.plist"; sourceTree = "<group>"; };
 		548F974F227670FC0018D8D9 /* GoogleService-Info--Development.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info--Development.plist"; sourceTree = "<group>"; };
 		548F9751227673F20018D8D9 /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
@@ -237,6 +241,15 @@
 			path = Utilities;
 			sourceTree = "<group>";
 		};
+		548BE6FA22F8E42900620388 /* DailyReportShareURLView */ = {
+			isa = PBXGroup;
+			children = (
+				548BE6FB22F8E45800620388 /* DailyReportShareURLView.xib */,
+				548BE6FD22F8E5E100620388 /* DailyReportShareURLView.swift */,
+			);
+			path = DailyReportShareURLView;
+			sourceTree = "<group>";
+		};
 		54BECCE122458DD80064BE83 /* ViewsControllers */ = {
 			isa = PBXGroup;
 			children = (
@@ -357,6 +370,7 @@
 		54E6486622D01CF900C20EF6 /* DailyReportShow */ = {
 			isa = PBXGroup;
 			children = (
+				548BE6FA22F8E42900620388 /* DailyReportShareURLView */,
 				54E6486F22D01E1800C20EF6 /* DailyReportShow.storyboard */,
 				5457299F224D853B001F20CD /* DailyReportShowViewController.swift */,
 			);
@@ -551,6 +565,7 @@
 				54E6487C22D01F8100C20EF6 /* Setting.storyboard in Resources */,
 				54C1FCF5224444CD00AB4FC8 /* Assets.xcassets in Resources */,
 				54C1FCF0224444CA00AB4FC8 /* Launch.storyboard in Resources */,
+				548BE6FC22F8E45800620388 /* DailyReportShareURLView.xib in Resources */,
 				540F0694225FF8D800A9CCA1 /* daily_report_show.html in Resources */,
 				54E6486322D01CAC00C20EF6 /* SignIn.storyboard in Resources */,
 				54E6487022D01E1800C20EF6 /* DailyReportShow.storyboard in Resources */,
@@ -687,6 +702,7 @@
 				54C1FCED224444CA00AB4FC8 /* SignInViewController.swift in Sources */,
 				540381792265479B0077F687 /* UIView+.swift in Sources */,
 				545729A0224D853B001F20CD /* DailyReportShowViewController.swift in Sources */,
+				548BE6FE22F8E5E100620388 /* DailyReportShareURLView.swift in Sources */,
 				545159C22246DB80005854CE /* SignUpViewController.swift in Sources */,
 				54408D47226BD4C000DF8F7E /* PrivacyViewController.swift in Sources */,
 				54C1FCEB224444CA00AB4FC8 /* AppDelegate.swift in Sources */,
