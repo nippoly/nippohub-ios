@@ -18,8 +18,13 @@ class DailyReportShareURLView: UIView {
     }
     var onTapStopShare: (() -> ())?
 
+
     @IBAction
     func tapStopShare() {
         onTapStopShare?.self()
+    }
+
+    func loadView() {
+        let view = Bundle.main.loadNibNamed("DailyReportShareURLView", owner: self, options: nil)?.first as? DailyReportShareURLView
     }
 }
