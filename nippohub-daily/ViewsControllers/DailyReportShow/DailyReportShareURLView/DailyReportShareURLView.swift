@@ -18,13 +18,26 @@ class DailyReportShareURLView: UIView {
     }
     var onTapStopShare: (() -> ())?
 
+    override init(frame: CGRect) {
+        super.init(frame: frame)
+
+        self.loadView()
+    }
+
+    required init?(coder aDecoder: NSCoder) {
+        super.init(coder: aDecoder)
+
+        self.loadView()
+    }
 
     @IBAction
     func tapStopShare() {
         onTapStopShare?.self()
     }
 
-    func loadView() {
-        let view = Bundle.main.loadNibNamed("DailyReportShareURLView", owner: self, options: nil)?.first as? DailyReportShareURLView
+    private func loadView() {
+        let view = Bundle.main.loadNibNamed("DailyReportShareURLView", owner: self, options: nil)?.first as! UIView
+
+        addSubview(view)
     }
 }
