@@ -27,7 +27,7 @@
                                     </view>
                                 </subviews>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="100" id="OK5-0a-Se2"/>
+                                    <constraint firstAttribute="height" constant="50" id="OK5-0a-Se2"/>
                                 </constraints>
                             </stackView>
                             <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eCZ-z5-Zws">
