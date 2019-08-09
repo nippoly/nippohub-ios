@@ -30,6 +30,14 @@ class DailyReportShareURLView: UIView {
         self.loadView()
     }
 
+    override func layoutSubviews() {
+        super.layoutSubviews()
+
+        subviews.forEach { [unowned self] in
+            $0.frame = self.bounds
+        }
+    }
+
     @IBAction
     func tapStopShare() {
         onTapStopShare?.self()
