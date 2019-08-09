@@ -13,7 +13,7 @@ class DailyReportShareURLView: UIView {
     @IBOutlet private weak var buttonShareStop: UIButton!
     var shareURL: String = "" {
         didSet {
-            //textFieldShareURL.text = shareURL
+            textFieldShareURL.text = shareURL
         }
     }
     var onTapStopShare: (() -> ())?
@@ -37,8 +37,10 @@ class DailyReportShareURLView: UIView {
 
     private func loadView() {
         let nib = UINib(nibName: "DailyReportShareURLView", bundle: nil)
-        let view = nib.instantiate(withOwner: self, options: nil).first
+        let view = nib.instantiate(withOwner: self, options: nil).first as! UIView
 
-        addSubview(view  as! UIView)
+        view.frame = bounds
+
+        addSubview(view)
     }
 }
