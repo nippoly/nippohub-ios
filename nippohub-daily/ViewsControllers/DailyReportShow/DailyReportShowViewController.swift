@@ -10,6 +10,8 @@ import UIKit
 import WebKit
 
 final class DailyReportShowViewController: UIViewController {
+    @IBOutlet private weak var dailyReportShareURLView: DailyReportShareURLView!
+    @IBOutlet private weak var btnShare: UIButton!
     @IBOutlet private weak var webKitForContents: WKWebView!
     
     var dailyReport: DailyReport!
@@ -17,6 +19,15 @@ final class DailyReportShowViewController: UIViewController {
     override func viewDidAppear(_ animated: Bool) {
         let url = Bundle.main.url(forResource: "daily_report_show", withExtension: "html")!
         let req = URLRequest(url: url)
+
+        if let accessKey = dailyReport.accessKey {
+            dailyReportShareURLView.isHidden = false
+            dailyReportShareURLView.shareURL = "https://nippohub.jp/daily_reports/public/\(accessKey)"
+            btnShare.isHidden = true
+        } else {
+            dailyReportShareURLView.isHidden = true
+            btnShare.isHidden = false
+        }
         
         webKitForContents.navigationDelegate = self
         webKitForContents.load(req)
@@ -28,6 +39,10 @@ final class DailyReportShowViewController: UIViewController {
         viewController.dailyReport = dailyReport
 
         navigationController?.pushViewController(viewController, animated: true)
+    }
+
+    @IBAction private func shareDailyReport() {
+
     }
     
     static func instantiate(dailyReport: DailyReport) -> DailyReportShowViewController {

@@ -19,19 +19,26 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="NJu-yh-ySU">
-                                <rect key="frame" x="20" y="88" width="374" height="50"/>
+                                <rect key="frame" x="20" y="88" width="374" height="75"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Szq-Mc-UkR" customClass="DailyReportShareURLView" customModule="nippohub_daily" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="0.0" width="374" height="50"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="374" height="45"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     </view>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="j6M-J9-O5s">
+                                        <rect key="frame" x="0.0" y="45" width="374" height="30"/>
+                                        <state key="normal" title="共有する"/>
+                                        <connections>
+                                            <action selector="shareDailyReport" destination="hV9-z2-wog" eventType="touchUpInside" id="fBO-Yn-min"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="75" id="OK5-0a-Se2"/>
                                 </constraints>
                             </stackView>
                             <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eCZ-z5-Zws">
-                                <rect key="frame" x="20" y="138" width="374" height="724"/>
+                                <rect key="frame" x="20" y="163" width="374" height="699"/>
                                 <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <wkWebViewConfiguration key="configuration">
                                     <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
@@ -60,6 +67,8 @@
                     </navigationItem>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
                     <connections>
+                        <outlet property="btnShare" destination="j6M-J9-O5s" id="Q5U-s5-l1D"/>
+                        <outlet property="dailyReportShareURLView" destination="Szq-Mc-UkR" id="JFo-LV-5l4"/>
                         <outlet property="webKitForContents" destination="eCZ-z5-Zws" id="oAc-2f-rih"/>
                     </connections>
                 </viewController>
