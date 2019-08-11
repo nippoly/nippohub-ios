@@ -67,4 +67,8 @@ final class DailyReportRepository {
             "content": dailyReport.content
         ])
     }
+
+    func updateAccessKey(user: Account, dailyReport: DailyReport, accessKeyId: String?) {
+        ref.child("/users/\(user.id)/daily_reports/\(dailyReport.id)/accessKey").setValue(accessKeyId)
+    }
 }
