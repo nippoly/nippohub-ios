@@ -35,6 +35,9 @@
                         <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wNo-VB-XAZ">
                             <rect key="frame" x="0.0" y="32" width="354" height="63"/>
                             <state key="normal" title="共有解除する"/>
+                            <connections>
+                                <action selector="tapStopShare" destination="-1" eventType="touchUpInside" id="wnw-Tu-hRJ"/>
+                            </connections>
                         </button>
                     </subviews>
                 </stackView>
@@ -47,7 +50,7 @@
                 <constraint firstAttribute="trailing" secondItem="Vyg-KR-O72" secondAttribute="trailing" id="zR6-T0-O34"/>
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
-            <point key="canvasLocation" x="-508.69565217391306" y="-199.88839285714286"/>
+            <point key="canvasLocation" x="-564" y="-200"/>
         </view>
     </objects>
 </document>
