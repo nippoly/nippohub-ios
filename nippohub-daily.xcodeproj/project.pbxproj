@@ -14,6 +14,7 @@
 		540F069E2263EAD400A9CCA1 /* AlertOnlyOK.swift in Sources */ = {isa = PBXBuildFile; fileRef = 540F069D2263EAD400A9CCA1 /* AlertOnlyOK.swift */; };
 		543AB1992300CDDF009F6AD0 /* AccessKeyRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 543AB1982300CDDF009F6AD0 /* AccessKeyRepository.swift */; };
 		543AB19B2300CF66009F6AD0 /* AccessKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 543AB19A2300CF66009F6AD0 /* AccessKey.swift */; };
+		543AB19E2300D5BF009F6AD0 /* DailyReportShareUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 543AB19D2300D5BF009F6AD0 /* DailyReportShareUseCase.swift */; };
 		54408D45226BC97000DF8F7E /* AgreementsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54408D44226BC97000DF8F7E /* AgreementsViewController.swift */; };
 		54408D47226BD4C000DF8F7E /* PrivacyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54408D46226BD4C000DF8F7E /* PrivacyViewController.swift */; };
 		545159C22246DB80005854CE /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 545159C12246DB80005854CE /* SignUpViewController.swift */; };
@@ -88,6 +89,7 @@
 		540F069D2263EAD400A9CCA1 /* AlertOnlyOK.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertOnlyOK.swift; sourceTree = "<group>"; };
 		543AB1982300CDDF009F6AD0 /* AccessKeyRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccessKeyRepository.swift; sourceTree = "<group>"; };
 		543AB19A2300CF66009F6AD0 /* AccessKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccessKey.swift; sourceTree = "<group>"; };
+		543AB19D2300D5BF009F6AD0 /* DailyReportShareUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyReportShareUseCase.swift; sourceTree = "<group>"; };
 		54408D44226BC97000DF8F7E /* AgreementsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgreementsViewController.swift; sourceTree = "<group>"; };
 		54408D46226BD4C000DF8F7E /* PrivacyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrivacyViewController.swift; sourceTree = "<group>"; };
 		545159C12246DB80005854CE /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
@@ -200,6 +202,14 @@
 			path = JavaScripts;
 			sourceTree = "<group>";
 		};
+		543AB19C2300D5AC009F6AD0 /* Usecases */ = {
+			isa = PBXGroup;
+			children = (
+				543AB19D2300D5BF009F6AD0 /* DailyReportShareUseCase.swift */,
+			);
+			path = Usecases;
+			sourceTree = "<group>";
+		};
 		54572993224ADFCA001F20CD /* Components */ = {
 			isa = PBXGroup;
 			children = (
@@ -299,6 +309,7 @@
 		54C1FCE9224444CA00AB4FC8 /* nippohub-daily */ = {
 			isa = PBXGroup;
 			children = (
+				543AB19C2300D5AC009F6AD0 /* Usecases */,
 				54E6485C22C9748700C20EF6 /* Repositories */,
 				540F0690225FF87D00A9CCA1 /* Assets */,
 				5472CE3522504AA3001158E4 /* Utilities */,
@@ -716,6 +727,7 @@
 				54C1FCEB224444CA00AB4FC8 /* AppDelegate.swift in Sources */,
 				54E6485B22C9703100C20EF6 /* Account.swift in Sources */,
 				54CA71CC225C026900D09381 /* AccountRepository.swift in Sources */,
+				543AB19E2300D5BF009F6AD0 /* DailyReportShareUseCase.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
