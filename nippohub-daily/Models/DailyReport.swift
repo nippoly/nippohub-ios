@@ -13,4 +13,5 @@ struct DailyReport {
     let date: Date
     let title: String
     let content: String
+    let accessKey: String?
 }

@@ -12,6 +12,9 @@
 		540F0697225FF9AD00A9CCA1 /* daily_report_show.js in Resources */ = {isa = PBXBuildFile; fileRef = 540F0696225FF9AD00A9CCA1 /* daily_report_show.js */; };
 		540F069C225FFE7700A9CCA1 /* marked.min.js in Resources */ = {isa = PBXBuildFile; fileRef = 540F069B225FFE7700A9CCA1 /* marked.min.js */; };
 		540F069E2263EAD400A9CCA1 /* AlertOnlyOK.swift in Sources */ = {isa = PBXBuildFile; fileRef = 540F069D2263EAD400A9CCA1 /* AlertOnlyOK.swift */; };
+		543AB1992300CDDF009F6AD0 /* AccessKeyRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 543AB1982300CDDF009F6AD0 /* AccessKeyRepository.swift */; };
+		543AB19B2300CF66009F6AD0 /* AccessKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 543AB19A2300CF66009F6AD0 /* AccessKey.swift */; };
+		543AB19E2300D5BF009F6AD0 /* DailyReportShareUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 543AB19D2300D5BF009F6AD0 /* DailyReportShareUseCase.swift */; };
 		54408D45226BC97000DF8F7E /* AgreementsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54408D44226BC97000DF8F7E /* AgreementsViewController.swift */; };
 		54408D47226BD4C000DF8F7E /* PrivacyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54408D46226BD4C000DF8F7E /* PrivacyViewController.swift */; };
 		545159C22246DB80005854CE /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 545159C12246DB80005854CE /* SignUpViewController.swift */; };
@@ -24,6 +27,8 @@
 		5472CE3722504B38001158E4 /* DateConverter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5472CE3622504B38001158E4 /* DateConverter.swift */; };
 		547A97FE2273D05600D175CC /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 547A97FD2273D05600D175CC /* SettingViewController.swift */; };
 		548BE6EE22F39FE100620388 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 548BE6F022F39FE100620388 /* Localizable.strings */; };
+		548BE6FC22F8E45800620388 /* DailyReportShareURLView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 548BE6FB22F8E45800620388 /* DailyReportShareURLView.xib */; };
+		548BE6FE22F8E5E100620388 /* DailyReportShareURLView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 548BE6FD22F8E5E100620388 /* DailyReportShareURLView.swift */; };
 		548F974E227670F40018D8D9 /* GoogleService-Info--Development.plist in Resources */ = {isa = PBXBuildFile; fileRef = 548F974D227670F40018D8D9 /* GoogleService-Info--Development.plist */; };
 		548F9750227670FC0018D8D9 /* GoogleService-Info--Development.plist in Resources */ = {isa = PBXBuildFile; fileRef = 548F974F227670FC0018D8D9 /* GoogleService-Info--Development.plist */; };
 		548F9752227673F20018D8D9 /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 548F9751227673F20018D8D9 /* Settings.bundle */; };
@@ -82,6 +87,9 @@
 		540F0696225FF9AD00A9CCA1 /* daily_report_show.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = daily_report_show.js; sourceTree = "<group>"; };
 		540F069B225FFE7700A9CCA1 /* marked.min.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = marked.min.js; sourceTree = "<group>"; };
 		540F069D2263EAD400A9CCA1 /* AlertOnlyOK.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertOnlyOK.swift; sourceTree = "<group>"; };
+		543AB1982300CDDF009F6AD0 /* AccessKeyRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccessKeyRepository.swift; sourceTree = "<group>"; };
+		543AB19A2300CF66009F6AD0 /* AccessKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccessKey.swift; sourceTree = "<group>"; };
+		543AB19D2300D5BF009F6AD0 /* DailyReportShareUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyReportShareUseCase.swift; sourceTree = "<group>"; };
 		54408D44226BC97000DF8F7E /* AgreementsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgreementsViewController.swift; sourceTree = "<group>"; };
 		54408D46226BD4C000DF8F7E /* PrivacyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrivacyViewController.swift; sourceTree = "<group>"; };
 		545159C12246DB80005854CE /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
@@ -97,6 +105,8 @@
 		548BE6EB22F39F1100620388 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
 		548BE6EF22F39FE100620388 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/Localizable.strings; sourceTree = "<group>"; };
 		548BE6F922F4FE1700620388 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		548BE6FB22F8E45800620388 /* DailyReportShareURLView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DailyReportShareURLView.xib; sourceTree = "<group>"; };
+		548BE6FD22F8E5E100620388 /* DailyReportShareURLView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyReportShareURLView.swift; sourceTree = "<group>"; };
 		548F974D227670F40018D8D9 /* GoogleService-Info--Development.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info--Development.plist"; sourceTree = "<group>"; };
 		548F974F227670FC0018D8D9 /* GoogleService-Info--Development.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info--Development.plist"; sourceTree = "<group>"; };
 		548F9751227673F20018D8D9 /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
@@ -192,6 +202,14 @@
 			path = JavaScripts;
 			sourceTree = "<group>";
 		};
+		543AB19C2300D5AC009F6AD0 /* Usecases */ = {
+			isa = PBXGroup;
+			children = (
+				543AB19D2300D5BF009F6AD0 /* DailyReportShareUseCase.swift */,
+			);
+			path = Usecases;
+			sourceTree = "<group>";
+		};
 		54572993224ADFCA001F20CD /* Components */ = {
 			isa = PBXGroup;
 			children = (
@@ -222,6 +240,7 @@
 			children = (
 				5457299B224AE3B9001F20CD /* DailyReport.swift */,
 				54E6485A22C9703100C20EF6 /* Account.swift */,
+				543AB19A2300CF66009F6AD0 /* AccessKey.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -235,6 +254,15 @@
 				54E6487F22DAAA4A00C20EF6 /* YearMonth.swift */,
 			);
 			path = Utilities;
+			sourceTree = "<group>";
+		};
+		548BE6FA22F8E42900620388 /* DailyReportShareURLView */ = {
+			isa = PBXGroup;
+			children = (
+				548BE6FB22F8E45800620388 /* DailyReportShareURLView.xib */,
+				548BE6FD22F8E5E100620388 /* DailyReportShareURLView.swift */,
+			);
+			path = DailyReportShareURLView;
 			sourceTree = "<group>";
 		};
 		54BECCE122458DD80064BE83 /* ViewsControllers */ = {
@@ -281,6 +309,7 @@
 		54C1FCE9224444CA00AB4FC8 /* nippohub-daily */ = {
 			isa = PBXGroup;
 			children = (
+				543AB19C2300D5AC009F6AD0 /* Usecases */,
 				54E6485C22C9748700C20EF6 /* Repositories */,
 				540F0690225FF87D00A9CCA1 /* Assets */,
 				5472CE3522504AA3001158E4 /* Utilities */,
@@ -322,6 +351,7 @@
 			children = (
 				54CA71CB225C026900D09381 /* AccountRepository.swift */,
 				54E6485D22CABEBC00C20EF6 /* DailyReportRepository.swift */,
+				543AB1982300CDDF009F6AD0 /* AccessKeyRepository.swift */,
 			);
 			path = Repositories;
 			sourceTree = "<group>";
@@ -357,6 +387,7 @@
 		54E6486622D01CF900C20EF6 /* DailyReportShow */ = {
 			isa = PBXGroup;
 			children = (
+				548BE6FA22F8E42900620388 /* DailyReportShareURLView */,
 				54E6486F22D01E1800C20EF6 /* DailyReportShow.storyboard */,
 				5457299F224D853B001F20CD /* DailyReportShowViewController.swift */,
 			);
@@ -551,6 +582,7 @@
 				54E6487C22D01F8100C20EF6 /* Setting.storyboard in Resources */,
 				54C1FCF5224444CD00AB4FC8 /* Assets.xcassets in Resources */,
 				54C1FCF0224444CA00AB4FC8 /* Launch.storyboard in Resources */,
+				548BE6FC22F8E45800620388 /* DailyReportShareURLView.xib in Resources */,
 				540F0694225FF8D800A9CCA1 /* daily_report_show.html in Resources */,
 				54E6486322D01CAC00C20EF6 /* SignIn.storyboard in Resources */,
 				54E6487022D01E1800C20EF6 /* DailyReportShow.storyboard in Resources */,
@@ -684,14 +716,18 @@
 				54E6485E22CABEBC00C20EF6 /* DailyReportRepository.swift in Sources */,
 				54E6488022DAAA4A00C20EF6 /* YearMonth.swift in Sources */,
 				545159C4224996AB005854CE /* DailyReportsTableViewController.swift in Sources */,
+				543AB19B2300CF66009F6AD0 /* AccessKey.swift in Sources */,
 				54C1FCED224444CA00AB4FC8 /* SignInViewController.swift in Sources */,
 				540381792265479B0077F687 /* UIView+.swift in Sources */,
 				545729A0224D853B001F20CD /* DailyReportShowViewController.swift in Sources */,
+				548BE6FE22F8E5E100620388 /* DailyReportShareURLView.swift in Sources */,
 				545159C22246DB80005854CE /* SignUpViewController.swift in Sources */,
 				54408D47226BD4C000DF8F7E /* PrivacyViewController.swift in Sources */,
+				543AB1992300CDDF009F6AD0 /* AccessKeyRepository.swift in Sources */,
 				54C1FCEB224444CA00AB4FC8 /* AppDelegate.swift in Sources */,
 				54E6485B22C9703100C20EF6 /* Account.swift in Sources */,
 				54CA71CC225C026900D09381 /* AccountRepository.swift in Sources */,
+				543AB19E2300D5BF009F6AD0 /* DailyReportShareUseCase.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
