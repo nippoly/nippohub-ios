@@ -16,8 +16,7 @@ final class SignInViewController: UIViewController {
         super.viewDidLoad()
     }
 
-    @IBAction
-    func signIn() {
+    @IBAction private func signIn() {
         let email = formEmail.text ?? ""
         let password = formPassword.text ?? ""
         
@@ -36,7 +35,7 @@ final class SignInViewController: UIViewController {
         })
     }
 
-    @IBAction func transitToSignUp() {
+    @IBAction private func transitToSignUp() {
         let viewController = SignUpViewController.instantiate()
 
         present(viewController, animated: true)

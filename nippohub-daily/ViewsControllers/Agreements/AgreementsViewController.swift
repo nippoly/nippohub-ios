@@ -22,8 +22,7 @@ final class AgreementsViewController: UIViewController {
         webviewAgreements.load(req)
     }
     
-    @IBAction
-    func back() {
+    @IBAction private func back() {
         self.dismiss(animated: true, completion: nil)
     }
     
