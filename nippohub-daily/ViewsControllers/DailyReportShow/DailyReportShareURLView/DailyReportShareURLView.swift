@@ -8,7 +8,7 @@
 
 import UIKit
 
-class DailyReportShareURLView: UIView {
+final class DailyReportShareURLView: UIView {
     @IBOutlet private weak var textFieldShareURL: UITextField!
     @IBOutlet private weak var buttonShareStop: UIButton!
     var shareURL: String = "" {

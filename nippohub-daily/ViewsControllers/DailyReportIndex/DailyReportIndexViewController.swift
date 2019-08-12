@@ -9,7 +9,7 @@
 import UIKit
 import XLPagerTabStrip
 
-class DailyReportIndexViewController: ButtonBarPagerTabStripViewController {
+final class DailyReportIndexViewController: ButtonBarPagerTabStripViewController {
     override func viewDidLoad() {
         settings.style.buttonBarItemTitleColor = UIColor.black
         settings.style.buttonBarItemBackgroundColor = UIColor(red: 0, green: 0, blue: 0, alpha: 0)
