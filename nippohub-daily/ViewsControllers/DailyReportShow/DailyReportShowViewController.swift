@@ -50,7 +50,7 @@ final class DailyReportShowViewController: UIViewController {
         }
     }
 
-    @IBAction func transitToEdit() {
+    @IBAction private func transitToEdit() {
         let viewController = DailyReportPostViewController.instantiate(dailyReport: dailyReport)
 
         viewController.dailyReport = dailyReport

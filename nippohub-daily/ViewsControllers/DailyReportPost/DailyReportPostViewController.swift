@@ -26,8 +26,7 @@ final class DailyReportPostViewController: UIViewController {
         }
     }
     
-    @IBAction
-    func sendDailyReport() {
+    @IBAction private func sendDailyReport() {
         guard let currentUser = AccountRepository.instance.currentUser else { return }
         let date = formDate.date
         let title = formTitle.text!

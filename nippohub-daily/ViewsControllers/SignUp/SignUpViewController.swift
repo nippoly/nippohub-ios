@@ -13,8 +13,7 @@ final class SignUpViewController: UIViewController {
     @IBOutlet private weak var formPassword: UITextField!
     @IBOutlet private weak var formPasswordConfirmation: UITextField!
     
-    @IBAction
-    func signUp() {
+    @IBAction private func signUp() {
         let email = formEmail.text ?? ""
         let password = formPassword.text ?? ""
         let passwordConfirmation = formPasswordConfirmation.text ?? ""
@@ -54,13 +53,13 @@ final class SignUpViewController: UIViewController {
         })
     }
 
-    @IBAction func transitToAgreements() {
+    @IBAction private func transitToAgreements() {
         let viewController = AgreementsViewController.instantiate()
 
         present(viewController, animated: true)
     }
 
-    @IBAction func transitToPrivacy() {
+    @IBAction private func transitToPrivacy() {
         let viewController = PrivacyViewController.instantiate()
 
         present(viewController, animated: true)
