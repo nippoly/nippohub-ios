@@ -47,6 +47,14 @@ final class DailyReportShowViewController: UIViewController {
             self.dailyReportShareUsecase.stopSharing(user: currentUser, dailyReport: self.dailyReport)
 
             self.accessKey = nil
+
+            self.dailyReport = DailyReport(
+                id: self.dailyReport.id,
+                date: self.dailyReport.date,
+                title: self.dailyReport.title,
+                content: self.dailyReport.content,
+                accessKey: nil
+            )
         }
     }
 
